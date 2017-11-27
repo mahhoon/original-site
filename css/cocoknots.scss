@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+    font-size: $size + px;
+    font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : "ヒラギノ角ゴ　pro W3","hiragino kaku Gothic Pro",メイリオ, Verdana, "MS Pゴシック", sans-serif;
+$blue1 : #26499d;
+$blue2 : #8ba4de;
+$base_white : #fdfcf9;
+
+body{
+    color:#333;
+    background-color: $base_white;
+}
+
+//ヘッダーライン
+#header_line {
+    width: 100%;
+    height: 7px;
+    background-color: $blue1;
+}
+
+//header
+header{ max-width: 1024px;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: space-between;
+
+    #pc_title_logo {
+        margin-top: 5px;
+        p {
+            margin-top: 7px;
+            @include fontsize(13);
+        }
+    }
+    
+    #head_navi {
+        text-align: right;
+        margin-top: 5px;
+        
+        .head_contact li {
+            display: inline-block;
+            @include fontsize(15);
+            font-weight: bold;
+            margin: 5px 0 20px 20px;
+            color: $blue1;
+            
+            a{
+                color: $blue1;
+                text-decoration: none;
+            }
+            .access_button {
+                background-color: $blue1;
+                border-radius: 2px;
+                color: #fff;
+                padding: 1px 6px;
+                @include fontsize(14);
+            }
+        }
+        .head_nav li {
+            display: inline-block;
+            @include fontsize(16);
+            font-weight: bold;
+            width: 148px;
+            border-right: 1px solid #333;
+            text-align: center;
+            padding: 2px 0;
+            
+            a{
+                color: #333;
+                text-decoration: none;
+                
+            }
+        }
+        .about{
+            border-left: 1px solid #333;
+            }
+    }
+}
+
+//cover area
+.cover_area {
+    background-image: url("../images/top/top-heroimage.jpg");
+    background-size: cover;
+    height: 466px;
+}
+
+.cover_title {
+    max-width: 1024px;
+    margin: 0 auto 20px;
+}
