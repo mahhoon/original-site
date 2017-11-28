@@ -3,7 +3,9 @@ html {
 
 body {
   color: #333;
-  background-color: #fdfcf9; }
+  background-color: #fdfcf9;
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 #header_line {
   width: 100%;
@@ -61,8 +63,138 @@ header {
   background-size: cover;
   height: 466px; }
 
-.cover_title {
+.cover_content {
   max-width: 1024px;
-  margin: 0 auto 20px; }
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.cover_title {
+  margin-top: 50px; }
+  .cover_title .readmore {
+    background-color: #8ba4de;
+    padding: 4px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    display: block;
+    width: 80px;
+    text-align: center;
+    margin-top: 10px; }
+
+.seal {
+  margin-top: 220px; }
+
+#from_issue {
+  background-color: #8ba4de; }
+
+.wrap_issue {
+  height: 130px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .wrap_issue .issue {
+    text-align: right;
+    margin: 0 20px; }
+    .wrap_issue .issue a {
+      text-decoration: none;
+      font-size: 18px;
+      font-size: 1.8rem;
+      color: #333;
+      font-weight: bold;
+      display: block;
+      padding: 4px; }
+  .wrap_issue .letscontact {
+    line-height: 3rem;
+    margin: 0 20px; }
+  .wrap_issue .underline {
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid #333; }
+  .wrap_issue .arrow {
+    margin: 0 20px; }
+
+#survicecategory {
+  max-width: 1024px;
+  margin: 60px auto;
+  text-align: center; }
+  #survicecategory h2 {
+    font-size: 36px;
+    font-size: 3.6rem; }
+    #survicecategory h2 span {
+      border-bottom: 2px solid #c9c9c9;
+      display: inline-block;
+      height: 40px; }
+  #survicecategory p.read {
+    margin: 20px 4px;
+    font-size: 16px;
+    font-size: 1.6rem; }
+  #survicecategory .detail_button {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-size: 1.4rem;
+    display: block;
+    width: 200px;
+    height: 20px;
+    margin: 20px auto;
+    padding: 7px 0 0 0;
+    border: 1px solid #333;
+    border-radius: 14px; }
+  #survicecategory .survice_wrap {
+    display: flex; }
+    #survicecategory .survice_wrap .survice {
+      width: 25%;
+      margin: 20px;
+      text-decoration: none;
+      color: #333; }
+      #survicecategory .survice_wrap .survice h3.catename {
+        font-size: 20px;
+        font-size: 2rem;
+        margin-bottom: 16px; }
+      #survicecategory .survice_wrap .survice p.catetext {
+        line-height: 2rem;
+        font-size: 14px;
+        font-size: 1.4rem; }
+
+#prmenu {
+  max-width: 1024px;
+  margin: 60px auto; }
+
+.prmenu_title {
+  margin-bottom: 15px; }
+  .prmenu_title .sikaku, .prmenu_title p, .prmenu_title h3 {
+    display: inline-block; }
+  .prmenu_title .sikaku {
+    width: 20px;
+    height: 6px;
+    background-color: #26499d; }
+  .prmenu_title h3 {
+    font-size: 20px;
+    font-size: 2rem; }
+  .prmenu_title p {
+    font-size: 15px;
+    font-size: 1.5rem;
+    margin-left: 20px; }
+
+.menues_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #26499d; }
+  .menues_wrap li {
+    width: 25%;
+    height: 45px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 16px; }
+  .menues_wrap a {
+    text-decoration: none;
+    color: #fff; }
 
 /*# sourceMappingURL=cocoknots.css.map */

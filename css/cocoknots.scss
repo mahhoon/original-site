@@ -17,6 +17,7 @@ $base_white : #fdfcf9;
 body{
     color:#333;
     background-color: $base_white;
+    @include fontsize(14);
 }
 
 //ヘッダーライン
@@ -91,7 +92,176 @@ header{ max-width: 1024px;
     height: 466px;
 }
 
-.cover_title {
+.cover_content {
     max-width: 1024px;
     margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cover_title {
+    margin-top: 50px;
+    .readmore {
+        background-color: #8ba4de;
+        padding: 4px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 10px;
+        @include fontsize(14);
+        display: block;
+        width: 80px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.seal {
+    margin-top: 220px;
+}
+
+//課題から
+#from_issue {
+    background-color: $blue2;
+
+}
+
+.wrap_issue {
+    height: 130px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     .issue {
+         text-align: right;
+         margin: 0 20px;
+         a{
+             text-decoration: none;
+             @include fontsize(18);
+             color: #333;
+             font-weight: bold;
+             display: block;
+             padding: 4px;
+         }
+     }
+     
+     .letscontact {
+        line-height: 3rem;
+        margin: 0 20px;
+     }
+     .underline {
+             @include fontsize(20);
+             font-weight: bold;
+             border-bottom: 3px solid #333;
+     }
+     
+     .arrow  {
+        margin: 0 20px;
+     }
+}
+
+//トップページ　PRサービス
+#survicecategory {
+    max-width: 1024px;
+    margin: 60px auto;
+    text-align: center;
+    
+    h2 {
+        @include fontsize(36);
+        
+        span {
+            border-bottom: 2px solid #c9c9c9;
+            display: inline-block;
+            height: 40px;
+        }
+    }
+    
+    p.read {
+        margin: 20px 4px;
+        @include fontsize(16);
+    }
+    
+    .detail_button {
+        text-decoration: none;
+        color: #333;
+        @include fontsize(14);
+        display: block;
+        width: 200px;
+        height: 20px;
+        margin: 20px auto;
+        padding: 7px 0 0 0;
+        border: 1px solid #333;
+        border-radius: 14px;
+    }
+    
+    .survice_wrap {
+    display: flex;
+    
+        .survice {
+            width: 25%;
+            margin: 20px;
+            text-decoration: none;
+            color: #333;
+            
+            h3.catename {
+                @include fontsize(20);
+                margin-bottom: 16px;
+            }
+            
+            p.catetext{
+                line-height: 2rem;
+                @include fontsize(14);
+            }
+        }
+    }
+
+}
+
+//トップページ　PRメニュー
+#prmenu {
+    max-width: 1024px;
+    margin: 60px auto;
+}
+.prmenu_title  {
+    margin-bottom: 15px;
+    
+    .sikaku , p , h3 {
+        display: inline-block;
+    }
+    
+    .sikaku {
+        width: 20px;
+        height: 6px;
+        background-color: $blue1;
+    }
+    
+    h3 {
+        @include fontsize(20);
+    }
+    
+    p {
+        @include fontsize(15);
+        margin-left: 20px;
+    }
+}
+
+.menues_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $blue1;
+    
+    li {
+        width: 25%;
+        height: 45px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 16px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
 }
