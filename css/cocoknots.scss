@@ -122,7 +122,6 @@ header{ max-width: 1024px;
 //課題から
 #from_issue {
     background-color: $blue2;
-
 }
 
 .wrap_issue {
@@ -167,32 +166,9 @@ header{ max-width: 1024px;
     margin: 60px auto;
     text-align: center;
     
-    h2 {
-        @include fontsize(36);
-        
-        span {
-            border-bottom: 2px solid #c9c9c9;
-            display: inline-block;
-            height: 40px;
-        }
-    }
-    
     p.read {
         margin: 20px 4px;
         @include fontsize(16);
-    }
-    
-    .detail_button {
-        text-decoration: none;
-        color: #333;
-        @include fontsize(14);
-        display: block;
-        width: 200px;
-        height: 20px;
-        margin: 20px auto;
-        padding: 7px 0 0 0;
-        border: 1px solid #333;
-        border-radius: 14px;
     }
     
     .survice_wrap {
@@ -215,8 +191,28 @@ header{ max-width: 1024px;
             }
         }
     }
-
 }
+
+.top_sectiontitle {
+            border-bottom: 2px solid #c9c9c9;
+            display: inline-block;
+            height: 40px;
+            @include fontsize(36);
+}
+
+.detail_button {
+        text-decoration: none;
+        color: #333;
+        @include fontsize(14);
+        display: block;
+        width: 200px;
+        height: 20px;
+        margin: 20px auto;
+        padding: 7px 0 0 0;
+        border: 1px solid #333;
+        border-radius: 14px;
+}
+
 
 //トップページ　PRメニュー
 #prmenu {
@@ -264,4 +260,167 @@ header{ max-width: 1024px;
         text-decoration: none;
         color: #fff;
     }
+}
+
+// トップページおすすめ
+#recommend {
+    background-color: #e5e5e5;
+}
+
+.recommends_wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+    .content_thumbnail_1,.content_thumbnail_2,.content_thumbnail_3 {
+            width: 33.33%;
+            margin: 20px 10px;
+            background-color: #fff;
+            
+            .content_thumbnail_image {
+                height: 130px;
+                text-align: center;
+            }
+            
+            h3 {
+                @include fontsize(18);
+                padding: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 2rem;
+            }
+            P {
+                padding: 20px;
+                line-height: 2.2rem;
+            }
+    }
+}
+
+//トップページ　お知らせ
+#news {
+    max-width: 1024px;
+    margin: 50px auto 80px;
+    text-align: center;
+    
+    .news_table{
+        text-align: left;
+        margin-top: 30px;
+    }
+    
+    .news_table th {
+        width: 120px;
+        padding: 10px;
+        @include fontsize(15);
+    }
+    .news_table td {
+        line-height: 2rem;
+        padding: 10px;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+#links {
+    max-width: 1024px;
+    background: linear-gradient(90deg, #e5e5e5, #8ba4de, #e5e5e5);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    
+    
+         .link_banner {
+             display: inline-block;
+             margin: 0 10px;
+         }
+}
+
+//footer
+footer {
+    margin-top: 50px;
+    
+    .gotop {
+        text-align: right;
+        max-width: 1024px;
+        margin: 0 auto 10px;
+    }
+
+    .footercolor {
+        background-color: $blue2;
+    }
+
+    #footnavi {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 20px 0;
+        
+        .footwrap1 {
+            display: flex;
+            justify-content: space-between;
+            
+            div {
+                width: 23%;
+                
+                h3 {
+                    color: #fff;
+                    font-weight: bold;  
+                    margin-bottom: 30px;
+                    border-top: 1px solid #fff;
+                    padding-top: 10px;
+                }
+                
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #fff;
+                    line-height: 3rem;
+                }
+                
+                .tanabe {
+                    color: #fff;
+                    font-weight: bold; 
+                    border-top: 1px solid #fff;
+                    padding-top: 10px;
+                    margin-top: 20px;
+                    line-height: 2rem;
+                }
+            }
+        }
+        
+        .footwrap2 {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            
+            .policy {
+                display: inline-block;
+                text-decoration: none;
+                color: #fff;
+                border-right: #fff 1px solid;
+            }
+            
+            .foot_address {
+                display: flex;
+                align-items: flex-end;
+                width: 50%;
+                
+                p {
+                    margin-left: 20px;
+                    color: #fff;
+
+                    @include fontsize(13)
+                }
+            }
+        }
+        .copyright {
+            text-align: right;
+            margin-top: 20px;
+            color: #fff;
+            @include fontsize(12);
+        }
+}
 }
