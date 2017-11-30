@@ -9,7 +9,7 @@ html{
     font-size: ($size / $base) * 1rem;
 }
 
-$ja_font : "ヒラギノ角ゴ　pro W3","hiragino kaku Gothic Pro",メイリオ, Verdana, "MS Pゴシック", sans-serif;
+$ja_font : "メイリオ", Meiryo UI , Meiryo,Osaka , YuGothic, "游ゴシック","ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic",sans-serif;
 $blue1 : #26499d;
 $blue2 : #8ba4de;
 $base_white : #fdfcf9;
@@ -45,7 +45,7 @@ header{ max-width: 1024px;
         text-align: right;
         margin-top: 5px;
         
-        .head_contact li {
+        ul.head_contact li {
             display: inline-block;
             @include fontsize(15);
             font-weight: bold;
@@ -64,24 +64,49 @@ header{ max-width: 1024px;
                 @include fontsize(14);
             }
         }
-        .head_nav li {
+        ul.head_nav li {
             display: inline-block;
             @include fontsize(16);
             font-weight: bold;
-            width: 148px;
+            width: 180px;
             border-right: 1px solid #333;
             text-align: center;
             padding: 2px 0;
+            position: relative;
             
             a{
                 color: #333;
                 text-decoration: none;
-                
             }
         }
-        .about{
+        li.about{
             border-left: 1px solid #333;
             }
+            
+        ul.navichild {
+            background-color: lighten( $blue2, 15% );
+            position: absolute;
+
+            width: 180px;
+            padding: 10px 0;
+            display: none;
+        
+            li  {
+            display: block;
+            border-right: none;
+            text-align: left;
+            width: 200px;
+            height: 20px;
+            padding: 10px 0 0 10px;
+            }
+            
+            a{
+                @include fontsize(14);
+            }
+            li a:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -102,16 +127,20 @@ header{ max-width: 1024px;
 .cover_title {
     margin-top: 50px;
     .readmore {
-        background-color: #8ba4de;
-        padding: 4px;
+        background-color: $blue1;
+        padding-top: 6px;
         text-decoration: none;
         color: #fff;
         border-radius: 10px;
         @include fontsize(14);
         display: block;
-        width: 80px;
+        width: 100px;
+        height: 20px;
         text-align: center;
         margin-top: 10px;
+    }
+    a:hover{
+            background-color: $blue2;
     }
 }
 
@@ -138,21 +167,25 @@ header{ max-width: 1024px;
          a{
              text-decoration: none;
              @include fontsize(18);
-             color: #333;
+             color: #fff;
              font-weight: bold;
              display: block;
              padding: 4px;
+         }
+         a:hover {
+             text-decoration: underline;
          }
      }
      
      .letscontact {
         line-height: 3rem;
         margin: 0 20px;
+        color: #fff;
      }
      .underline {
              @include fontsize(20);
              font-weight: bold;
-             border-bottom: 3px solid #333;
+             border-bottom: 3px solid #fff;
      }
      
      .arrow  {
@@ -183,6 +216,8 @@ header{ max-width: 1024px;
             h3.catename {
                 @include fontsize(20);
                 margin-bottom: 16px;
+                color: $blue1;
+                font-weight: bold;
             }
             
             p.catetext{
@@ -194,10 +229,20 @@ header{ max-width: 1024px;
 }
 
 .top_sectiontitle {
-            border-bottom: 2px solid #c9c9c9;
+            border-bottom: 3px solid #c9c9c9;
             display: inline-block;
+            position: relative;
             height: 40px;
             @include fontsize(36);
+}
+
+.top_sectiontitle:after {
+position: absolute;
+content: " ";
+display: block;
+border-bottom: solid 3px $blue1;
+bottom: -3px;
+width: 20%;
 }
 
 .detail_button {
@@ -396,31 +441,39 @@ footer {
             justify-content: space-between;
             align-items: flex-end;
             
-            .policy {
+            .policy li {
                 display: inline-block;
-                text-decoration: none;
-                color: #fff;
-                border-right: #fff 1px solid;
+                
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 3px 6px;
+                }
             }
+            li.otoiawase {
+                    border-right: #fff 1px solid;
+                }
+            li.aboutsite {
+                    border-right: #fff 1px solid;
+                }
             
             .foot_address {
                 display: flex;
-                align-items: flex-end;
                 width: 50%;
                 
                 p {
                     margin-left: 20px;
                     color: #fff;
-
+                    line-height: 1.5rem;
                     @include fontsize(13)
                 }
             }
         }
         .copyright {
             text-align: right;
-            margin-top: 20px;
+            margin-top: 10px;
             color: #fff;
-            @include fontsize(12);
+            @include fontsize(13);
         }
 }
 }
