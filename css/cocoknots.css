@@ -1,113 +1,127 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%; }
 
 body {
+  font-family: "メイリオ", Meiryo UI, Meiryo, Osaka, YuGothic, "游ゴシック", "ヒラギノ角ゴ Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   color: #333;
   background-color: #fdfcf9;
   font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  border-top: 5px solid #26499d; }
 
-#header_line {
-  width: 100%;
-  height: 7px;
-  background-color: #26499d; }
-
-header {
+#headerwrap {
   max-width: 1024px;
-  margin: 0 auto 20px;
+  margin: 0px auto 20px;
   display: flex;
   justify-content: space-between; }
-  header #pc_title_logo {
-    margin-top: 5px; }
-    header #pc_title_logo p {
+  #headerwrap #pc_title_logo {
+    width: 20%; }
+    #headerwrap #pc_title_logo p {
       margin-top: 7px;
       font-size: 13px;
       font-size: 1.3rem; }
-  header #head_navi {
-    text-align: right;
-    margin-top: 5px; }
-    header #head_navi ul.head_contact li {
+  #headerwrap #sp_title_logo {
+    display: none; }
+  #headerwrap #head_navi {
+    text-align: right; }
+    #headerwrap #head_navi ul.head_contact_pc li {
       display: inline-block;
       font-size: 15px;
       font-size: 1.5rem;
       font-weight: bold;
       margin: 5px 0 20px 20px;
       color: #26499d; }
-      header #head_navi ul.head_contact li a {
+      #headerwrap #head_navi ul.head_contact_pc li a {
         color: #26499d;
         text-decoration: none; }
-      header #head_navi ul.head_contact li .access_button {
+      #headerwrap #head_navi ul.head_contact_pc li .access_button {
         background-color: #26499d;
         border-radius: 2px;
         color: #fff;
         padding: 1px 6px;
         font-size: 14px;
         font-size: 1.4rem; }
-    header #head_navi ul.head_nav li {
+    #headerwrap #head_navi ul.head_nav li {
       display: inline-block;
       font-size: 16px;
       font-size: 1.6rem;
       font-weight: bold;
       width: 180px;
       border-right: 1px solid #333;
+      border-bottom: 3px solid #fdfcf9;
       text-align: center;
       padding: 2px 0;
       position: relative; }
-      header #head_navi ul.head_nav li a {
-        color: #333;
-        text-decoration: none; }
-    header #head_navi li.about {
+    #headerwrap #head_navi ul.head_nav a {
+      color: #333;
+      text-decoration: none; }
+    #headerwrap #head_navi ul.head_nav li.about {
       border-left: 1px solid #333; }
-    header #head_navi ul.navichild {
+    #headerwrap #head_navi ul.head_nav li:hover {
+      border-bottom: 3px solid #8ba4de; }
+    #headerwrap #head_navi ul.navichild {
       background-color: #c7d3ef;
+      border-top: 10px solid #fdfcf9;
       position: absolute;
       width: 180px;
-      padding: 10px 0;
+      padding: 7px 0;
+      box-sizing: border-box;
+      margin-top: 7px;
       display: none; }
-      header #head_navi ul.navichild li {
+      #headerwrap #head_navi ul.navichild li {
         display: block;
-        border-right: none;
         text-align: left;
-        width: 200px;
+        width: 180px;
         height: 20px;
-        padding: 10px 0 0 10px; }
-      header #head_navi ul.navichild a {
+        padding: 10px 0 0 10px;
+        border-right: none;
+        border-bottom: none; }
+      #headerwrap #head_navi ul.navichild li:hover {
+        border-bottom: none; }
+      #headerwrap #head_navi ul.navichild a {
         font-size: 14px;
-        font-size: 1.4rem; }
-      header #head_navi ul.navichild li a:hover {
+        font-size: 1.4rem;
+        font-weight: normal; }
+      #headerwrap #head_navi ul.navichild a:hover {
         text-decoration: underline; }
+  #headerwrap #head_navi_sp {
+    display: none; }
 
-.cover_area {
+#cover_area {
   background-image: url("../images/top/top-heroimage.jpg");
-  background-size: cover;
-  height: 466px; }
-
-.cover_content {
-  max-width: 1024px;
-  margin: 0 auto 20px;
-  display: flex;
-  justify-content: space-between; }
-
-.cover_title {
-  margin-top: 50px; }
-  .cover_title .readmore {
-    background-color: #26499d;
-    padding-top: 6px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 14px;
-    font-size: 1.4rem;
-    display: block;
-    width: 100px;
-    height: 20px;
-    text-align: center;
-    margin-top: 10px; }
-  .cover_title a:hover {
-    background-color: #8ba4de; }
-
-.seal {
-  margin-top: 220px; }
+  background-position: center center;
+  background-size: cover; }
+  #cover_area .cover_content {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 426px; }
+    #cover_area .cover_content .cover_title {
+      margin-top: 50px;
+      width: 60%; }
+      #cover_area .cover_content .cover_title .readmore {
+        background-color: #26499d;
+        padding-top: 6px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 14px;
+        font-size: 1.4rem;
+        display: block;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        margin-top: 10px; }
+      #cover_area .cover_content .cover_title a:hover {
+        background-color: #8ba4de; }
+    #cover_area .cover_content .seal {
+      width: 40%;
+      margin-top: 200px;
+      text-align: right; }
+      #cover_area .cover_content .seal .seal_sp {
+        display: none; }
 
 #from_issue {
   background-color: #8ba4de; }
@@ -133,12 +147,15 @@ header {
     .wrap_issue .issue a:hover {
       text-decoration: underline; }
   .wrap_issue .letscontact {
-    line-height: 3rem;
-    margin: 0 20px;
-    color: #fff; }
+    margin: 0 20px; }
+    .wrap_issue .letscontact a {
+      text-decoration: none;
+      line-height: 1.5;
+      color: #fff; }
   .wrap_issue .underline {
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2;
     font-weight: bold;
     border-bottom: 3px solid #fff; }
   .wrap_issue .arrow {
@@ -160,13 +177,13 @@ header {
       text-decoration: none;
       color: #333; }
       #survicecategory .survice_wrap .survice h3.catename {
-        font-size: 20px;
-        font-size: 2rem;
+        font-size: 19px;
+        font-size: 1.9rem;
         margin-bottom: 16px;
         color: #26499d;
-        font-weight: bold; }
+        letter-spacing: 0.2rem; }
       #survicecategory .survice_wrap .survice p.catetext {
-        line-height: 2rem;
+        line-height: 1.5;
         font-size: 14px;
         font-size: 1.4rem; }
 
@@ -232,7 +249,9 @@ header {
     padding-top: 16px; }
   .menues_wrap a {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-size: 15px;
+    font-size: 1.5rem; }
 
 #recommend {
   background-color: #e5e5e5; }
@@ -250,8 +269,8 @@ header {
       height: 130px;
       text-align: center; }
     .recommends_wrap .content_thumbnail_1 h3, .recommends_wrap .content_thumbnail_2 h3, .recommends_wrap .content_thumbnail_3 h3 {
-      font-size: 18px;
-      font-size: 1.8rem;
+      font-size: 20px;
+      font-size: 2rem;
       padding: 20px;
       height: 20px;
       text-align: center;
@@ -332,14 +351,12 @@ footer {
       align-items: flex-end; }
       footer #footnavi .footwrap2 .policy li {
         display: inline-block; }
-        footer #footnavi .footwrap2 .policy li a {
-          text-decoration: none;
-          color: #fff;
-          padding: 3px 6px; }
-      footer #footnavi .footwrap2 li.otoiawase {
-        border-right: #fff 1px solid; }
-      footer #footnavi .footwrap2 li.aboutsite {
-        border-right: #fff 1px solid; }
+      footer #footnavi .footwrap2 .policy a {
+        text-decoration: none;
+        color: #fff;
+        padding: 3px 6px; }
+      footer #footnavi .footwrap2 .policy li + li {
+        border-left: #fff 1px solid; }
       footer #footnavi .footwrap2 .foot_address {
         display: flex;
         width: 50%; }
@@ -355,5 +372,238 @@ footer {
       color: #fff;
       font-size: 13px;
       font-size: 1.3rem; }
+
+/*企業案内ページ---------------------------
+---------------------------------------------------*/
+.max-width {
+  max-width: 1024px;
+  margin: 0 auto 8px; }
+
+.breadcrumb li {
+  display: inline;
+  /*横に並ぶように*/
+  list-style: none; }
+
+.breadcrumb li:after {
+  /* >を表示*/
+  content: '>';
+  padding: 0 3px;
+  color: #26499d; }
+
+.breadcrumb li:last-child:after {
+  content: ''; }
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #26499d; }
+
+.breadcrumb li a:hover {
+  text-decoration: underline; }
+
+.cover_area_common {
+  background-image: url("../images/about/cover_about.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_common {
+      background-image: url("../images/about/cover_about@2x.jpg"); } }
+  .cover_area_common .page_title {
+    text-align: center;
+    font-size: 30px;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 100px;
+    letter-spacing: 0.5rem; }
+
+#content {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex; }
+  #content article {
+    width: 75%; }
+  #content aside {
+    width: 25%; }
+
+#content article {
+  padding-right: 30px; }
+  #content article .spirit_title {
+    font-size: 24px;
+    font-size: 2.4rem;
+    color: #26499d;
+    line-height: 1.5;
+    border-left: 9px solid #26499d;
+    padding-left: 10px;
+    margin: 80px 0 30px 0; }
+  #content article p.honbun {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2; }
+  #content article span.spirit_title_sub {
+    display: block;
+    font-size: 18px;
+    font-size: 1.8rem; }
+
+#sidemenu {
+  margin-top: 50px;
+  margin-left: 20px; }
+  #sidemenu a {
+    text-decoration: none;
+    color: #333;
+    line-height: 1.5; }
+    #sidemenu a li {
+      border-left: 1px #333 solid;
+      border-right: 1px #333 solid;
+      border-bottom: 1px #333 solid;
+      padding: 10px;
+      background-image: url("../images/common/allowright.png");
+      background-repeat: no-repeat;
+      background-position: 95% 50%; }
+    #sidemenu a li.sidemenu1 {
+      border-top: 1px #333 solid;
+      border-left: 1px #333 solid;
+      border-right: 1px #333 solid; }
+  #sidemenu a:hover li {
+    background-color: #ededed; }
+
+/* mobile 設定 common----------------------------------------
+------------------------------------------------------*/
+@media (max-width: 768px) {
+  body {
+    width: 100%; }
+
+  #headerwrap {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; }
+    #headerwrap #pc_title_logo {
+      display: none; }
+    #headerwrap #sp_title_logo {
+      display: block; }
+      #headerwrap #sp_title_logo p {
+        margin-top: 10px;
+        font-size: 16px;
+        font-size: 1.6rem; }
+    #headerwrap #head_navi {
+      display: none; }
+    #headerwrap #head_navi_sp {
+      display: block; }
+      #headerwrap #head_navi_sp ul.head_contact_sp {
+        vertical-align: middle; }
+      #headerwrap #head_navi_sp ul.head_contact_sp li {
+        display: inline-block;
+        font-size: 24px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding: 0 10px;
+        color: #26499d; }
+        #headerwrap #head_navi_sp ul.head_contact_sp li a {
+          color: #26499d;
+          text-decoration: none; }
+        #headerwrap #head_navi_sp ul.head_contact_sp li .access_button {
+          background-color: #26499d;
+          border-radius: 2px;
+          color: #fff;
+          padding: 2px 4px 1px;
+          font-size: 20px;
+          font-size: 2rem; }
+    #headerwrap ul.sp_menu_toggle {
+      width: 200px;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      text-align: left;
+      padding: 0px;
+      border: 1px solid #524c3e;
+      background: #fff;
+      z-index: 100;
+      display: none; }
+      #headerwrap ul.sp_menu_toggle a {
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        font-size: 14px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-bottom: 1px solid #524c3e;
+        color: #524c3e; }
+
+  #cover_area {
+    background-image: url("../images/top/top-heroimage_sp.jpg"); }
+    #cover_area .cover_content {
+      max-width: 768px;
+      margin-left: 50px;
+      height: 300px; }
+      #cover_area .cover_content .cover_title {
+        margin-top: 20px; }
+      #cover_area .cover_content .seal {
+        margin-top: 150px; }
+        #cover_area .cover_content .seal .seal_pc {
+          display: none; }
+        #cover_area .cover_content .seal .seal_sp {
+          display: block; }
+
+  .wrap_issue {
+    display: block;
+    height: 330px;
+    padding-top: 20px; }
+    .wrap_issue .issue a {
+      text-align: center;
+      font-size: 24px;
+      font-size: 2.4rem;
+      line-height: 1.5; }
+    .wrap_issue .arrow {
+      text-align: center;
+      transform: rotate(90deg); }
+    .wrap_issue .letscontact {
+      text-align: center; }
+      .wrap_issue .letscontact .underline {
+        font-size: 26px;
+        font-size: 2.6rem; }
+
+  .top_sectiontitle {
+    border-bottom: 4px solid #c9c9c9;
+    height: 50px;
+    font-size: 46px;
+    font-size: 4.6rem; }
+
+  .top_sectiontitle:after {
+    border-bottom: solid 4px #26499d;
+    bottom: -4px; }
+
+  .detail_button {
+    font-size: 22px;
+    font-size: 2.2rem;
+    width: 300px;
+    height: 36px;
+    margin: 20px auto;
+    padding: 18px 0 0 0;
+    border: 1px solid #333;
+    border-radius: 24px; }
+
+  #survicecategory {
+    margin: 60px 20px; }
+    #survicecategory p.read {
+      font-size: 22px;
+      font-size: 2.2rem;
+      padding: 10px 50px;
+      line-height: 1.5; }
+    #survicecategory .survice_wrap {
+      display: block;
+      padding-left: 200px; }
+      #survicecategory .survice_wrap .survice {
+        margin: 20px;
+        text-decoration: none;
+        color: #333;
+        text-align: left; }
+        #survicecategory .survice_wrap .survice h3.catename {
+          font-size: 30px;
+          font-size: 3rem; }
+        #survicecategory .survice_wrap .survice p.catetext {
+          line-height: 1.5;
+          font-size: 22px;
+          font-size: 2.2rem; }
+        #survicecategory .survice_wrap .survice .cateicon {
+          display: none; } }
 
 /*# sourceMappingURL=cocoknots.css.map */

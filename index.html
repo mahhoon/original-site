@@ -33,27 +33,32 @@
   <!-- jQuery 
   ------------------------------------------------------------ -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-　<script src="cocoknots.js"></script>
+　<script src="js/cocoknots.js"></script>
     
 </head>
 
 <body>
-    <div id="header_line"></div>
-    <header>
+    <header id="headerwrap">
         <div id="pc_title_logo">
             <h1><a href="index.html"><img src="images/common/logo.png" alt="Cocoknots" srcset="images/common/logo@2x.png 2x"/></a></h1>
             <p>株式会社ココノッツ</p>
         </div>
+        <div id="sp_title_logo">
+            <h1><a href="index.html"><img src="images/common/logo_sp.png" alt="Cocoknots" srcset="images/common/logo_sp@2x.png 2x"/></a></h1>
+            <p>株式会社ココノッツ</p>
+        </div>
+            
         <nav id="head_navi">
             <div>
-                <ul class="head_contact">
+                <ul class="head_contact_pc">
                     <li><i class="fa fa-phone" aria-label="お問い合わせ電話番号"></i>03-5212-4888</li>
                     <li><a href="#"><i class="fa fa-envelope" aria-labeln="メールでのお問い合わせ"></i>メール</a></li>
                     <li><a class="access_button" href="#">アクセス</a></li>
                 </ul>
+                
             </div>
             <ul class="head_nav">
-                    <li class="about"><a href="#">私たちについて</a>
+                    <li class="about"><a href="spirit.html">私たちについて</a>
                         <ul class="navichild">
                             <li><a href="#">会社概要</a></li>
                             <li><a href="#">アクセス／お問合わせ</a></li>
@@ -82,19 +87,45 @@
                     </li>
             </ul>
         </nav>
+        <nav id="head_navi_sp">
+                <ul class="head_contact_sp">
+                    <li><a href="#"><i class="fa fa-envelope" aria-labeln="メールでのお問い合わせ"></i> メール</a></li>
+                    <li><a class="access_button" href="#">アクセス</a></li>
+                    <li><a class="menu_icon" href="#"><img src="images/common/menuicon.png" alt="Cocoknots" srcset="images/common/menuicon@2x.png 2x"/></a></li>
+                </ul>
+                <ul class="sp_menu_toggle">
+                    <li><a href="#">私たちについて</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">アクセス／お問合わせ</a></li>
+                    <li><a href="#">PRサービス</a></li>
+                    <li><a href="#">企業広報</a></li>
+                    <li><a href="#">マーケティング広報</a></li>
+                    <li><a href="#">広報体制構築</a></li>
+                    <li><a href="#">危機管理広報</a></li>
+                    <li><a href="#">PRとは</a></li>
+                    <li><a href="#">ヘルスケア広報3.0</a></li>
+                    <li><a href="#">PR Q&A</a></li>
+                    <li><a href="#">医療広報勉強会「Q's」</a></li>
+                    <li><a href="#">コラム</a></li>
+                    <li><a href="#">ココノッツ代表ブログ</a></li>
+                    <li><a href="#">ココランチ</a></li>
+                </ul>
+        </nav>
     </header>
     
-    <div class="cover_area">
+    <div id="cover_area">
         <div class="cover_content">
             <div class="cover_title">
-            <img src="images/top/maincopy.png" alt="医療と社会を結ぶ　ヘルスケア広報3.0" srcset="images/top/maincopy@2x.png 2x"/>
+            <img class="cover_title_img wow fadeInDown" src="images/top/maincopy.png" alt="医療と社会を結ぶ　ヘルスケア広報3.0" srcset="images/top/maincopy@2x.png 2x"/>
             <a class="readmore" href="#">Read More</a>
             </div>
             <div class="seal">
-            <img src="images/top/top-seal.png" alt="ココノッツは医療・ヘルスケアを専門とする広報コンサルティングファームです。" srcset="images/top/top-seal@2x.png 2x"/>
+            <img class="seal_pc wow jackInTheBox" src="images/top/top-seal.png" alt="ココノッツは医療・ヘルスケアを専門とする広報コンサルティングファームです。" srcset="images/top/top-seal@2x.png 2x"/>
+            <img class="seal_sp wow jackInTheBox" src="images/top/top-seal_sp.png" alt="ココノッツは医療・ヘルスケアを専門とする広報コンサルティングファームです。" srcset="images/top/top-seal_sp@2x.png 2x"/>
             </div>
         </div>
     </div>
+
     
     <section id="from_issue">
         <div class="wrap_issue">
@@ -105,8 +136,8 @@
             </div>
             <div class="arrow"><img src="images/top/top-bigarrow.png" srcset="images/top/top-bigarrow@2x.png 2x"/></div>
             <p class="letscontact">
-                <span class="underline">広報の「困った」</span><br>
-                <span class="underline">まずはお気軽にご相談ください。</span>
+                <a href=""><span class="underline">広報の「困った」</span><br>
+                <span class="underline">まずはお気軽にご相談ください。</span></a>
             </p>
         </div>
     </section>
@@ -117,22 +148,22 @@
         <a class="detail_button" href="#">ココノッツのPRサービス</a>
         <div class="survice_wrap">
             <a class="survice" href="#">
-                <img src="images/top/corporate-icon.png" srcset="images/top/corporate-icon@2x.png 2x"/>
+                <img class="cateicon" src="images/top/corporate-icon.png" srcset="images/top/corporate-icon@2x.png 2x"/>
                 <h3 class="catename">企業広報</h3>
                 <p class="catetext">医療機器や医薬品の企業、業界団体、医療機関等における広報戦略の立案・実施</p>
             </a>
             <a class="survice" href="#">
-                <img src="images/top/marketing-icon.png" srcset="images/top/marketing-icon@2x.png 2x"/>
+                <img class="cateicon" src="images/top/marketing-icon.png" srcset="images/top/marketing-icon@2x.png 2x"/>
                 <h3 class="catename">マーケティング広報</h3>
                 <p class="catetext">薬事法によりさまざまな規制を受けるヘルスケア製品の情報発信</p>
             </a>
             <a class="survice" href="#">
-                <img src="images/top/prsupport-icon.png" srcset="images/top/prsupport-icon@2x.png 2x"/>
+                <img class="cateicon" src="images/top/prsupport-icon.png" srcset="images/top/prsupport-icon@2x.png 2x"/>
                 <h3 class="catename">広報体制構築</h3>
                 <p class="catetext">これから広報体制を確立したい、広報組織を持たない企業や団体の体制づくりのサポート</p>
             </a>
             <a class="survice" href="#">
-                <img src="images/top/crisis-icon.png" srcset="images/top/crisis-icon@2x.png 2x"/>
+                <img class="cateicon" src="images/top/crisis-icon.png" srcset="images/top/crisis-icon@2x.png 2x"/>
                 <h3 class="catename">危機管理広報</h3>
                 <p class="catetext">ヘルスケア企業が遭遇する大小の問題に対して広報的なアドバイスと対応</p>
             </a>
@@ -243,11 +274,11 @@
             <div class="footwrap2">
                 <div class="foot_address">
                     <img src="images/common/logo-white.png" alt="ココノッツ" srcset="images/common/logo-white@2x.png 2x"/>
-                    <p>株式会社ココノッツ<br>〒102-0093 東京都千代田区平河町1-1-8 麹町市原ビル10F </p>
+                    <p>株式会社ココノッツ<br>〒102-0093 東���都千代田区平河町1-1-8 麹町市原ビル10F </p>
                 </div>
                 <ul class="policy">
-                    <li class="otoiawase"><a href="#">お問い合わせ</a></li>
-                    <li class="aboutsite"><a href="#">サイトご利用にあたって</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">サイトご利用にあたって</a></li>
                     <li><a href="#">プライバシーポリシー</a></li>
                 </ul>
             </div>
@@ -259,6 +290,9 @@
         
     </footer>
     
-
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
