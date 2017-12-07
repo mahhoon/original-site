@@ -146,7 +146,6 @@ body{
             
             .cover_title {
                 margin-top: 50px;
-                width: 60%;
                 
                 .readmore {
                     background-color: $blue1;
@@ -168,7 +167,6 @@ body{
             }
             
             .seal {
-            width: 40%;
             margin-top: 200px;
             text-align: right;
             
@@ -194,10 +192,10 @@ body{
 
      .issue {
          text-align: right;
-         margin: 0 20px;
+         margin: 0 10px;
          a{
              text-decoration: none;
-             @include fontsize(18);
+             @include fontsize(16);
              color: #fff;
              font-weight: bold;
              display: block;
@@ -263,6 +261,10 @@ body{
                 @include fontsize(14);
             }
         }
+    }
+    
+   .survice_wrap_sp {
+       display: none;
     }
 }
 
@@ -365,6 +367,9 @@ width: 20%;
             .content_thumbnail_image {
                 height: 130px;
                 text-align: center;
+                img {
+                    max-width: 100%;
+                }
             }
             
             h3 {
@@ -379,6 +384,10 @@ width: 20%;
                 line-height: 2.2rem;
             }
     }
+}
+
+.recommends_wrap_sp {
+    display: none;
 }
 
 //トップページ　お知らせ
@@ -406,6 +415,10 @@ width: 20%;
     }
 }
 
+#news_sp {
+    display: none;
+}
+
 #links {
     max-width: 1024px;
     background: linear-gradient(90deg, #e5e5e5, #8ba4de, #e5e5e5);
@@ -416,10 +429,13 @@ width: 20%;
     height: 80px;
     
     
-         .link_banner {
+         .link_banner_pc {
              display: inline-block;
              margin: 0 10px;
          }
+         .link_banner_sp{
+                 display: none;
+             }
 }
 
 //footer
@@ -507,6 +523,10 @@ footer {
                     @include fontsize(13)
                 }
             }
+        }
+        
+        .footwrap3 {
+            display:none;
         }
         .copyright {
             text-align: right;
@@ -643,20 +663,16 @@ footer {
         }
     }
     
-/* mobile 設定 common----------------------------------------
+/* mobile 設定 toppage----------------------------------------
 ------------------------------------------------------*/
-@media (max-width: 768px) {
-    //全体サイズ 
-    body {
-        width: 100%;
-    }
-
+@media (max-width: 645px) {
     
     //ヘッダー(mobile)
     #headerwrap {
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 10px;
+        margin: 0;
+        box-sizing: border-box;
         
         #pc_title_logo {
             display: none;
@@ -665,8 +681,8 @@ footer {
         #sp_title_logo {
             display: block;
             p {
-                margin-top: 10px;
-                @include fontsize(16);
+                margin-top: 5px;
+                @include fontsize(14);
             }
         }
         
@@ -677,28 +693,26 @@ footer {
         #head_navi_sp {
             display: block;
             
-            ul.head_contact_sp {
-                vertical-align: middle;
-            }
-            
             ul.head_contact_sp li {
                 display: inline-block;
-                @include fontsize(24);
-                font-weight: bold;
-                padding: 0 10px;
-                color: $blue1;
+                padding: 0 5px;
                 
                 a{
                     color: $blue1;
                     text-decoration: none;
                 }
+                span {
+                        @include fontsize(34);
+                        color: $blue1;
+                    }
                 
                 .access_button {
                     background-color: $blue1;
                     border-radius: 2px;
                     color: #fff;
-                    padding: 2px 4px 1px;
-                    @include fontsize(20);
+                    font-weight: bold;
+                    padding: 4px;
+                    @include fontsize(16);
                 }
             }
         }
@@ -708,7 +722,7 @@ footer {
             width: 200px;
             position: absolute;
             top: 70px;
-            right: 20px;
+            right: 10px;
             text-align: left;
             padding: 0px;
             border: 1px solid #524c3e;
@@ -733,16 +747,28 @@ footer {
         background-image: url("../images/top/top-heroimage_sp.jpg");
         
         .cover_content {
-            max-width: 768px;
-            margin-left: 50px;
-            height: 300px;
-        
+            max-width: 100%;
+            height: 320px;
+            display: block;
+            position: relative;
+            
+                .cover_title_img {
+                    max-width: 100%;
+                }
+                
                 .cover_title {
+                    padding: 20px 20px 0 20px;
                     margin-top: 20px;
+                }
+        
+                .readmore {
+                    margin-left: 10px;
                 }
                 
                 .seal {
-                    margin-top: 150px;
+                    text-align: right;
+                    margin: 50px 20px;
+
                     
                     .seal_pc {
                         display: none;
@@ -750,6 +776,10 @@ footer {
                     
                     .seal_sp {
                         display: block;
+                        position: absolute;
+                        width: 320px;
+                        bottom: 20px;
+                        right: 20px;
                     }
                 }
         }
@@ -758,13 +788,13 @@ footer {
     //課題から(mobile)
     .wrap_issue {
         display: block;
-        height: 330px;
+        height: 280px;
         padding-top: 20px;
         
         .issue {
             a{
             text-align: center;
-            @include fontsize(24);
+            @include fontsize(16);
             line-height: 1.5;
             }
         }
@@ -778,7 +808,7 @@ footer {
             text-align: center;
             
             .underline {
-            @include fontsize(26);
+            @include fontsize(18);
             }
         }
     }
@@ -786,8 +816,8 @@ footer {
     //PRサービス（mobile)
     .top_sectiontitle {
             border-bottom: 4px solid #c9c9c9;
-            height: 50px;
-            @include fontsize(46);
+            height: 32px;
+            @include fontsize(30);
     }
 
     .top_sectiontitle:after {
@@ -796,50 +826,294 @@ footer {
     }
 
     .detail_button {
-        @include fontsize(22);
-        width: 300px;
-        height: 36px;
+        @include fontsize(18);
+        width: 280px;
+        height: 30px;
         margin: 20px auto;
-        padding: 18px 0 0 0;
+        padding: 14px 0 0 0;
         border: 1px solid #333;
         border-radius: 24px;
+        margin-bottom: 50px;
     }
     
     #survicecategory {
-    margin: 60px 20px;
+        margin: 40px 10px;
     
-    p.read {
-        @include fontsize(22);
-        padding: 10px 50px;
-        line-height: 1.5;
-    }
-    
-    .survice_wrap {
-    display: block;
-    padding-left: 200px;
-    
-        .survice {
-            margin: 20px;
-            text-decoration: none;
-            color: #333;
+        p.read {
+            @include fontsize(17);
+            padding: 10px 40px;
+            line-height: 1.5;
+        }
+        
+        .survice_wrap {
+            display: none;
+        }
+        
+        .survice_wrap_sp {
+            display: block;
             text-align: left;
             
-            h3.catename {
-                @include fontsize(30);
+            .survice {
+                padding-left: 80px;
+                height: 110px;
+                background-color: #dcdcdc;
+                padding-top: 20px;
+                padding-right: 20px;
+                margin-bottom: 10px;
             }
-            
-            p.catetext{
-                line-height: 1.5;
-                @include fontsize(22);
+            a {
+                display: block;
+                text-decoration: none;
+                color: #333;
+                
+                h3 {
+                    @include fontsize(20);
+                    margin-bottom: 10px;
+                }
+                
+                p {
+                    @include fontsize(16);
+                    line-height: 1.5;
+                }
             }
+            .no1 {
+                background-image: url("../images/top/corporate-icon.png");
+                background-repeat: no-repeat;
+            }
+            .no2 {
+                background-image: url("../images/top/marketing-icon.png");
+                background-repeat: no-repeat;
+            }
+            .no3 {
+                background-image: url("../images/top/prsupport-icon.png");
+                background-repeat: no-repeat;
+            }
+            .no4 {
+                background-image: url("../images/top/crisis-icon.png");
+                background-repeat: no-repeat;
+                background-position: 0 -10px;
+            }            
+        }
+    }
+
+    //PRメニュー(mobile)
+    #prmenu {
+        max-width: 100%;
+        margin: 60px 10px;
+    }
+    .prmenu_title  {
+        
+        p {
+            display: block;
+            @include fontsize(17);
+            margin: 0;
+        }
+        
+        .sikaku {
+            height: 4px;
+        }
+        
+        h3 {
+            @include fontsize(20);
+            font-wight: bold;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .menues_wrap {
+        
+        li {
+            width: 50%;
+            height: 60px;
+            border: 2px solid #fff;
+            padding: 20px 10px 10px;
+        }
+        
+        a {
+            @include fontsize(16);
+        }
+    }
+
+    //おすすめ(mobile)
+    #recommend {
+        padding: 20px 10px;
+    }
+    .recommends_wrap {
+        display: none;
+    }
+    
+    .recommends_wrap_sp {
+        display: block;
+        
+        .content_thumbnail {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 0;
+                background-color: #fff;
+                height: 130px;
+                
+                img {
+                    height: 130px;
+                    text-align: left;
+                    float: left;
+                    margin-right: 10px;
+                }
+                
+                     h3 {
+                        @include fontsize(16);
+                        font-weight: bold;
+                        padding: 10px 20px 10px;
+                        text-align: left;
+                        line-height: 1.2;
+                    }
+                    
+                    P {
+                        padding: 0 20px;
+                        line-height: 2rem;
+                        @include fontsize(15);
+                    }
+        }
+    }
+ 
+     //お知らせ(mobile)
+    #news {
+        display: none;
+    } 
+    
+    #news_sp {
+        max-width: 100%;
+        margin: 50px 20px 30px;
+        text-align: center;
+        
+        h2 {
+            margin-bottom: 20px;
+        }
+        
+        .news_block {
+            text-align: left;
+            @include fontsize(16);
+            line-height: 1.5;
+            margin-bottom: 20px;
             
-            .cateicon {
-                display: none;
+            .date {
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            .news_title {
+                font-weight: bold;
             }
         }
     }
-}
+    
+    #links {
+    max-width: 100%;
+    background: none;
+    margin: 30px 10px;
+    display: block;
+    text-align: center;
+    height: auto;
+         
+        .link_banner_pc {
+            display: none;
+        }
+            
+        .link_banner_sp{
+            display: block;
+            text-decoration: none;
+            
+            .tanabebanner_sp {
+                max-width: 100%;
+            }
+            h3 {
+            font-weight: bold;
+            text-align: left;
+            color: #333;
+            @include fontsize(14);
+            margin-bottom: 5px;
+            }   
+        }
+    }
+    
+    //footer(mobile)
+    footer {
+        margin-top: 60px;
+    
+    .gotop {
+        text-align: right;
+        max-width: 1024px;
+        margin: 0 20px 10px;
+    }
 
+    #footnavi {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        @include fontsize(20);
+        
+        .footwrap1, .footwrap2 {
+            display: none;
+            }
+        
+        .footwrap3 {
+            display: block;
+            margin-top: 20px;
+            
+            .contact {
+                border: 1px solid #fff;
+                margin: 10px;
+                padding: 20px 10px;
+                
+                span {
+                   @include fontsize(34); 
+                }
+                h2 {
+                    @include fontsize(30); 
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+                .time {
+                    @include fontsize(16); 
+                }
+            }
+            
+            img {
+                margin: 20px 0 10px 0;
+            }
+            h1 {
+                @include fontsize(14); 
+            }
+            
+            .policy {
+                margin-top: 40px;
+                @include fontsize(14); 
+                li {
+                display: inline-block;
 
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 3px 6px;
+                }
+
+                li + li {
+                        border-left: #fff 1px solid;
+                    }
+            }
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            @include fontsize(14);
+        }
+    }
+    }
     
 }
