@@ -88,6 +88,13 @@ body {
   #headerwrap #head_navi_sp {
     display: none; }
 
+.fixed {
+  position: fixed;
+  background-color: rgba(253, 252, 249, 0.9);
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+
 #cover_area {
   background-image: url("../images/top/top-heroimage.jpg");
   background-position: center center;
@@ -95,11 +102,9 @@ body {
   #cover_area .cover_content {
     max-width: 1024px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     height: 426px; }
     #cover_area .cover_content .cover_title {
-      margin-top: 50px; }
+      padding-top: 40px; }
       #cover_area .cover_content .cover_title .readmore {
         background-color: #26499d;
         padding-top: 6px;
@@ -116,7 +121,6 @@ body {
       #cover_area .cover_content .cover_title a:hover {
         background-color: #8ba4de; }
     #cover_area .cover_content .seal {
-      margin-top: 200px;
       text-align: right; }
       #cover_area .cover_content .seal .seal_sp {
         display: none; }
@@ -203,7 +207,7 @@ body {
   bottom: -3px;
   width: 20%; }
 
-.detail_button {
+#detail_button {
   text-decoration: none;
   color: #333;
   font-size: 14px;
@@ -255,6 +259,9 @@ body {
 
 #recommend {
   background-color: #e5e5e5; }
+  #recommend a {
+    text-decoration: none;
+    color: #333; }
 
 .recommends_wrap {
   max-width: 1024px;
@@ -394,7 +401,9 @@ footer {
 .breadcrumb li {
   display: inline;
   /*横に並ぶように*/
-  list-style: none; }
+  list-style: none;
+  font-size: 12px;
+  font-size: 1.2rem; }
 
 .breadcrumb li:after {
   /* >を表示*/
@@ -412,21 +421,22 @@ footer {
 .breadcrumb li a:hover {
   text-decoration: underline; }
 
-.cover_area_common {
+.cover_area_about {
   background-image: url("../images/about/cover_about.jpg");
   background-size: cover;
   height: 200px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_common {
+    .cover_area_about {
       background-image: url("../images/about/cover_about@2x.jpg"); } }
-  .cover_area_common .page_title {
-    text-align: center;
-    font-size: 30px;
-    font-size: 3rem;
-    color: #fff;
-    font-weight: bold;
-    padding-top: 100px;
-    letter-spacing: 0.5rem; }
+
+.page_title {
+  text-align: center;
+  font-size: 30px;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 100px;
+  letter-spacing: 0.5rem; }
 
 #content {
   max-width: 1024px;
@@ -437,9 +447,9 @@ footer {
   #content aside {
     width: 25%; }
 
-#content article {
+#content .spirit {
   padding-right: 30px; }
-  #content article .spirit_title {
+  #content .spirit h2 {
     font-size: 24px;
     font-size: 2.4rem;
     color: #26499d;
@@ -447,14 +457,30 @@ footer {
     border-left: 9px solid #26499d;
     padding-left: 10px;
     margin: 80px 0 30px 0; }
-  #content article p.honbun {
-    font-size: 16px;
-    font-size: 1.6rem;
+  #content .spirit p {
+    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 2; }
-  #content article span.spirit_title_sub {
+  #content .spirit span {
     display: block;
     font-size: 18px;
     font-size: 1.8rem; }
+  #content .spirit .require {
+    margin-bottom: 40px; }
+    #content .spirit .require span {
+      font-size: 30px;
+      font-size: 3rem;
+      display: inline;
+      padding-right: 20px;
+      padding-left: 10px; }
+    #content .spirit .require h3 {
+      font-size: 20px;
+      font-size: 2rem;
+      display: inline; }
+    #content .spirit .require p {
+      margin-top: 6px;
+      padding-top: 4px;
+      border-top: 1px solid #333; }
 
 #sidemenu {
   margin-top: 50px;
@@ -477,6 +503,239 @@ footer {
       border-right: 1px #333 solid; }
   #sidemenu a:hover li {
     background-color: #ededed; }
+
+/*サービスページ---------------------------
+---------------------------------------------------*/
+.cover_area_survice {
+  background-image: url("../images/survice/prsurvicecover.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_survice {
+      background-image: url("../images/survice/prsurvicecover@2x.jpg"); } }
+  .cover_area_survice .page_title {
+    text-align: center;
+    font-size: 30px;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 100px;
+    letter-spacing: 0.5rem; }
+
+/*代表ブログ---------------------------
+---------------------------------------------------*/
+.cover_area_kimiblog {
+  background-image: url("../images/blog/kimiblog-cover.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_kimiblog {
+      background-image: url("../images/blog/kimiblog-cover@2x.jpg"); }
+      .cover_area_kimiblog .cover_title_kimi {
+        max-width: 1024px;
+        margin: 0 auto; } }
+  .cover_area_kimiblog .page_title {
+    text-align: left;
+    font-size: 30px;
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 40px;
+    letter-spacing: 0.5rem; }
+  .cover_area_kimiblog img {
+    margin-top: 20px;
+    float: left; }
+  .cover_area_kimiblog p {
+    color: #fff;
+    margin: 70px 0 0 110px;
+    line-height: 1.5;
+    letter-spacing: 0.2rem; }
+
+#content {
+  justify-content: space-between; }
+  #content #kimiblog {
+    max-width: 700px; }
+  #content .widget {
+    width: 240px; }
+
+#kimiblog {
+  margin-top: 50px; }
+  #kimiblog span {
+    margin-left: 30px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 3; }
+  #kimiblog .kimiblogcate {
+    padding: 0 10px;
+    width: 60px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-size: 11px;
+    font-size: 1.1rem; }
+  #kimiblog .blog-title img {
+    float: left;
+    margin-bottom: 10px; }
+  #kimiblog .blog-title h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 30px 0 50px 270px; }
+  #kimiblog .blog-title p {
+    clear: both;
+    border-top: 1px solid #333;
+    padding-top: 40px;
+    line-height: 1.8;
+    letter-spacing: 0.2rem; }
+  #kimiblog .page_navi {
+    text-align: center;
+    margin-top: 50px; }
+    #kimiblog .page_navi a {
+      text-decoration: none;
+      color: #333;
+      width: 180px;
+      height: 20px;
+      line-height: 20px;
+      border: 1px solid #a6a6a6;
+      padding: 10px 30px;
+      display: inline-block; }
+    #kimiblog .page_navi .goprevious {
+      text-align: right; }
+    #kimiblog .page_navi .gonext {
+      text-align: left; }
+    #kimiblog .page_navi .goindex {
+      margin-top: 20px;
+      width: 100px;
+      height: 14px;
+      line-height: 14px;
+      padding: 5px;
+      border-radius: 6px; }
+  #kimiblog .snsbutton {
+    text-align: center;
+    margin-top: 30px; }
+
+.widget {
+  box-sizing: border-box;
+  padding-left: 20px;
+  margin-top: 50px; }
+  .widget .widget-item {
+    height: 200px;
+    background-color: #c5c5c5;
+    margin-bottom: 10px; }
+  .widget .gotococolunch {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e44da1;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+    display: block; }
+
+#kimiblog .blog-index img {
+  float: right;
+  margin-bottom: 20px; }
+#kimiblog .blog-index li {
+  clear: both;
+  border-bottom: 1px solid #c5c5c5;
+  height: 110px; }
+  #kimiblog .blog-index li a {
+    text-decoration: none;
+    color: #333; }
+#kimiblog .blog-index span {
+  margin: 0; }
+#kimiblog .blog-index h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 10px; }
+#kimiblog .blog-index .kimiblogcate {
+  font-size: 11px;
+  font-size: 1.1rem; }
+#kimiblog #detail_button {
+  height: 12px;
+  line-height: 12px;
+  border-radius: 20px; }
+
+.cover_area_blog .page_title {
+  box-sizing: border-box;
+  background-color: #8ba4de;
+  height: 120px;
+  padding-top: 50px; }
+.cover_area_blog .blog_navi {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #26499d;
+  height: 60px;
+  padding-top: 15px; }
+  .cover_area_blog .blog_navi a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    background-color: #3f6ad1;
+    padding: 0 20px;
+    margin: 0 10px;
+    border-radius: 4px; }
+
+#blogindex_wrap {
+  max-width: 1024px;
+  margin: 50px auto; }
+  #blogindex_wrap .blogindex {
+    display: flex;
+    flex-wrap: wrap; }
+    #blogindex_wrap .blogindex li {
+      width: 33.33%; }
+      #blogindex_wrap .blogindex li img {
+        width: 100%; }
+      #blogindex_wrap .blogindex li a {
+        background-color: #fff;
+        display: block;
+        margin: 3%;
+        box-shadow: 1px 1px 5px #a6a6a6;
+        text-decoration: none;
+        color: #333; }
+        #blogindex_wrap .blogindex li a .text {
+          padding: 15px; }
+          #blogindex_wrap .blogindex li a .text .blogname {
+            background-color: #00a0e9;
+            border-radius: 6px;
+            font-size: 11px;
+            font-size: 1.1rem;
+            text-align: center;
+            color: #fff;
+            padding: 0 10px;
+            height: 16px;
+            line-height: 16px; }
+          #blogindex_wrap .blogindex li a .text h2 {
+            font-size: 16px;
+            font-size: 1.6rem;
+            margin: 10px 0;
+            font-weight: bold; }
+          #blogindex_wrap .blogindex li a .text p {
+            font-size: 13px;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            margin-bottom: 20px; }
+          #blogindex_wrap .blogindex li a .text .date {
+            font-size: 12px;
+            font-size: 1.2rem; }
+          #blogindex_wrap .blogindex li a .text .coco {
+            background-color: #e44da1; }
+  #blogindex_wrap #detail_button {
+    text-align: center; }
+
+/*PRとはページ---------------------------
+---------------------------------------------------*/
+.cover_area_about {
+  background-image: url("../images/whatispr/whatispr_cover.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_about {
+      background-image: url("../images/about/whatispr_cover@2x.jpg"); } }
 
 /* mobile 設定 toppage----------------------------------------
 ------------------------------------------------------*/
@@ -591,7 +850,7 @@ footer {
     border-bottom: solid 4px #26499d;
     bottom: -4px; }
 
-  .detail_button {
+  #detail_button {
     font-size: 18px;
     font-size: 1.8rem;
     width: 280px;
@@ -749,7 +1008,7 @@ footer {
         margin-bottom: 5px; }
 
   footer {
-    margin-top: 60px; }
+    margin-top: 80px; }
     footer .gotop {
       text-align: right;
       max-width: 1024px;
