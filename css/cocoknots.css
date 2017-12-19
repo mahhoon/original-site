@@ -11,6 +11,7 @@ body {
   border-top: 5px solid #26499d; }
 
 #headerwrap {
+  width: 96%;
   max-width: 1024px;
   margin: 0px auto 20px;
   display: flex;
@@ -44,10 +45,10 @@ body {
         font-size: 1.4rem; }
     #headerwrap #head_navi ul.head_nav li {
       display: inline-block;
-      font-size: 16px;
-      font-size: 1.6rem;
+      font-size: 15px;
+      font-size: 1.5rem;
       font-weight: bold;
-      width: 180px;
+      width: 160px;
       border-right: 1px solid #333;
       border-bottom: 2px solid #fdfcf9;
       text-align: center;
@@ -64,7 +65,7 @@ body {
       background-color: #c7d3ef;
       border-top: 10px solid #fdfcf9;
       position: absolute;
-      width: 180px;
+      width: 160px;
       padding: 7px 0;
       box-sizing: border-box;
       margin-top: 5px;
@@ -80,29 +81,20 @@ body {
       #headerwrap #head_navi ul.navichild li:hover {
         border-bottom: none; }
       #headerwrap #head_navi ul.navichild a {
-        font-size: 14px;
-        font-size: 1.4rem;
+        font-size: 13px;
+        font-size: 1.3rem;
         font-weight: normal; }
       #headerwrap #head_navi ul.navichild a:hover {
         text-decoration: underline; }
   #headerwrap #head_navi_sp {
     display: none; }
 
-.fixed {
-  position: fixed;
-  background-color: #fdfcf9;
-  border-bottom: 1px solid #26499d;
-  border-top: 5px solid #26499d;
-  padding-top: 10px;
-  top: 0;
-  width: 100%;
-  z-index: 1000; }
-
 #cover_area {
   background-image: url("../images/top/top-heroimage.jpg");
   background-position: center center;
   background-size: cover; }
   #cover_area .cover_content {
+    width: 96%;
     max-width: 1024px;
     margin: 0 auto;
     height: 426px; }
@@ -224,6 +216,7 @@ body {
   border-radius: 14px; }
 
 #prmenu {
+  width: 96%;
   max-width: 1024px;
   margin: 60px auto; }
 
@@ -267,6 +260,7 @@ body {
     color: #333; }
 
 .recommends_wrap {
+  width: 98%;
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
@@ -295,6 +289,7 @@ body {
   display: none; }
 
 #news {
+  width: 96%;
   max-width: 1024px;
   margin: 50px auto 80px;
   text-align: center; }
@@ -333,11 +328,13 @@ footer {
   margin-top: 50px; }
   footer .gotop {
     text-align: right;
+    width: 96%;
     max-width: 1024px;
     margin: 0 auto 10px; }
   footer .footercolor {
     background-color: #8ba4de; }
   footer #footnavi {
+    width: 96%;
     max-width: 1024px;
     margin: 0 auto;
     padding: 20px 0; }
@@ -376,12 +373,14 @@ footer {
       footer #footnavi .footwrap2 .policy a {
         text-decoration: none;
         color: #fff;
-        padding: 3px 6px; }
+        padding: 3px 6px;
+        font-size: 12px;
+        font-size: 1.2rem; }
       footer #footnavi .footwrap2 .policy li + li {
         border-left: #fff 1px solid; }
       footer #footnavi .footwrap2 .foot_address {
         display: flex;
-        width: 50%; }
+        width: 55%; }
         footer #footnavi .footwrap2 .foot_address p {
           margin-left: 20px;
           color: #fff;
@@ -400,6 +399,7 @@ footer {
 /*企業案内ページ---------------------------
 ---------------------------------------------------*/
 .max-width {
+  width: 96%;
   max-width: 1024px;
   margin: 0 auto 8px; }
 
@@ -444,6 +444,7 @@ footer {
   letter-spacing: 0.5rem; }
 
 #content {
+  width: 96%;
   max-width: 1024px;
   margin: 0 auto;
   display: flex; }
@@ -455,13 +456,13 @@ footer {
 #content .spirit {
   padding-right: 30px; }
   #content .spirit h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 23px;
+    font-size: 2.3rem;
     color: #26499d;
     line-height: 1.5;
     border-left: 9px solid #26499d;
     padding-left: 10px;
-    margin: 80px 0 30px 0; }
+    margin: 60px 0 30px 0; }
   #content .spirit p {
     font-size: 15px;
     font-size: 1.5rem;
@@ -486,6 +487,50 @@ footer {
       margin-top: 6px;
       padding-top: 4px;
       border-top: 1px solid #333; }
+#content .about {
+  padding-right: 30px; }
+  #content .about .companyprofile_wrap {
+    margin-top: 50px; }
+    #content .about .companyprofile_wrap .about_subtitle {
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #26499d;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    #content .about .companyprofile_wrap .companyprofile {
+      width: 100%; }
+      #content .about .companyprofile_wrap .companyprofile tr {
+        border-bottom: 1px solid #a6a6a6; }
+      #content .about .companyprofile_wrap .companyprofile th {
+        padding: 10px 0;
+        text-align: left;
+        font-weight: bold;
+        line-height: 1.5; }
+      #content .about .companyprofile_wrap .companyprofile td {
+        vertical-align: middle;
+        padding: 10px;
+        line-height: 1.5; }
+    #content .about .companyprofile_wrap .exective_profile {
+      padding: 20px 30px 0px;
+      background-color: #e6e6e6; }
+    #content .about .companyprofile_wrap .profile_wrap {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #fff; }
+      #content .about .companyprofile_wrap .profile_wrap P {
+        line-height: 1.5; }
+      #content .about .companyprofile_wrap .profile_wrap span {
+        font-size: 17px;
+        font-size: 1.7rem; }
+      #content .about .companyprofile_wrap .profile_wrap img {
+        float: right;
+        margin-left: 10px; }
+      #content .about .companyprofile_wrap .profile_wrap .biography {
+        clear: both;
+        background-color: #fff;
+        padding: 10px;
+        font-size: 12px;
+        font-size: 1.2rem; }
 
 #sidemenu {
   margin-top: 50px;
@@ -857,7 +902,8 @@ footer {
     #headerwrap #pc_title_logo {
       display: none; }
     #headerwrap #sp_title_logo {
-      display: block; }
+      display: block;
+      width: 80%; }
       #headerwrap #sp_title_logo p {
         margin-top: 5px;
         font-size: 14px;
@@ -873,8 +919,8 @@ footer {
           color: #26499d;
           text-decoration: none; }
         #headerwrap #head_navi_sp ul.head_contact_sp li span {
-          font-size: 34px;
-          font-size: 3.4rem;
+          font-size: 28px;
+          font-size: 2.8rem;
           color: #26499d; }
         #headerwrap #head_navi_sp ul.head_contact_sp li .access_button {
           background-color: #26499d;
@@ -882,8 +928,8 @@ footer {
           color: #fff;
           font-weight: bold;
           padding: 4px;
-          font-size: 16px;
-          font-size: 1.6rem; }
+          font-size: 14px;
+          font-size: 1.4rem; }
     #headerwrap ul.sp_menu_toggle {
       width: 200px;
       position: absolute;
@@ -904,6 +950,15 @@ footer {
         font-weight: bold;
         border-bottom: 1px solid #524c3e;
         color: #524c3e; }
+
+  .fixed {
+    position: fixed;
+    background-color: #fdfcf9;
+    border-top: 5px solid #26499d;
+    padding-top: 10px;
+    top: 0;
+    width: 100%;
+    z-index: 1000; }
 
   #cover_area {
     background-image: url("../images/top/top-heroimage_sp.jpg"); }
@@ -933,8 +988,8 @@ footer {
 
   .wrap_issue {
     display: block;
-    height: 280px;
-    padding-top: 20px; }
+    height: 260px;
+    padding-top: 10px; }
     .wrap_issue .issue a {
       text-align: center;
       font-size: 16px;
@@ -952,20 +1007,20 @@ footer {
   .top_sectiontitle {
     border-bottom: 4px solid #c9c9c9;
     height: 32px;
-    font-size: 30px;
-    font-size: 3rem; }
+    font-size: 26px;
+    font-size: 2.6rem; }
 
   .top_sectiontitle:after {
     border-bottom: solid 4px #26499d;
     bottom: -4px; }
 
   #detail_button {
-    font-size: 18px;
-    font-size: 1.8rem;
-    width: 280px;
-    height: 30px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    width: 260px;
+    height: 20px;
     margin: 20px auto;
-    padding: 14px 0 0 0;
+    padding: 6px 0 0 0;
     border: 1px solid #333;
     border-radius: 24px;
     margin-bottom: 50px; }
@@ -973,8 +1028,8 @@ footer {
   #survicecategory {
     margin: 40px 10px; }
     #survicecategory p.read {
-      font-size: 17px;
-      font-size: 1.7rem;
+      font-size: 14px;
+      font-size: 1.4rem;
       padding: 10px 40px;
       line-height: 1.5; }
     #survicecategory .survice_wrap {
@@ -994,12 +1049,12 @@ footer {
         text-decoration: none;
         color: #333; }
         #survicecategory .survice_wrap_sp a h3 {
-          font-size: 20px;
-          font-size: 2rem;
+          font-size: 18px;
+          font-size: 1.8rem;
           margin-bottom: 10px; }
         #survicecategory .survice_wrap_sp a p {
-          font-size: 16px;
-          font-size: 1.6rem;
+          font-size: 14px;
+          font-size: 1.4rem;
           line-height: 1.5; }
       #survicecategory .survice_wrap_sp .no1 {
         background-image: url("../images/top/corporate-icon.png");
@@ -1021,11 +1076,11 @@ footer {
 
   .prmenu_title p {
     display: block;
-    font-size: 17px;
-    font-size: 1.7rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     margin: 0; }
   .prmenu_title .sikaku {
-    height: 4px; }
+    height: 2px; }
   .prmenu_title h3 {
     font-size: 20px;
     font-size: 2rem;
@@ -1038,8 +1093,8 @@ footer {
     border: 2px solid #fff;
     padding: 20px 10px 10px; }
   .menues_wrap a {
-    font-size: 16px;
-    font-size: 1.6rem; }
+    font-size: 15px;
+    font-size: 1.5rem; }
 
   #recommend {
     padding: 20px 10px; }

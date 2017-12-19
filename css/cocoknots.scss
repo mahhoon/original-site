@@ -24,7 +24,9 @@ body{
 }
 
 //header
-#headerwrap { max-width: 1024px;
+#headerwrap {
+        width: 96%;
+        max-width: 1024px;
         margin: 0px auto 20px;
         display: flex;
         justify-content: space-between;
@@ -67,15 +69,14 @@ body{
         ul.head_nav {
             li {
                 display: inline-block;
-                @include fontsize(16);
+                @include fontsize(15);
                 font-weight: bold;
-                width: 180px;
+                width: 160px;
                 border-right: 1px solid #333;
                 border-bottom: 2px solid $base_white;
                 text-align: center;
                 padding: 2px 0;
                 position: relative;
-                
             }
             
             a{
@@ -96,7 +97,7 @@ body{
             background-color: lighten( $blue2, 15% );
             border-top: 10px solid $base_white;
             position: absolute;
-            width: 180px;
+            width: 160px;
             padding: 7px 0;
             box-sizing: border-box;
             margin-top: 5px;
@@ -118,7 +119,7 @@ body{
             }
             
             a{
-                @include fontsize(14);
+                @include fontsize(13);
                 font-weight: normal;
             }
             
@@ -132,17 +133,7 @@ body{
         }
 }//head_navi
 
-//　グロナビ固定
-.fixed {
-    position: fixed;
-    background-color: $base_white;
-    border-bottom: 1px solid $blue1;
-    border-top: 5px solid $blue1;
-    padding-top: 10px;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
+
 
 //cover area
 
@@ -152,6 +143,7 @@ body{
         background-size: cover;
         
         .cover_content {
+            width: 96%;
             max-width: 1024px;
             margin: 0 auto;
             height: 426px;
@@ -312,6 +304,7 @@ width: 20%;
 
 //トップページ　PRメニュー
 #prmenu {
+    width: 96%;
     max-width: 1024px;
     margin: 60px auto;
 }
@@ -370,6 +363,7 @@ width: 20%;
 }
 
 .recommends_wrap {
+    width: 98%;
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
@@ -408,6 +402,7 @@ width: 20%;
 
 //トップページ　お知らせ
 #news {
+    width: 96%;
     max-width: 1024px;
     margin: 50px auto 80px;
     text-align: center;
@@ -460,6 +455,7 @@ footer {
     
     .gotop {
         text-align: right;
+        width: 96%;
         max-width: 1024px;
         margin: 0 auto 10px;
     }
@@ -469,6 +465,7 @@ footer {
     }
 
     #footnavi {
+        width: 96%;
         max-width: 1024px;
         margin: 0 auto;
         padding: 20px 0;
@@ -525,6 +522,7 @@ footer {
                     text-decoration: none;
                     color: #fff;
                     padding: 3px 6px;
+                    @include fontsize(12);
                 }
 
             li + li {
@@ -534,13 +532,13 @@ footer {
             
             .foot_address {
                 display: flex;
-                width: 50%;
+                width: 55%;
                 
                 p {
                     margin-left: 20px;
                     color: #fff;
                     line-height: 1.5rem;
-                    @include fontsize(13)
+                    @include fontsize(13);
                 }
             }
         }
@@ -554,6 +552,8 @@ footer {
             color: #fff;
             @include fontsize(13);
         }
+        
+
 }
 }
 
@@ -562,6 +562,7 @@ footer {
 
 //パンくず（下層ページ共通）
     .max-width {
+        width: 96%;
         max-width: 1024px;
         margin: 0 auto 8px;
     }
@@ -612,6 +613,7 @@ footer {
 
 //2カラム設定（企業案内＆サービス共通）
     #content {
+        width: 96%;
         max-width: 1024px;
         margin: 0 auto;
         display: flex;
@@ -631,12 +633,12 @@ footer {
         .spirit {
             padding-right: 30px;
             h2{
-                @include fontsize(24);
+                @include fontsize(23);
                 color: $blue1;
                 line-height: 1.5;
                 border-left: 9px solid $blue1;
                 padding-left: 10px;
-                margin: 80px 0 30px 0;
+                margin: 60px 0 30px 0;
             }
         
             p{
@@ -668,6 +670,68 @@ footer {
                 }
 
             }
+        }
+        
+    //会社概要
+        .about {
+            padding-right: 30px;
+            
+            .companyprofile_wrap {
+                margin-top: 50px ;
+                
+                .about_subtitle {
+                    @include fontsize(16);
+                    color: $blue1;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                .companyprofile {
+                    width: 100%;
+                    tr{
+                        border-bottom: 1px solid #a6a6a6;
+                    }
+                    th {
+                        padding: 10px 0;
+                        text-align: left;
+                        font-weight: bold;
+                        line-height: 1.5;
+                    }
+                    td{
+                        vertical-align: middle;
+                        padding: 10px;
+                        line-height: 1.5;
+                    }
+                }
+                .exective_profile {
+                    padding: 20px 30px 0px;
+                    background-color: #e6e6e6;
+                }
+                .profile_wrap {
+                    
+                    margin-bottom: 20px;
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid #fff;
+                    
+                    P {
+                        line-height: 1.5;
+                    }
+                    
+                    span{
+                        @include fontsize(17);
+                    }
+                    img {
+                        float: right;
+                        margin-left: 10px;
+                    }
+                    .biography {
+                        clear: both;
+                        background-color: #fff;
+                        padding: 10px;
+                        @include fontsize(12);
+                    }
+                }
+            }
+            
         }
     }
     
@@ -1189,6 +1253,7 @@ footer {
     
         #sp_title_logo {
             display: block;
+            width: 80%;
             p {
                 margin-top: 5px;
                 @include fontsize(14);
@@ -1211,7 +1276,7 @@ footer {
                     text-decoration: none;
                 }
                 span {
-                        @include fontsize(34);
+                        @include fontsize(28);
                         color: $blue1;
                     }
                 
@@ -1221,7 +1286,7 @@ footer {
                     color: #fff;
                     font-weight: bold;
                     padding: 4px;
-                    @include fontsize(16);
+                    @include fontsize(14);
                 }
             }
         }
@@ -1249,7 +1314,18 @@ footer {
                 color: #524c3e;
             }
         }
-    }    
+    } 
+    
+    //　グロナビ固定
+    .fixed {
+        position: fixed;
+        background-color: $base_white;
+        border-top: 5px solid $blue1;
+        padding-top: 10px;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
         
     //カバーエリア(mobile)
     #cover_area {
@@ -1297,8 +1373,8 @@ footer {
     //課題から(mobile)
     .wrap_issue {
         display: block;
-        height: 280px;
-        padding-top: 20px;
+        height: 260px;
+        padding-top: 10px;
         
         .issue {
             a{
@@ -1326,7 +1402,7 @@ footer {
     .top_sectiontitle {
             border-bottom: 4px solid #c9c9c9;
             height: 32px;
-            @include fontsize(30);
+            @include fontsize(26);
     }
 
     .top_sectiontitle:after {
@@ -1335,11 +1411,11 @@ footer {
     }
 
     #detail_button {
-        @include fontsize(18);
-        width: 280px;
-        height: 30px;
+        @include fontsize(16);
+        width: 260px;
+        height: 20px;
         margin: 20px auto;
-        padding: 14px 0 0 0;
+        padding: 6px 0 0 0;
         border: 1px solid #333;
         border-radius: 24px;
         margin-bottom: 50px;
@@ -1349,7 +1425,7 @@ footer {
         margin: 40px 10px;
     
         p.read {
-            @include fontsize(17);
+            @include fontsize(14);
             padding: 10px 40px;
             line-height: 1.5;
         }
@@ -1376,12 +1452,12 @@ footer {
                 color: #333;
                 
                 h3 {
-                    @include fontsize(20);
+                    @include fontsize(18);
                     margin-bottom: 10px;
                 }
                 
                 p {
-                    @include fontsize(16);
+                    @include fontsize(14);
                     line-height: 1.5;
                 }
             }
@@ -1414,12 +1490,12 @@ footer {
         
         p {
             display: block;
-            @include fontsize(17);
+            @include fontsize(14);
             margin: 0;
         }
         
         .sikaku {
-            height: 4px;
+            height: 2px;
         }
         
         h3 {
@@ -1439,7 +1515,7 @@ footer {
         }
         
         a {
-            @include fontsize(16);
+            @include fontsize(15);
         }
     }
 
