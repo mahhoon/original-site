@@ -48,7 +48,7 @@ body {
       font-size: 15px;
       font-size: 1.5rem;
       font-weight: bold;
-      width: 160px;
+      width: 130px;
       border-right: 1px solid #333;
       border-bottom: 2px solid #fdfcf9;
       text-align: center;
@@ -88,6 +88,16 @@ body {
         text-decoration: underline; }
   #headerwrap #head_navi_sp {
     display: none; }
+
+.fixed {
+  position: fixed;
+  background-color: #fdfcf9;
+  border-top: 5px solid #26499d;
+  border-bottom: 1px solid #cfd9f3;
+  padding-top: 10px;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
 
 #cover_area {
   background-image: url("../images/top/top-heroimage.jpg");
@@ -174,11 +184,11 @@ body {
       text-decoration: none;
       color: #333; }
       #survicecategory .survice_wrap .survice h3.catename {
-        font-size: 19px;
-        font-size: 1.9rem;
+        font-size: 18px;
+        font-size: 1.8rem;
         margin-bottom: 16px;
         color: #26499d;
-        letter-spacing: 0.2rem; }
+        font-weight: bold; }
       #survicecategory .survice_wrap .survice p.catetext {
         line-height: 1.5;
         font-size: 14px;
@@ -539,7 +549,8 @@ footer {
     #content .about .companyprofile_wrap .map {
       width: 100%;
       height: 400px;
-      background-color: #cfd9f3;
+      background-image: url(../images/about/map.svg);
+      background-repeat: no-repeat;
       text-align: center;
       line-height: 400px;
       margin-bottom: 20px; }
@@ -563,7 +574,7 @@ footer {
           line-height: 2; }
     #content .about .companyprofile_wrap .contact {
       border: 1px solid #26499d;
-      margin: 10px;
+      margin: 10px 0;
       padding: 20px 10px;
       color: #26499d;
       height: 60px;
@@ -583,20 +594,20 @@ footer {
         font-size: 16px;
         font-size: 1.6rem; }
       #content .about .companyprofile_wrap .contact .mail {
-        font-size: 26px;
-        font-size: 2.6rem;
+        font-size: 24px;
+        font-size: 2.4rem;
         margin-top: 10px; }
 
-#sidemenu {
+#sidebar #sidemenu {
   margin-top: 50px;
   margin-left: 20px; }
-  #sidemenu a {
+  #sidebar #sidemenu a {
     text-decoration: none;
     color: #333;
     line-height: 1.5;
     font-size: 13px;
     font-size: 1.3rem; }
-    #sidemenu a li {
+    #sidebar #sidemenu a li {
       border-left: 1px #333 solid;
       border-right: 1px #333 solid;
       border-bottom: 1px #333 solid;
@@ -604,11 +615,11 @@ footer {
       background-image: url("../images/common/allowright.png");
       background-repeat: no-repeat;
       background-position: 95% 50%; }
-    #sidemenu a li.sidemenu1 {
+    #sidebar #sidemenu a li.sidemenu1 {
       border-top: 1px #333 solid;
       border-left: 1px #333 solid;
       border-right: 1px #333 solid; }
-  #sidemenu a:hover li {
+  #sidebar #sidemenu a:hover li {
     background-color: #ededed; }
 
 /*サービスページ---------------------------
@@ -950,7 +961,7 @@ footer {
 
 /* mobile 設定 toppage----------------------------------------
 ------------------------------------------------------*/
-@media (max-width: 645px) {
+@media (max-width: 767px) {
   #headerwrap {
     width: 100%;
     padding: 0 10px;
@@ -960,7 +971,7 @@ footer {
       display: none; }
     #headerwrap #sp_title_logo {
       display: block;
-      width: 80%; }
+      width: 50%; }
       #headerwrap #sp_title_logo p {
         margin-top: 5px;
         font-size: 14px;
@@ -971,22 +982,23 @@ footer {
       display: block; }
       #headerwrap #head_navi_sp ul.head_contact_sp li {
         display: inline-block;
-        padding: 0 5px; }
+        padding: 0 5px;
+        vertical-align: middle; }
         #headerwrap #head_navi_sp ul.head_contact_sp li a {
           color: #26499d;
           text-decoration: none; }
         #headerwrap #head_navi_sp ul.head_contact_sp li span {
-          font-size: 28px;
-          font-size: 2.8rem;
+          font-size: 32px;
+          font-size: 3.2rem;
           color: #26499d; }
         #headerwrap #head_navi_sp ul.head_contact_sp li .access_button {
           background-color: #26499d;
           border-radius: 2px;
           color: #fff;
           font-weight: bold;
-          padding: 4px;
           font-size: 14px;
-          font-size: 1.4rem; }
+          font-size: 1.4rem;
+          padding: 5px; }
     #headerwrap ul.sp_menu_toggle {
       width: 200px;
       position: absolute;
@@ -1007,15 +1019,6 @@ footer {
         font-weight: bold;
         border-bottom: 1px solid #524c3e;
         color: #524c3e; }
-
-  .fixed {
-    position: fixed;
-    background-color: #fdfcf9;
-    border-top: 5px solid #26499d;
-    padding-top: 10px;
-    top: 0;
-    width: 100%;
-    z-index: 1000; }
 
   #cover_area {
     background-image: url("../images/top/top-heroimage_sp.jpg"); }
@@ -1039,19 +1042,19 @@ footer {
         #cover_area .cover_content .seal .seal_sp {
           display: block;
           position: absolute;
-          width: 320px;
+          width: 260px;
           bottom: 20px;
           right: 20px; }
 
   .wrap_issue {
     display: block;
-    height: 260px;
+    height: 240px;
     padding-top: 10px; }
     .wrap_issue .issue a {
       text-align: center;
-      font-size: 16px;
-      font-size: 1.6rem;
-      line-height: 1.5; }
+      font-size: 15px;
+      font-size: 1.5rem;
+      line-height: 1.2; }
     .wrap_issue .arrow {
       text-align: center;
       transform: rotate(90deg); }
@@ -1096,9 +1099,9 @@ footer {
       text-align: left; }
       #survicecategory .survice_wrap_sp .survice {
         padding-left: 80px;
-        height: 110px;
+        height: 75px;
         background-color: #dcdcdc;
-        padding-top: 20px;
+        padding-top: 10px;
         padding-right: 20px;
         margin-bottom: 10px; }
       #survicecategory .survice_wrap_sp a {
@@ -1108,7 +1111,7 @@ footer {
         #survicecategory .survice_wrap_sp a h3 {
           font-size: 18px;
           font-size: 1.8rem;
-          margin-bottom: 10px; }
+          margin-bottom: 5px; }
         #survicecategory .survice_wrap_sp a p {
           font-size: 14px;
           font-size: 1.4rem;
@@ -1133,8 +1136,8 @@ footer {
 
   .prmenu_title p {
     display: block;
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 13px;
+    font-size: 1.3rem;
     margin: 0; }
   .prmenu_title .sikaku {
     height: 2px; }
@@ -1150,11 +1153,12 @@ footer {
     border: 2px solid #fff;
     padding: 20px 10px 10px; }
   .menues_wrap a {
-    font-size: 15px;
-    font-size: 1.5rem; }
+    font-size: 13px;
+    font-size: 1.3rem; }
 
   #recommend {
-    padding: 20px 10px; }
+    padding: 10px 10px;
+    height: 410px; }
 
   .recommends_wrap {
     display: none; }
@@ -1162,25 +1166,22 @@ footer {
   .recommends_wrap_sp {
     display: block; }
     .recommends_wrap_sp .content_thumbnail {
-      width: 100%;
+      display: block;
       margin-bottom: 10px;
-      padding: 0;
-      background-color: #fff;
-      height: 130px; }
+      clear: both; }
       .recommends_wrap_sp .content_thumbnail img {
         height: 130px;
         text-align: left;
-        float: left;
-        margin-right: 10px; }
+        margin: 0 10px 10px 0;
+        float: left; }
       .recommends_wrap_sp .content_thumbnail h3 {
         font-size: 16px;
         font-size: 1.6rem;
         font-weight: bold;
-        padding: 10px 20px 10px;
         text-align: left;
-        line-height: 1.2; }
+        line-height: 1.2;
+        margin-bottom: 10px; }
       .recommends_wrap_sp .content_thumbnail P {
-        padding: 0 20px;
         line-height: 2rem;
         font-size: 15px;
         font-size: 1.5rem; }
@@ -1230,10 +1231,6 @@ footer {
 
   footer {
     margin-top: 80px; }
-    footer .gotop {
-      text-align: right;
-      max-width: 1024px;
-      margin: 0 20px 10px; }
     footer #footnavi {
       max-width: 100%;
       margin: 0 auto;

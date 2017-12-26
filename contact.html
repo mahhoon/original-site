@@ -25,6 +25,7 @@
   ------------------------------------------------------------ -->   
   <link rel="stylesheet" href="css/cocoknots.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/jquery.fit-sidebar.css">
   
   <!-- FontAwesome
   ------------------------------------------------------------ -->
@@ -34,6 +35,7 @@
   ------------------------------------------------------------ -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 　<script src="js/cocoknots.js"></script>
+　<script type="text/javascript" src="js/jquery.fit-sidebar.js"></script>
     
 </head>
 
@@ -54,7 +56,7 @@
                 <ul class="head_contact_pc">
                     <li><i class="fa fa-phone" aria-label="お問い合わせ電話番号"></i>03-5212-4888</li>
                     <li><a href="#"><i class="fa fa-envelope" aria-labeln="メールでのお問い合わせ"></i>メール</a></li>
-                    <li><a class="access_button" href="#">アクセス</a></li>
+                    <li><a class="access_button" href="contact.html">アクセス</a></li>
                 </ul>
                 
             </div>
@@ -141,7 +143,9 @@
         <article class="about">
             <div class="companyprofile_wrap">
                 <h2 class="about_subtitle">アクセス</h2>
-                <div class="map">地図</div>
+                <div class="map">
+                    <img src="images/about/map.svg" alt="地図" width="745px" height="400px">
+                </div>
                 <img class="entrance" src="images/about/office_entrance.jpg" alt="エントランス">
                 <div class="accesstext">
                     <p><span>所在地</span><br>東京都千代田区平河町1-1-8　麹町市原ビル10Ｆ</p>
@@ -163,20 +167,20 @@
             
         </article>
         
-        <aside>
+        <aside id= "sidebar">
             <ul id="sidemenu">
                 <a href="spirit.html"><li class="sidemenu1">企業理念</li></a>
                 <a href="about.html"><li>会社概要</li></a>
                 <a href="contact.html"><li>アクセス／お問合わせ</li></a>
             </ul>
         </aside>
-    </div>
+    </div><!--content-->
     
     
     
     <footer>
         <div class="gotop">
-            <a href="#top"><img class="gotop_pc" src="images/top/gotop.png" alt="トップへ戻る" srcset="images/top/gotop@2x.png 2x"/></a>        </div>
+            <a href="#top"><img src="images/common/gotop.png" alt="トップへ戻る" srcset="images/common/gotop@2x.png 2x"/></a>        </div>
         <div class="footercolor">
         <div id="footnavi">
             <div class="footwrap1">
