@@ -642,6 +642,22 @@ footer {
     padding-top: 100px;
     letter-spacing: 0.5rem; }
 
+.cover_area_corporatepr {
+  background-image: url("../images/survice/corporatehero.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_corporatepr {
+      background-image: url("../images/survice/corporatehero@2x.jpg"); } }
+
+.cover_area_marketingpr {
+  background-image: url("../images/survice/marketinghero.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_marketingpr {
+      background-image: url("../images/survice/marketinghero@2x.jpg"); } }
+
 .prsurvice {
   padding: 60px 30px 0 0; }
   .prsurvice .read {
@@ -715,6 +731,66 @@ footer {
     margin-top: 10px;
     background-color: #e6e6e6;
     border-radius: 6px; }
+
+.eachsurvice {
+  margin-top: 80px;
+  padding-right: 30px; }
+  .eachsurvice h2 {
+    font-size: 30px;
+    font-size: 3rem;
+    color: #26499d;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .eachsurvice p {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 2; }
+
+.more_detailsmenu {
+  background-color: #8ba4de;
+  padding: 20px;
+  margin-top: 40px; }
+  .more_detailsmenu ul li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px; }
+  .more_detailsmenu h2 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #26499d;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid; }
+  .more_detailsmenu p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5; }
+
+.strong {
+  border: solid 1px #26499d;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center; }
+  .strong h2 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+  .strong span {
+    color: #26499d;
+    font-weight: bold; }
+
+.case {
+  border: solid 1px #26499d;
+  margin-top: 20px;
+  padding: 20px; }
+  .case h2 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+  .case h3 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px; }
 
 /*代表ブログ---------------------------
 ---------------------------------------------------*/
