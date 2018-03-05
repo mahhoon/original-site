@@ -658,6 +658,22 @@ footer {
     .cover_area_marketingpr {
       background-image: url("../images/survice/marketinghero@2x.jpg"); } }
 
+.cover_area_hospitalpr {
+  background-image: url("../images/survice/hospitalhero.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_hospitalpr {
+      background-image: url("../images/survice/hospitalhero@2x.jpg"); } }
+
+.cover_area_crisispr {
+  background-image: url("../images/survice/crisishero.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_crisispr {
+      background-image: url("../images/survice/crisishero@2x.jpg"); } }
+
 .prsurvice {
   padding: 60px 30px 0 0; }
   .prsurvice .read {
@@ -748,7 +764,7 @@ footer {
 
 .more_detailsmenu {
   background-color: #8ba4de;
-  padding: 20px;
+  padding: 10px;
   margin-top: 40px; }
   .more_detailsmenu ul li {
     background-color: #fff;
@@ -1034,6 +1050,10 @@ footer {
       .whatispr_navi_area .whatispr_navi .a2l span {
         font-size: 10px;
         font-size: 1rem; }
+
+#content_whatispr {
+  width: 758px;
+  margin: 50px auto; }
 
 #content_prqa {
   width: 758px;

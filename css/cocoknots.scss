@@ -890,6 +890,24 @@ footer {
           background-image: url("../images/survice/marketinghero@2x.jpg");
         }
     }
+    .cover_area_hospitalpr {
+        background-image: url("../images/survice/hospitalhero.jpg");
+        background-size: cover;
+        height: 200px;
+        
+        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+          background-image: url("../images/survice/hospitalhero@2x.jpg");
+        }
+    }
+    .cover_area_crisispr {
+        background-image: url("../images/survice/crisishero.jpg");
+        background-size: cover;
+        height: 200px;
+        
+        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+          background-image: url("../images/survice/crisishero@2x.jpg");
+        }
+    }
 //PRサービス全体ページ    
     .prsurvice {
         padding: 60px 30px 0 0;
@@ -999,7 +1017,7 @@ footer {
   }
   .more_detailsmenu {
       background-color: $blue2;
-      padding: 20px;
+      padding: 10px;
       margin-top: 40px;
       ul li{
         background-color: #fff;
@@ -1384,6 +1402,12 @@ footer {
             }
         }
     }
+}
+
+//PRとは
+#content_whatispr {
+    width: 758px;
+    margin: 50px auto;
 }
 
 //PRQ&A
