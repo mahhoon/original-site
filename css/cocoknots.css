@@ -1054,6 +1054,30 @@ footer {
 #content_whatispr {
   width: 758px;
   margin: 50px auto; }
+  #content_whatispr h2 {
+    margin: 20px 0 10px;
+    font-size: 26px;
+    font-size: 2.6rem; }
+    #content_whatispr h2 span {
+      padding-right: 10px; }
+  #content_whatispr p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 50px; }
+    #content_whatispr p .teigi {
+      margin-top: 20px;
+      display: block;
+      border: 1px solid #333;
+      padding: 10px;
+      font-size: 15px;
+      font-size: 1.5rem; }
+      #content_whatispr p .teigi .source {
+        font-size: 12px;
+        font-size: 1.2rem;
+        padding-left: 20px; }
+    #content_whatispr p .bold {
+      font-weight: bold; }
 
 #content_prqa {
   width: 758px;

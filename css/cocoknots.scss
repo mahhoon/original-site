@@ -1408,6 +1408,33 @@ footer {
 #content_whatispr {
     width: 758px;
     margin: 50px auto;
+    
+    h2 {
+        margin: 20px 0 10px;
+        @include fontsize(26);
+        span {
+            padding-right: 10px;
+        }
+    }
+    p {
+        @include fontsize(16);
+        line-height: 2;
+        margin-bottom: 50px;
+        .teigi {
+            margin-top: 20px;
+            display: block;
+            border: 1px solid #333;
+            padding: 10px;
+            @include fontsize(15);
+            .source {
+            @include fontsize(12);
+            padding-left: 20px;
+            }
+        }
+        .bold {
+            font-weight: bold;
+        }
+    }
 }
 
 //PRQ&A
