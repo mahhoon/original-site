@@ -75,7 +75,7 @@ body{
                 display: inline-block;
                 @include fontsize(15);
                 font-weight: bold;
-                width: 130px;
+                width: 160px;
                 border-right: 1px solid #333;
                 border-bottom: 2px solid $base_white;
                 text-align: center;
@@ -210,16 +210,12 @@ body{
      .issue {
          text-align: right;
          margin: 0 10px;
-         a{
-             text-decoration: none;
+         p{
              @include fontsize(16);
              color: #fff;
              font-weight: bold;
-             display: block;
-             padding: 4px;
-         }
-         a:hover {
-             text-decoration: underline;
+             line-height: 1;
+             margin: 10px 0;
          }
      }
      
@@ -812,6 +808,9 @@ footer {
                     .mail {
                          @include fontsize(24); 
                          margin-top: 10px;
+                    }
+                    .mailp {
+                        line-height: 1;
                     }
                 }
             }
@@ -1558,8 +1557,8 @@ footer {
     }
 }
 
-//PR3.0
-#content_pr3 {
+//PR3.0 , Q's
+#content_pr3 , .qs_read {
     width: 758px;
     margin: 50px auto;
     
@@ -1579,6 +1578,79 @@ footer {
         @include fontsize(17);
         line-height: 3;
     }
+}
+.content_qs {
+    width: 944px;
+    margin: 50px auto 0;
+    display: flex;
+    
+    .qs_read {
+    width: 50%;
+    margin: 0;
+    padding-right: 10px;
+    }
+    .qs_logo {
+    width: 20%;
+    padding: 0 10px;
+    }
+    .qsimage {
+    width: 30%;
+    margin-top: 120px;
+    }
+}
+.qs_info {
+    width: 944px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    display: flex;
+    
+    .midashi , .midashi_2 {
+        width: 20%;
+        margin-right: 50px;
+        text-align: center;
+        height: 30px;
+        font-weight: bold;
+    }
+    
+    .midashi {
+        color: #fff;
+        background-color: $blue1;
+    }
+    
+    .midashi_2 {
+        border: 1px solid $blue1;
+        color: $blue1;
+    }
+    
+    .qs_title {
+        @include fontsize(20);
+    }
+    .qs_new {
+        font-weight: bold;
+        
+        .button {
+            text-decoration: none;
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 10px;
+            display: block;
+            width: 100px;
+            margin-top: 20px;
+        }
+    }
+    .qs_past {
+        border-bottom: 1px solid #333;
+        padding: 10px 0;
+        p {
+            line-height: 1.5;
+        }
+    }
+    .qs_past_title {
+        font-weight: bold;
+    }
+}
+.qs_info_new {
+    background-color: lighten($blue2 , 15%);
 }
 
 

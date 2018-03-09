@@ -52,7 +52,7 @@ body {
       font-size: 15px;
       font-size: 1.5rem;
       font-weight: bold;
-      width: 130px;
+      width: 160px;
       border-right: 1px solid #333;
       border-bottom: 2px solid #fdfcf9;
       text-align: center;
@@ -147,16 +147,13 @@ body {
   .wrap_issue .issue {
     text-align: right;
     margin: 0 10px; }
-    .wrap_issue .issue a {
-      text-decoration: none;
+    .wrap_issue .issue p {
       font-size: 16px;
       font-size: 1.6rem;
       color: #fff;
       font-weight: bold;
-      display: block;
-      padding: 4px; }
-    .wrap_issue .issue a:hover {
-      text-decoration: underline; }
+      line-height: 1;
+      margin: 10px 0; }
   .wrap_issue .letscontact {
     margin: 0 20px; }
     .wrap_issue .letscontact a {
@@ -603,6 +600,8 @@ footer {
         font-size: 24px;
         font-size: 2.4rem;
         margin-top: 10px; }
+      #content .about .companyprofile_wrap .contact .mailp {
+        line-height: 1; }
 
 #sidebar #sidemenu {
   margin-top: 50px;
@@ -1169,23 +1168,79 @@ footer {
       text-decoration: none;
       color: #333; }
 
-#content_pr3 {
+#content_pr3, .qs_read {
   width: 758px;
   margin: 50px auto; }
-  #content_pr3 h2 {
+  #content_pr3 h2, .qs_read h2 {
     font-size: 50px;
     font-size: 5rem;
     font-weight: bold;
     margin-bottom: 30px; }
-  #content_pr3 .small {
+  #content_pr3 .small, .qs_read .small {
     font-size: 12px;
     font-size: 1.2rem;
     line-height: 1; }
-  #content_pr3 .bold {
+  #content_pr3 .bold, .qs_read .bold {
     font-weight: bold;
     font-size: 17px;
     font-size: 1.7rem;
     line-height: 3; }
+
+.content_qs {
+  width: 944px;
+  margin: 50px auto 0;
+  display: flex; }
+  .content_qs .qs_read {
+    width: 50%;
+    margin: 0;
+    padding-right: 10px; }
+  .content_qs .qs_logo {
+    width: 20%;
+    padding: 0 10px; }
+  .content_qs .qsimage {
+    width: 30%;
+    margin-top: 120px; }
+
+.qs_info {
+  width: 944px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  display: flex; }
+  .qs_info .midashi, .qs_info .midashi_2 {
+    width: 20%;
+    margin-right: 50px;
+    text-align: center;
+    height: 30px;
+    font-weight: bold; }
+  .qs_info .midashi {
+    color: #fff;
+    background-color: #26499d; }
+  .qs_info .midashi_2 {
+    border: 1px solid #26499d;
+    color: #26499d; }
+  .qs_info .qs_title {
+    font-size: 20px;
+    font-size: 2rem; }
+  .qs_info .qs_new {
+    font-weight: bold; }
+    .qs_info .qs_new .button {
+      text-decoration: none;
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 10px;
+      display: block;
+      width: 100px;
+      margin-top: 20px; }
+  .qs_info .qs_past {
+    border-bottom: 1px solid #333;
+    padding: 10px 0; }
+    .qs_info .qs_past p {
+      line-height: 1.5; }
+  .qs_info .qs_past_title {
+    font-weight: bold; }
+
+.qs_info_new {
+  background-color: #c7d3ef; }
 
 /* mobile 設定 toppage----------------------------------------
 ------------------------------------------------------*/
