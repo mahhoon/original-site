@@ -1131,13 +1131,13 @@ footer {
 //ブログ部分
     #blog {
         margin-top: 50px;
-        
-        span {
-                margin-left: 30px;
-                @include fontsize(12);
-                line-height: 3;
-            }
-            .kimiblogcate {
+            
+        .date , .kimiblogcate {
+            margin-left: 30px;
+            @include fontsize(12);
+            line-height: 3;
+        }
+        .kimiblogcate , .lunchblogcate {
                 padding: 0 10px;
                 width: 60px;
                 height: 17px;
@@ -1168,6 +1168,7 @@ footer {
                 letter-spacing: 0.1rem;
             }
         }
+        
         
         .page_navi {
             text-align :center;
@@ -1269,7 +1270,7 @@ footer {
             @include fontsize(16);
             margin-bottom: 10px;
         }
-        .kimiblogcate {
+        .kimiblogcate , .lunchblogcate {
             @include fontsize(11);
         }
     }
@@ -1391,15 +1392,68 @@ footer {
     #blog {
         .lunchread {
             padding: 15px;
-            border: 1px solid #333;
+            border: 1px solid #a9a9a9;
             margin-bottom: 50px;
         }
         .catorary {
             padding-left: 20px;
         }
     }
+    
+    .restaurant_name {
+        font-weight: bold;
+        @include fontsize(17);
+    }
 
-
+//ランチ個別ページ
+    .lunchblog-title {
+        border-bottom: 1px solid #a9a9a9;
+        padding-bottom: 20px;
+        h2 {
+            padding: 0 0 30px 0;
+            @include fontsize(26);
+            font-weight: bold;
+        }
+    }
+    
+    .restaurant_text {
+        margin: 30px 0;
+    }
+    
+    .cap {
+        @include fontsize(12);
+    }
+    
+    #blog .lunchblog-title span {
+        margin-left: 0;
+    }
+    
+    .restaurant_info{
+        margin: 30px 0;
+        padding: 10px;
+        border: 1px solid #a9a9a9;
+        img {
+            float: left;
+        }
+        p{
+            margin-left: 304px;
+            @include fontsize(14);
+            line-height: 1.5;
+            }
+    }
+    
+    .restaurant_info_name {
+        @include fontsize(16);
+        font-weight: bold;
+        display: block;
+        margin: 20px 0 10px;
+    }
+    
+    .restaurant_info:after {
+       display: block;
+       clear: both;
+       content: "";
+    }
 
 /*PRとはページ---------------------------
 ---------------------------------------------------*/

@@ -855,12 +855,12 @@ footer {
 
 #blog {
   margin-top: 50px; }
-  #blog span {
+  #blog .date, #blog .kimiblogcate {
     margin-left: 30px;
     font-size: 12px;
     font-size: 1.2rem;
     line-height: 3; }
-  #blog .kimiblogcate {
+  #blog .kimiblogcate, #blog .lunchblogcate {
     padding: 0 10px;
     width: 60px;
     height: 17px;
@@ -956,7 +956,7 @@ footer {
   font-size: 16px;
   font-size: 1.6rem;
   margin-bottom: 10px; }
-#blog .blog-index .kimiblogcate {
+#blog .blog-index .kimiblogcate, #blog .blog-index .lunchblogcate {
   font-size: 11px;
   font-size: 1.1rem; }
 #blog #detail_button {
@@ -1045,10 +1045,58 @@ footer {
 
 #blog .lunchread {
   padding: 15px;
-  border: 1px solid #333;
+  border: 1px solid #a9a9a9;
   margin-bottom: 50px; }
 #blog .catorary {
   padding-left: 20px; }
+
+.restaurant_name {
+  font-weight: bold;
+  font-size: 17px;
+  font-size: 1.7rem; }
+
+.lunchblog-title {
+  border-bottom: 1px solid #a9a9a9;
+  padding-bottom: 20px; }
+  .lunchblog-title h2 {
+    padding: 0 0 30px 0;
+    font-size: 26px;
+    font-size: 2.6rem;
+    font-weight: bold; }
+
+.restaurant_text {
+  margin: 30px 0; }
+
+.cap {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+#blog .lunchblog-title span {
+  margin-left: 0; }
+
+.restaurant_info {
+  margin: 30px 0;
+  padding: 10px;
+  border: 1px solid #a9a9a9; }
+  .restaurant_info img {
+    float: left; }
+  .restaurant_info p {
+    margin-left: 304px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5; }
+
+.restaurant_info_name {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0 10px; }
+
+.restaurant_info:after {
+  display: block;
+  clear: both;
+  content: ""; }
 
 /*PRとはページ---------------------------
 ---------------------------------------------------*/
