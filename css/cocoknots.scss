@@ -831,19 +831,20 @@ footer {
                 @include fontsize(13);
     
                 li{
-                    border-left: 1px #333 solid;
-                    border-right: 1px #333 solid;
-                    border-bottom: 1px #333 solid;
+                    border-left: 1px #a9a9a9 solid;
+                    border-right: 1px #a9a9a9 solid;
+                    border-bottom: 1px #a9a9a9 solid;
                     padding: 10px;
                     background-image: url("../images/common/allowright.png");
                     background-repeat: no-repeat;
                     background-position: 95% 50%;
+                    background-color: $base_white;
                 }
                 
                 li.sidemenu1 {
-                    border-top: 1px #333 solid;
-                    border-left: 1px #333 solid;
-                    border-right: 1px #333 solid;
+                    border-top: 1px #a9a9a9 solid;
+                    border-left: 1px #a9a9a9 solid;
+                    border-right: 1px #a9a9a9 solid;
                 }
             }
             a:hover {
@@ -1001,6 +1002,12 @@ footer {
                 border-radius: 6px;
             }
         }
+        #release_description , #seminar_description , #training_description , 
+        #tour_description , #forum_description , #ad_description , #creative_description , 
+        #lecturer_description {
+            margin-top: -113px;
+            padding-top: 113px;
+        }
         
     }
 //個別サービスページ
@@ -1081,6 +1088,7 @@ footer {
         }
         
         .cover_title_kimi{
+            width: 96%;
             max-width: 1024px;
             margin: 0 auto; 
         }  
@@ -1111,7 +1119,7 @@ footer {
     #content {
         justify-content: space-between;
         
-        #kimiblog {
+        #blog {
             max-width: 700px;
         }
         .widget {
@@ -1121,7 +1129,7 @@ footer {
     
     
 //ブログ部分
-    #kimiblog {
+    #blog {
         margin-top: 50px;
         
         span {
@@ -1222,10 +1230,21 @@ footer {
         padding: 10px;
         display: block;
     }
+    .gotokimiblog{
+        margin-top: 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #00a0e9;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+        padding: 10px;
+        display: block;
+    }
 }
 
 //一覧ページ
-#kimiblog {
+#blog {
     
     .blog-index {
         
@@ -1354,6 +1373,32 @@ footer {
         text-align: center;
     }
 }
+
+/*ココランチ---------------------------
+---------------------------------------------------*/
+//カバーエリア
+    .cover_area_cocolunch {
+        background-image: url("../images/blog/cocolunch.jpg");
+        background-size: cover;
+        height: 200px;
+
+        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+          background-image: url("../images/blog/cocolunch@2x.jpg");
+        }
+    }
+
+//一覧ページ
+    #blog {
+        .lunchread {
+            padding: 15px;
+            border: 1px solid #333;
+            margin-bottom: 50px;
+        }
+        .catorary {
+            padding-left: 20px;
+        }
+    }
+
 
 
 /*PRとはページ---------------------------

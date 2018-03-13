@@ -613,17 +613,18 @@ footer {
     font-size: 13px;
     font-size: 1.3rem; }
     #sidebar #sidemenu a li {
-      border-left: 1px #333 solid;
-      border-right: 1px #333 solid;
-      border-bottom: 1px #333 solid;
+      border-left: 1px #a9a9a9 solid;
+      border-right: 1px #a9a9a9 solid;
+      border-bottom: 1px #a9a9a9 solid;
       padding: 10px;
       background-image: url("../images/common/allowright.png");
       background-repeat: no-repeat;
-      background-position: 95% 50%; }
+      background-position: 95% 50%;
+      background-color: #fdfcf9; }
     #sidebar #sidemenu a li.sidemenu1 {
-      border-top: 1px #333 solid;
-      border-left: 1px #333 solid;
-      border-right: 1px #333 solid; }
+      border-top: 1px #a9a9a9 solid;
+      border-left: 1px #a9a9a9 solid;
+      border-right: 1px #a9a9a9 solid; }
   #sidebar #sidemenu a:hover li {
     background-color: #ededed; }
 
@@ -750,6 +751,11 @@ footer {
     margin-top: 10px;
     background-color: #e6e6e6;
     border-radius: 6px; }
+  .prsurvice #release_description, .prsurvice #seminar_description, .prsurvice #training_description,
+  .prsurvice #tour_description, .prsurvice #forum_description, .prsurvice #ad_description, .prsurvice #creative_description,
+  .prsurvice #lecturer_description {
+    margin-top: -113px;
+    padding-top: 113px; }
 
 .eachsurvice {
   margin-top: 80px;
@@ -821,6 +827,7 @@ footer {
     .cover_area_kimiblog {
       background-image: url("../images/blog/kimiblog-cover@2x.jpg"); } }
   .cover_area_kimiblog .cover_title_kimi {
+    width: 96%;
     max-width: 1024px;
     margin: 0 auto; }
   .cover_area_kimiblog .page_title {
@@ -841,19 +848,19 @@ footer {
 
 #content {
   justify-content: space-between; }
-  #content #kimiblog {
+  #content #blog {
     max-width: 700px; }
   #content .widget {
     width: 240px; }
 
-#kimiblog {
+#blog {
   margin-top: 50px; }
-  #kimiblog span {
+  #blog span {
     margin-left: 30px;
     font-size: 12px;
     font-size: 1.2rem;
     line-height: 3; }
-  #kimiblog .kimiblogcate {
+  #blog .kimiblogcate {
     padding: 0 10px;
     width: 60px;
     height: 17px;
@@ -863,24 +870,24 @@ footer {
     border-radius: 10px;
     font-size: 11px;
     font-size: 1.1rem; }
-  #kimiblog .blog-title img {
+  #blog .blog-title img {
     float: left;
     margin-bottom: 10px; }
-  #kimiblog .blog-title h2 {
+  #blog .blog-title h2 {
     font-size: 26px;
     font-size: 2.6rem;
     font-weight: bold;
     padding: 30px 0 50px 270px; }
-  #kimiblog .blog-title p {
+  #blog .blog-title p {
     clear: both;
     border-top: 1px solid #333;
     padding-top: 40px;
     line-height: 2;
     letter-spacing: 0.1rem; }
-  #kimiblog .page_navi {
+  #blog .page_navi {
     text-align: center;
     margin-top: 50px; }
-    #kimiblog .page_navi a {
+    #blog .page_navi a {
       text-decoration: none;
       color: #333;
       width: 180px;
@@ -889,18 +896,18 @@ footer {
       border: 1px solid #a6a6a6;
       padding: 10px 30px;
       display: inline-block; }
-    #kimiblog .page_navi .goprevious {
+    #blog .page_navi .goprevious {
       text-align: right; }
-    #kimiblog .page_navi .gonext {
+    #blog .page_navi .gonext {
       text-align: left; }
-    #kimiblog .page_navi .goindex {
+    #blog .page_navi .goindex {
       margin-top: 20px;
       width: 100px;
       height: 14px;
       line-height: 14px;
       padding: 5px;
       border-radius: 6px; }
-  #kimiblog .snsbutton {
+  #blog .snsbutton {
     text-align: center;
     margin-top: 30px; }
 
@@ -922,27 +929,37 @@ footer {
     line-height: 20px;
     padding: 10px;
     display: block; }
+  .widget .gotokimiblog {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #00a0e9;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+    display: block; }
 
-#kimiblog .blog-index img {
+#blog .blog-index img {
   float: right;
   margin-bottom: 20px; }
-#kimiblog .blog-index li {
+#blog .blog-index li {
   clear: both;
   border-bottom: 1px solid #c5c5c5;
   height: 110px; }
-  #kimiblog .blog-index li a {
+  #blog .blog-index li a {
     text-decoration: none;
     color: #333; }
-#kimiblog .blog-index span {
+#blog .blog-index span {
   margin: 0; }
-#kimiblog .blog-index h3 {
+#blog .blog-index h3 {
   font-size: 16px;
   font-size: 1.6rem;
   margin-bottom: 10px; }
-#kimiblog .blog-index .kimiblogcate {
+#blog .blog-index .kimiblogcate {
   font-size: 11px;
   font-size: 1.1rem; }
-#kimiblog #detail_button {
+#blog #detail_button {
   height: 12px;
   line-height: 12px;
   border-radius: 20px; }
@@ -1015,6 +1032,23 @@ footer {
             background-color: #e44da1; }
   #blogindex_wrap #detail_button {
     text-align: center; }
+
+/*ココランチ---------------------------
+---------------------------------------------------*/
+.cover_area_cocolunch {
+  background-image: url("../images/blog/cocolunch.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_cocolunch {
+      background-image: url("../images/blog/cocolunch@2x.jpg"); } }
+
+#blog .lunchread {
+  padding: 15px;
+  border: 1px solid #333;
+  margin-bottom: 50px; }
+#blog .catorary {
+  padding-left: 20px; }
 
 /*PRとはページ---------------------------
 ---------------------------------------------------*/
