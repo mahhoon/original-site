@@ -12,6 +12,9 @@
  *	http://jquery.com
  *
  */
+ 
+ /*
+ 一時停止
 ;(function($){
 	var s = $.fitSidebar = function(target, option){
 		var o = this, c = o.config = $.extend({}, s.defaults, option);

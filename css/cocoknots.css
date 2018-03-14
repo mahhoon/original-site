@@ -23,7 +23,7 @@ body {
   #headerwrap #pc_title_logo {
     width: 20%; }
     #headerwrap #pc_title_logo p {
-      margin-top: 7px;
+      margin-top: 2px;
       font-size: 13px;
       font-size: 1.3rem; }
   #headerwrap #sp_title_logo {
@@ -177,8 +177,12 @@ body {
     margin: 20px 4px;
     font-size: 16px;
     font-size: 1.6rem; }
+  #survicecategory .survicecate_title a:hover {
+    background-color: #cfd9f3; }
   #survicecategory .survice_wrap {
     display: flex; }
+    #survicecategory .survice_wrap a:hover img {
+      opacity: .7; }
     #survicecategory .survice_wrap .survice {
       width: 25%;
       margin: 20px;
@@ -187,7 +191,7 @@ body {
       #survicecategory .survice_wrap .survice h3.catename {
         font-size: 18px;
         font-size: 1.8rem;
-        margin-bottom: 16px;
+        margin: 16px 0;
         color: #26499d;
         font-weight: bold; }
       #survicecategory .survice_wrap .survice p.catetext {
@@ -225,6 +229,8 @@ body {
   padding: 7px 0 0 0;
   border: 1px solid #333;
   border-radius: 14px; }
+  #detail_button a:hover {
+    background-color: #cfd9f3; }
 
 #prmenu {
   width: 96%;
@@ -265,7 +271,7 @@ body {
     font-size: 1.5rem; }
 
 #recommend {
-  background-color: #e5e5e5; }
+  background-color: #8ba4de; }
   #recommend a {
     text-decoration: none;
     color: #333; }
@@ -279,7 +285,8 @@ body {
   .recommends_wrap .content_thumbnail_1, .recommends_wrap .content_thumbnail_2, .recommends_wrap .content_thumbnail_3 {
     width: 33.33%;
     margin: 20px 10px;
-    background-color: #fff; }
+    background-color: #fff;
+    box-shadow: 1px 1px 8px #547ad5; }
     .recommends_wrap .content_thumbnail_1 .content_thumbnail_image, .recommends_wrap .content_thumbnail_2 .content_thumbnail_image, .recommends_wrap .content_thumbnail_3 .content_thumbnail_image {
       height: 130px;
       text-align: center; }
@@ -482,6 +489,18 @@ footer {
     display: block;
     font-size: 18px;
     font-size: 1.8rem; }
+  #content .spirit .yurai {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px dashed #a9a9a9;
+    border-radius: 3px; }
+    #content .spirit .yurai p {
+      font-size: 14px;
+      font-size: 1.4rem;
+      line-height: 1.5; }
+    #content .spirit .yurai h3 {
+      font-weight: bold;
+      margin-bottom: 5px; }
   #content .spirit .require {
     margin-bottom: 40px; }
     #content .spirit .require span {
@@ -613,20 +632,26 @@ footer {
     font-size: 13px;
     font-size: 1.3rem; }
     #sidebar #sidemenu a li {
-      border-left: 1px #a9a9a9 solid;
-      border-right: 1px #a9a9a9 solid;
       border-bottom: 1px #a9a9a9 solid;
       padding: 10px;
       background-image: url("../images/common/allowright.png");
       background-repeat: no-repeat;
       background-position: 95% 50%;
       background-color: #fdfcf9; }
-    #sidebar #sidemenu a li.sidemenu1 {
-      border-top: 1px #a9a9a9 solid;
-      border-left: 1px #a9a9a9 solid;
-      border-right: 1px #a9a9a9 solid; }
+    #sidebar #sidemenu a li.sidemenu_bottom {
+      border-bottom: 0px #a9a9a9 solid; }
+    #sidebar #sidemenu a li.sidemenu_top {
+      border-top: 1px #a9a9a9 solid; }
   #sidebar #sidemenu a:hover li {
     background-color: #ededed; }
+  #sidebar #sidemenu .sidemenucate1 {
+    background-color: #cfd9f3;
+    padding: 10px 5px;
+    border: none; }
+  #sidebar #sidemenu .sidemenucate2 {
+    background-color: #cfd9f3;
+    padding: 10px 5px;
+    border: 1px solid #fff; }
 
 /*サービスページ---------------------------
 ---------------------------------------------------*/
@@ -955,7 +980,8 @@ footer {
 #blog .blog-index h3 {
   font-size: 16px;
   font-size: 1.6rem;
-  margin-bottom: 10px; }
+  font-weight: bold;
+  padding: 15px 0; }
 #blog .blog-index .kimiblogcate, #blog .blog-index .lunchblogcate {
   font-size: 11px;
   font-size: 1.1rem; }
@@ -1046,14 +1072,16 @@ footer {
 #blog .lunchread {
   padding: 15px;
   border: 1px solid #a9a9a9;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border-radius: 3px; }
 #blog .catorary {
   padding-left: 20px; }
 
 .restaurant_name {
   font-weight: bold;
   font-size: 17px;
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  padding: 15px 0 5px; }
 
 .lunchblog-title {
   border-bottom: 1px solid #a9a9a9;
@@ -1153,7 +1181,7 @@ footer {
     #content_whatispr p .teigi {
       margin-top: 20px;
       display: block;
-      border: 1px solid #333;
+      border: 1px dashed #333;
       padding: 10px;
       font-size: 15px;
       font-size: 1.5rem; }
