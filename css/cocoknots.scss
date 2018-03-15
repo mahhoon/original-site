@@ -152,7 +152,7 @@ body{
 //cover area
 
     #cover_area {
-        background-image: url("../images/top/top-heroimage.jpg");
+        background-image: url("../images/top/knots_coverimage.jpg");
         background-position: center center;
         background-size: cover;
         
@@ -251,7 +251,7 @@ body{
         margin: 20px 4px;
         @include fontsize(16);
     }
-    .survicecate_title{
+    .survicecate_title {
         a:hover {
             background-color: lighten($blue1 , 50%);
         }
@@ -317,9 +317,6 @@ width: 20%;
         padding: 7px 0 0 0;
         border: 1px solid #333;
         border-radius: 14px;
-        a:hover {
-        background-color: lighten($blue1 , 50%);
-        }
 }
 
 
@@ -338,12 +335,13 @@ width: 20%;
     
     .sikaku {
         width: 20px;
-        height: 6px;
+        height: 2px;
         background-color: $blue1;
     }
     
     h3 {
         @include fontsize(20);
+        font-weight: bold;
     }
     
     p {
@@ -355,9 +353,9 @@ width: 20%;
 .menues_wrap {
     display: flex;
     flex-wrap: wrap;
-    background-color: $blue1;
     
     li {
+        background-color: $blue1;
         width: 25%;
         height: 45px;
         border: 1px solid #fff;
@@ -371,6 +369,10 @@ width: 20%;
         color: #fff;
         @include fontsize(15);
     }
+    
+    a:hover {
+        color: $blue2;
+    }
 }
 
 // トップページおすすめ
@@ -381,6 +383,12 @@ width: 20%;
         text-decoration: none;
         color: #333;
     }
+}
+.recommend_title {
+    text-align: center;
+    padding-top: 20px;
+    @include fontsize(20);
+    color: #fff;
 }
 
 .recommends_wrap {
@@ -405,16 +413,38 @@ width: 20%;
             }
             
             h3 {
-                @include fontsize(20);
+                @include fontsize(18);
                 padding: 20px;
                 height: 20px;
                 text-align: center;
-                line-height: 2rem;
+                line-height: 1.2;
             }
             P {
                 padding: 20px;
-                line-height: 2.2rem;
+                line-height: 1.5;
+                @include fontsize(14);
             }
+    }
+    .ribbon_over {
+        position: relative;
+    }
+    p.ribbon {
+        position: absolute;
+        padding: 2px;
+        top: 4px;
+        left: -8px;
+        background-color: $blue1;
+        color: #fff;
+        @include fontsize(12);
+    }
+    p.ribbon:before {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 0;
+        border: none;
+        border-bottom: solid 10px transparent;
+        border-right: solid 8px darken($blue1 , 50%);
     }
 }
 
@@ -445,6 +475,11 @@ width: 20%;
         span {
             font-weight: bold;
         }
+    }
+    a:hover {
+            background-color: lighten($blue1 , 50%);
+    
+        
     }
 }
 
@@ -1798,6 +1833,44 @@ footer {
 .qs_info_new {
     background-color: lighten($blue2 , 15%);
 }
+
+/*お知らせページ------------------------------------------------
+------------------------------------------------------*/
+.cover_area_news {
+        background-color: $blue2;
+        height: 120px;
+        
+        .page_title {
+            padding-top: 60px;
+        }
+    }
+
+.news {
+    margin: 50px 30px 50px 0;
+    .news_table {
+        width: 100%;
+        tr {
+            border-bottom: 1px solid #a9a9a9;
+            padding: 5px;
+        }
+        th {
+            padding: 10px 0;
+            text-align: left;
+            font-weight: bold;
+            line-height: 1.5;
+            width: 100px;
+        }
+        td{
+            vertical-align: middle;
+            padding: 10px;
+            line-height: 1.5;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    
+} 
 
 
     

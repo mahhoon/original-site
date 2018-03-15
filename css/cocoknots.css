@@ -104,7 +104,7 @@ body {
   z-index: 1000; }
 
 #cover_area {
-  background-image: url("../images/top/top-heroimage.jpg");
+  background-image: url("../images/top/knots_coverimage.jpg");
   background-position: center center;
   background-size: cover; }
   #cover_area .cover_content {
@@ -229,8 +229,6 @@ body {
   padding: 7px 0 0 0;
   border: 1px solid #333;
   border-radius: 14px; }
-  #detail_button a:hover {
-    background-color: #cfd9f3; }
 
 #prmenu {
   width: 96%;
@@ -243,11 +241,12 @@ body {
     display: inline-block; }
   .prmenu_title .sikaku {
     width: 20px;
-    height: 6px;
+    height: 2px;
     background-color: #26499d; }
   .prmenu_title h3 {
     font-size: 20px;
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-weight: bold; }
   .prmenu_title p {
     font-size: 15px;
     font-size: 1.5rem;
@@ -255,9 +254,9 @@ body {
 
 .menues_wrap {
   display: flex;
-  flex-wrap: wrap;
-  background-color: #26499d; }
+  flex-wrap: wrap; }
   .menues_wrap li {
+    background-color: #26499d;
     width: 25%;
     height: 45px;
     border: 1px solid #fff;
@@ -269,12 +268,21 @@ body {
     color: #fff;
     font-size: 15px;
     font-size: 1.5rem; }
+  .menues_wrap a:hover {
+    color: #8ba4de; }
 
 #recommend {
   background-color: #8ba4de; }
   #recommend a {
     text-decoration: none;
     color: #333; }
+
+.recommend_title {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-size: 2rem;
+  color: #fff; }
 
 .recommends_wrap {
   width: 98%;
@@ -293,15 +301,36 @@ body {
       .recommends_wrap .content_thumbnail_1 .content_thumbnail_image img, .recommends_wrap .content_thumbnail_2 .content_thumbnail_image img, .recommends_wrap .content_thumbnail_3 .content_thumbnail_image img {
         max-width: 100%; }
     .recommends_wrap .content_thumbnail_1 h3, .recommends_wrap .content_thumbnail_2 h3, .recommends_wrap .content_thumbnail_3 h3 {
-      font-size: 20px;
-      font-size: 2rem;
+      font-size: 18px;
+      font-size: 1.8rem;
       padding: 20px;
       height: 20px;
       text-align: center;
-      line-height: 2rem; }
+      line-height: 1.2; }
     .recommends_wrap .content_thumbnail_1 P, .recommends_wrap .content_thumbnail_2 P, .recommends_wrap .content_thumbnail_3 P {
       padding: 20px;
-      line-height: 2.2rem; }
+      line-height: 1.5;
+      font-size: 14px;
+      font-size: 1.4rem; }
+  .recommends_wrap .ribbon_over {
+    position: relative; }
+  .recommends_wrap p.ribbon {
+    position: absolute;
+    padding: 2px;
+    top: 4px;
+    left: -8px;
+    background-color: #26499d;
+    color: #fff;
+    font-size: 12px;
+    font-size: 1.2rem; }
+  .recommends_wrap p.ribbon:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 8px black; }
 
 .recommends_wrap_sp {
   display: none; }
@@ -324,6 +353,8 @@ body {
     padding: 10px; }
     #news .news_table td span {
       font-weight: bold; }
+  #news a:hover {
+    background-color: #cfd9f3; }
 
 #news_sp {
   display: none; }
@@ -1351,6 +1382,34 @@ footer {
 
 .qs_info_new {
   background-color: #c7d3ef; }
+
+/*お知らせページ------------------------------------------------
+------------------------------------------------------*/
+.cover_area_news {
+  background-color: #8ba4de;
+  height: 120px; }
+  .cover_area_news .page_title {
+    padding-top: 60px; }
+
+.news {
+  margin: 50px 30px 50px 0; }
+  .news .news_table {
+    width: 100%; }
+    .news .news_table tr {
+      border-bottom: 1px solid #a9a9a9;
+      padding: 5px; }
+    .news .news_table th {
+      padding: 10px 0;
+      text-align: left;
+      font-weight: bold;
+      line-height: 1.5;
+      width: 100px; }
+    .news .news_table td {
+      vertical-align: middle;
+      padding: 10px;
+      line-height: 1.5; }
+      .news .news_table td span {
+        font-weight: bold; }
 
 /* mobile 設定 toppage----------------------------------------
 ------------------------------------------------------*/
