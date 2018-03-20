@@ -1444,18 +1444,20 @@ footer {
     #headerwrap #head_navi {
       display: none; }
     #headerwrap #head_navi_sp {
-      display: block; }
+      display: block;
+      padding-top: 5px; }
       #headerwrap #head_navi_sp ul.head_contact_sp li {
         display: inline-block;
-        padding: 0 5px;
+        padding: 0;
         vertical-align: middle; }
         #headerwrap #head_navi_sp ul.head_contact_sp li a {
           color: #26499d;
           text-decoration: none; }
         #headerwrap #head_navi_sp ul.head_contact_sp li span {
-          font-size: 32px;
-          font-size: 3.2rem;
-          color: #26499d; }
+          font-size: 30px;
+          font-size: 3rem;
+          color: #26499d;
+          baseline-shift: 5px; }
         #headerwrap #head_navi_sp ul.head_contact_sp li .access_button {
           background-color: #26499d;
           border-radius: 2px;
@@ -1465,13 +1467,13 @@ footer {
           font-size: 1.4rem;
           padding: 5px; }
     #headerwrap ul.sp_menu_toggle {
-      width: 200px;
+      width: 300px;
       position: absolute;
       top: 70px;
       right: 10px;
       text-align: left;
       padding: 0px;
-      border: 1px solid #524c3e;
+      border: 1px solid #a9a9a9;
       background: #fff;
       z-index: 100;
       display: none; }
@@ -1479,10 +1481,10 @@ footer {
         text-decoration: none;
         display: block;
         padding: 10px;
-        font-size: 14px;
-        font-size: 1.4rem;
+        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: bold;
-        border-bottom: 1px solid #524c3e;
+        border-bottom: 1px solid #a9a9a9;
         color: #524c3e; }
 
   #cover_area {
@@ -1510,6 +1512,17 @@ footer {
           width: 260px;
           bottom: 20px;
           right: 20px; }
+
+  .cover_area_about {
+    background-image: url("../images/top/cover_about_sp.jpg");
+    background-size: cover;
+    height: 150px; } }
+  @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .cover_area_about {
+      background-image: url("../images/about/cover_about_sp@2x.jpg"); } }
+@media (max-width: 767px) {
+    .cover_area_about .page_title {
+      padding: 75px 0; }
 
   .wrap_issue {
     display: block;
@@ -1554,9 +1567,9 @@ footer {
   #survicecategory {
     margin: 40px 10px; }
     #survicecategory p.read {
-      font-size: 14px;
-      font-size: 1.4rem;
-      padding: 10px 40px;
+      font-size: 16px;
+      font-size: 1.6rem;
+      padding: 10px 5px;
       line-height: 1.5; }
     #survicecategory .survice_wrap {
       display: none; }
@@ -1584,21 +1597,24 @@ footer {
           line-height: 1.5; }
       #survicecategory .survice_wrap_sp .no1 {
         background-image: url("../images/top/corporate-icon.png");
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-position: 5% 50%; }
       #survicecategory .survice_wrap_sp .no2 {
         background-image: url("../images/top/marketing-icon.png");
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-position: 5% 50%; }
       #survicecategory .survice_wrap_sp .no3 {
-        background-image: url("../images/top/prsupport-icon.png");
-        background-repeat: no-repeat; }
+        background-image: url("../images/top/hospital-icon.png");
+        background-repeat: no-repeat;
+        background-position: 5% 50%; }
       #survicecategory .survice_wrap_sp .no4 {
         background-image: url("../images/top/crisis-icon.png");
         background-repeat: no-repeat;
-        background-position: 0 -10px; }
+        background-position: 5% 50%; }
 
   #prmenu {
     max-width: 100%;
-    margin: 60px 10px; }
+    margin: 50px 10px; }
 
   .prmenu_title p {
     display: block;
@@ -1624,7 +1640,9 @@ footer {
 
   #recommend {
     padding: 10px 10px;
-    height: 410px; }
+    height: 470px; }
+    #recommend .recommend_title {
+      padding: 5px 0 10px; }
 
   .recommends_wrap {
     display: none; }
@@ -1748,6 +1766,13 @@ footer {
         text-align: center;
         margin-top: 30px;
         font-size: 14px;
-        font-size: 1.4rem; } }
+        font-size: 1.4rem; }
+
+  /*企業理念ページ以下（mobile）--------------------*/
+  #content {
+    display: block; }
+    #content .spirit {
+      padding-right: 0;
+      width: 100%; } }
 
 /*# sourceMappingURL=cocoknots.css.map */

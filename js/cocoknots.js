@@ -23,13 +23,14 @@ $(function(){
 	});
 });
 
-/*サイドナビ固定*/
+/*サイドナビ固定
 $(function() {
      $('#sidemenu').fitSidebar({
          wrapper : '#contents',
          responsiveWidth : 767
      });
  });
+ */
 
 /*
  $(function(){
@@ -63,3 +64,10 @@ $(function() {
      w.on('scroll', adjust);
  });
  */
+ 
+ /*toggle button*/
+ $(document).ready(function(){
+  $(".menu_icon").click(function(){
+    $(".sp_menu_toggle").slideToggle();
+  });
+});

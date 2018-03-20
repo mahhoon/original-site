@@ -1932,10 +1932,11 @@ footer {
         
         #head_navi_sp {
             display: block;
+            padding-top: 5px;
             
             ul.head_contact_sp li {
                 display: inline-block;
-                padding: 0 5px;
+                padding: 0;
                 vertical-align: middle;
                 
                 a{
@@ -1943,8 +1944,9 @@ footer {
                     text-decoration: none;
                 }
                 span {
-                        @include fontsize(32);
+                        @include fontsize(30);
                         color: $blue1;
+                        baseline-shift: 5px;
                     }
                 
                 .access_button {
@@ -1960,13 +1962,13 @@ footer {
         
         //toggle button(mobile)
         ul.sp_menu_toggle {
-            width: 200px;
+            width: 300px;
             position: absolute;
             top: 70px;
             right: 10px;
             text-align: left;
             padding: 0px;
-            border: 1px solid #524c3e;
+            border: 1px solid #a9a9a9;
             background: #fff;
             z-index: 100;
             display: none;
@@ -1975,9 +1977,9 @@ footer {
                 text-decoration: none;
                 display: block;
                 padding: 10px;
-                @include fontsize(14);
+                @include fontsize(16);
                 font-weight: bold;
-                border-bottom: 1px solid #524c3e;
+                border-bottom: 1px solid #a9a9a9;
                 color: #524c3e;
             }
         }
@@ -2025,6 +2027,20 @@ footer {
                         right: 20px;
                     }
                 }
+        }
+    }
+    
+    .cover_area_about {
+        background-image: url("../images/top/cover_about_sp.jpg");
+        background-size: cover;
+        height: 150px;
+        
+        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+         background-image: url("../images/about/cover_about_sp@2x.jpg");
+        }
+        
+        .page_title {
+            padding: 75px 0;
         }
     }
     
@@ -2082,8 +2098,8 @@ footer {
         margin: 40px 10px;
     
         p.read {
-            @include fontsize(14);
-            padding: 10px 40px;
+            @include fontsize(16);
+            padding: 10px 5px;
             line-height: 1.5;
         }
         
@@ -2121,19 +2137,22 @@ footer {
             .no1 {
                 background-image: url("../images/top/corporate-icon.png");
                 background-repeat: no-repeat;
+                background-position: 5% 50%;
             }
             .no2 {
                 background-image: url("../images/top/marketing-icon.png");
                 background-repeat: no-repeat;
+                background-position: 5% 50%;
             }
             .no3 {
-                background-image: url("../images/top/prsupport-icon.png");
+                background-image: url("../images/top/hospital-icon.png");
                 background-repeat: no-repeat;
+                background-position: 5% 50%;
             }
             .no4 {
                 background-image: url("../images/top/crisis-icon.png");
                 background-repeat: no-repeat;
-                background-position: 0 -10px;
+                background-position: 5% 50%;
             }            
         }
     }
@@ -2141,7 +2160,7 @@ footer {
     //PRメニュー(mobile)
     #prmenu {
         max-width: 100%;
-        margin: 60px 10px;
+        margin: 50px 10px;
     }
     .prmenu_title  {
         
@@ -2179,7 +2198,10 @@ footer {
     //おすすめ(mobile)
     #recommend {
         padding: 10px 10px;
-        height: 410px
+        height: 470px;
+        .recommend_title {
+            padding: 5px 0 10px;
+        }
     }
     .recommends_wrap {
         display: none;
@@ -2349,5 +2371,19 @@ footer {
         }
     }
     }
+    
+    /*企業理念ページ以下（mobile）--------------------*/
+    
+    //1カラム設定
+    #content {
+        display: block;
+        
+        .spirit {
+            padding-right: 0;
+            width: 100%;
+        }
+
+    }
+    
     
 }
