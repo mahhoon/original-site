@@ -812,6 +812,15 @@ footer {
   .prsurvice #lecturer_description {
     margin-top: -113px;
     padding-top: 113px; }
+  .prsurvice .flow, .prsurvice .contract {
+    margin-top: 30px; }
+    .prsurvice .flow table tr, .prsurvice .contract table tr {
+      border: 1px solid #26499d; }
+      .prsurvice .flow table tr th, .prsurvice .contract table tr th {
+        width: 200px;
+        padding: 15px; }
+      .prsurvice .flow table tr td, .prsurvice .contract table tr td {
+        padding: 15px; }
 
 .eachsurvice {
   margin-top: 80px;
@@ -849,29 +858,33 @@ footer {
     line-height: 1.5; }
 
 .strong {
-  border: solid 1px #26499d;
-  margin-top: 20px;
-  padding: 20px;
-  text-align: center; }
-  .strong h2 {
-    font-size: 18px;
-    font-size: 1.8rem; }
-  .strong span {
-    color: #26499d;
-    font-weight: bold; }
-
-.case {
-  border: solid 1px #26499d;
   margin-top: 20px;
   padding: 20px; }
-  .case h2 {
+  .strong h2 {
     font-size: 18px;
-    font-size: 1.8rem; }
-  .case h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    position: relative;
+    padding: .5em .75em;
+    background-color: #26499d;
+    border-radius: 6px; }
+  .strong h2::after {
+    position: absolute;
+    top: 100%;
+    left: 30px;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 15px solid #26499d; }
+  .strong h3 {
     font-size: 16px;
     font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-left: 10px; }
+  .strong p {
+    padding-left: 10px; }
 
 /*代表ブログ---------------------------
 ---------------------------------------------------*/
@@ -1425,7 +1438,7 @@ footer {
       display: block;
       width: 50%; }
       #headerwrap #sp_title_logo p {
-        margin-top: 5px;
+        margin-top: 0;
         font-size: 14px;
         font-size: 1.4rem; }
     #headerwrap #head_navi {
@@ -1501,8 +1514,9 @@ footer {
   .wrap_issue {
     display: block;
     height: 240px;
-    padding-top: 10px; }
-    .wrap_issue .issue a {
+    padding: 10px 0;
+    text-align: center; }
+    .wrap_issue .issue {
       text-align: center;
       font-size: 15px;
       font-size: 1.5rem;

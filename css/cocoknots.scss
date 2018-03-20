@@ -1086,6 +1086,25 @@ footer {
             padding-top: 113px;
         }
         
+        .flow , .contract {
+            margin-top: 30px;
+            
+            table {
+
+                tr {
+                    
+                    border: 1px solid $blue1;
+                    th {
+                        width: 200px;
+                        padding: 15px;
+                    }
+                    td {
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+        
     }
 //個別サービスページ
   .eachsurvice {
@@ -1125,31 +1144,40 @@ footer {
       }
   }
   .strong {
-    border: solid 1px $blue1;
-    margin-top: 20px;
-    padding: 20px;
-    text-align: center;
-    h2{
-      @include fontsize(18);
-    }
-    span {
-        color: $blue1;
-        font-weight: bold;
-      }
-  }
-  .case {
-    border: solid 1px $blue1;
     margin-top: 20px;
     padding: 20px;
     h2{
       @include fontsize(18);
+      color: #fff;
+      position: relative;
+      padding: .5em .75em;
+      background-color: $blue1;
+      border-radius: 6px;
     }
+    
+    h2::after {
+      position: absolute;
+      top: 100%;
+      left: 30px;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top: 15px solid $blue1;
+    }
+    
     h3 {
       @include fontsize(16);
       font-weight: bold;
       margin-bottom: 10px;
+      padding-left: 10px;
+    }
+    
+    p {
+        padding-left: 10px;
     }
   }
+ 
 
     
 /*代表ブログ---------------------------
@@ -1893,7 +1921,7 @@ footer {
             display: block;
             width: 50%;
             p {
-                margin-top: 5px;
+                margin-top: 0;
                 @include fontsize(14);
             }
         }
@@ -2004,14 +2032,13 @@ footer {
     .wrap_issue {
         display: block;
         height: 240px;
-        padding-top: 10px;
+        padding: 10px 0;
+        text-align: center;
         
         .issue {
-            a{
             text-align: center;
             @include fontsize(15);
             line-height: 1.2;
-            }
         }
         
         .arrow {
@@ -2021,7 +2048,7 @@ footer {
         
         .letscontact {
             text-align: center;
-            
+
             .underline {
             @include fontsize(18);
             }
