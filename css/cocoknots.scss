@@ -1962,10 +1962,10 @@ footer {
         
         //toggle button(mobile)
         ul.sp_menu_toggle {
-            width: 300px;
+            width: 100%;
             position: absolute;
-            top: 70px;
-            right: 10px;
+            top: 80px;
+            right: 0px;
             text-align: left;
             padding: 0px;
             border: 1px solid #a9a9a9;
@@ -1976,9 +1976,8 @@ footer {
             a {
                 text-decoration: none;
                 display: block;
-                padding: 10px;
-                @include fontsize(16);
-                font-weight: bold;
+                padding: 14px;
+                @include fontsize(14);
                 border-bottom: 1px solid #a9a9a9;
                 color: #524c3e;
             }
@@ -2298,7 +2297,7 @@ footer {
     
     //footer(mobile)
     footer {
-        margin-top: 80px;
+        margin-top: 60px;
 
     #footnavi {
         max-width: 100%;
@@ -2378,9 +2377,60 @@ footer {
     #content {
         display: block;
         
-        .spirit {
+        article {
+            width: 100%;
+        }
+        
+        #sidebar {
+            width: 100%;
+            #sidemenu {
+                margin-left: 0;
+            }
+        }
+        
+        .spirit , .about {
             padding-right: 0;
             width: 100%;
+            h2 {
+                @include fontsize(20);
+                margin: 30px 0 20px;
+            }
+            p {
+                line-height: 1.5;
+            }
+            .require {
+                margin-bottom: 20px;
+                h3 {
+                    @include fontsize(16);
+                }
+                span {
+                    @include fontsize(26);
+                    padding-right: 10px;
+                    padding-left: 5px;
+                }
+            }
+            .companyprofile_wrap {
+                margin-bottom: 50px;
+                .companyprofile {
+                    th {
+                        width: 80px;
+                    }
+                }
+                .map {
+                    height: 250px;
+                    margin: 0;
+                }
+                .accesstext {
+                    padding: 0;
+                }
+                .entrance {
+                    float: none;
+                    margin-bottom: 10px;
+                }
+            }
+            .otoiawase_sp {
+                display: none;
+            }
         }
 
     }

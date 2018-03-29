@@ -1467,10 +1467,10 @@ footer {
           font-size: 1.4rem;
           padding: 5px; }
     #headerwrap ul.sp_menu_toggle {
-      width: 300px;
+      width: 100%;
       position: absolute;
-      top: 70px;
-      right: 10px;
+      top: 80px;
+      right: 0px;
       text-align: left;
       padding: 0px;
       border: 1px solid #a9a9a9;
@@ -1480,10 +1480,9 @@ footer {
       #headerwrap ul.sp_menu_toggle a {
         text-decoration: none;
         display: block;
-        padding: 10px;
-        font-size: 16px;
-        font-size: 1.6rem;
-        font-weight: bold;
+        padding: 14px;
+        font-size: 14px;
+        font-size: 1.4rem;
         border-bottom: 1px solid #a9a9a9;
         color: #524c3e; }
 
@@ -1714,7 +1713,7 @@ footer {
         margin-bottom: 5px; }
 
   footer {
-    margin-top: 80px; }
+    margin-top: 60px; }
     footer #footnavi {
       max-width: 100%;
       margin: 0 auto;
@@ -1771,8 +1770,44 @@ footer {
   /*企業理念ページ以下（mobile）--------------------*/
   #content {
     display: block; }
-    #content .spirit {
+    #content article {
+      width: 100%; }
+    #content #sidebar {
+      width: 100%; }
+      #content #sidebar #sidemenu {
+        margin-left: 0; }
+    #content .spirit, #content .about {
       padding-right: 0;
-      width: 100%; } }
+      width: 100%; }
+      #content .spirit h2, #content .about h2 {
+        font-size: 20px;
+        font-size: 2rem;
+        margin: 30px 0 20px; }
+      #content .spirit p, #content .about p {
+        line-height: 1.5; }
+      #content .spirit .require, #content .about .require {
+        margin-bottom: 20px; }
+        #content .spirit .require h3, #content .about .require h3 {
+          font-size: 16px;
+          font-size: 1.6rem; }
+        #content .spirit .require span, #content .about .require span {
+          font-size: 26px;
+          font-size: 2.6rem;
+          padding-right: 10px;
+          padding-left: 5px; }
+      #content .spirit .companyprofile_wrap, #content .about .companyprofile_wrap {
+        margin-bottom: 50px; }
+        #content .spirit .companyprofile_wrap .companyprofile th, #content .about .companyprofile_wrap .companyprofile th {
+          width: 80px; }
+        #content .spirit .companyprofile_wrap .map, #content .about .companyprofile_wrap .map {
+          height: 250px;
+          margin: 0; }
+        #content .spirit .companyprofile_wrap .accesstext, #content .about .companyprofile_wrap .accesstext {
+          padding: 0; }
+        #content .spirit .companyprofile_wrap .entrance, #content .about .companyprofile_wrap .entrance {
+          float: none;
+          margin-bottom: 10px; }
+      #content .spirit .otoiawase_sp, #content .about .otoiawase_sp {
+        display: none; } }
 
 /*# sourceMappingURL=cocoknots.css.map */
