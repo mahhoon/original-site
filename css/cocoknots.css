@@ -739,8 +739,9 @@ footer {
   .prsurvice .read {
     color: #26499d;
     margin-bottom: 20px;
-    font-size: 18px;
-    font-size: 1.8rem; }
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.5; }
   .prsurvice h2 {
     font-size: 26px;
     font-size: 2.6rem;
@@ -753,6 +754,11 @@ footer {
     color: #26499d;
     line-height: 2;
     font-weight: bold; }
+  .prsurvice h4 {
+    margin: 20px 0 5px;
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #26499d; }
   .prsurvice .survicedescription {
     display: flex;
     flex-wrap: wrap;

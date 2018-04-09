@@ -995,7 +995,8 @@ footer {
         .read {
             color: $blue1;
             margin-bottom: 20px;
-            @include fontsize(18);
+            @include fontsize(20);
+            line-height: 1.5;
         }
         h2 {
             @include fontsize(26);
@@ -1009,6 +1010,11 @@ footer {
             color: $blue1;
             line-height: 2;	
             font-weight: bold;
+        }
+        h4 {
+            margin: 20px 0 5px;
+            @include fontsize(18);
+            color: $blue1;
         }
         .survicedescription {	
             display: flex;	
