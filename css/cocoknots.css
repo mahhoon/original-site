@@ -104,7 +104,7 @@ body {
   z-index: 1000; }
 
 #cover_area {
-  background-image: url("../images/top/knots_coverimage.jpg");
+  background-image: url("../images/top/knots_coverimage2@2x.jpg");
   background-position: center center;
   background-size: cover; }
   #cover_area .cover_content {
@@ -481,7 +481,7 @@ footer {
   height: 200px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .cover_area_about {
-      background-image: url("../images/about/cover_about@2x.jpg"); } }
+      background-image: url("../images/about/spiritheroimage@2x.jpg"); } }
 
 .page_title {
   text-align: center;
@@ -537,23 +537,6 @@ footer {
       text-align: center;
       float: right;
       margin: 30px 0 40px 40px; }
-  #content .spirit .require {
-    margin-bottom: 30px; }
-    #content .spirit .require span {
-      font-size: 22px;
-      font-size: 2.2rem;
-      display: inline;
-      padding-right: 20px;
-      padding-left: 10px; }
-    #content .spirit .require h3 {
-      font-size: 18px;
-      font-size: 1.8rem;
-      display: inline; }
-    #content .spirit .require p {
-      margin-top: 6px;
-      padding-top: 4px;
-      border-top: 1px solid #333;
-      line-height: 1.5; }
 #content .about {
   padding-right: 30px; }
   #content .about .companyprofile_wrap {
@@ -695,7 +678,8 @@ footer {
 .cover_area_survice {
   background-image: url("../images/survice/prsurvicecover.jpg");
   background-size: cover;
-  height: 200px; }
+  height: 200px;
+  opacity: 0.5; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .cover_area_survice {
       background-image: url("../images/survice/prsurvicecover@2x.jpg"); } }
@@ -920,14 +904,18 @@ footer {
           line-height: 1.5; }
 
 .eachsurvice {
-  margin-top: 80px;
+  margin-top: 50px;
   padding-right: 30px; }
+  .eachsurvice .eachsurviceicon {
+    border-right: 1px solid #26499d;
+    margin-right: 20px; }
   .eachsurvice h2 {
     font-size: 30px;
     font-size: 3rem;
     color: #26499d;
     font-weight: bold;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    baseline-shift: 50%; }
   .eachsurvice p {
     font-size: 15px;
     font-size: 1.5rem;
@@ -950,8 +938,8 @@ footer {
     padding-bottom: 5px;
     border-bottom: 1px solid; }
   .more_detailsmenu p {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 1.5; }
 
 .strong {
@@ -1314,6 +1302,11 @@ footer {
     font-size: 2.6rem; }
     #content_whatispr h2 span {
       padding-right: 10px; }
+  #content_whatispr .title2ndlevel {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px; }
   #content_whatispr p {
     font-size: 16px;
     font-size: 1.6rem;
@@ -1332,6 +1325,24 @@ footer {
         padding-left: 20px; }
     #content_whatispr p .bold {
       font-weight: bold; }
+  #content_whatispr .require span {
+    font-size: 18px;
+    font-size: 1.8rem;
+    display: inline;
+    padding-right: 20px;
+    padding-left: 10px; }
+  #content_whatispr .require h3 {
+    font-size: 17px;
+    font-size: 1.7rem;
+    display: inline; }
+  #content_whatispr .require p {
+    margin-top: 6px;
+    margin-bottom: 20px;
+    padding-top: 4px;
+    border-top: 1px solid #333;
+    line-height: 1.5;
+    font-size: 14px;
+    font-size: 1.4rem; }
 
 #content_prqa {
   width: 758px;
