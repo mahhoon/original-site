@@ -476,7 +476,7 @@ footer {
   text-decoration: underline; }
 
 .cover_area_about {
-  background-image: url("../images/about/cover_about.jpg");
+  background-image: url("../images/about/spiritheroimage.jpg");
   background-size: cover;
   height: 200px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -487,7 +487,7 @@ footer {
   text-align: center;
   font-size: 30px;
   font-size: 3rem;
-  color: #fff;
+  color: #26499d;
   font-weight: bold;
   padding-top: 100px;
   letter-spacing: 0.5rem; }
@@ -505,13 +505,14 @@ footer {
 #content .spirit {
   padding-right: 30px; }
   #content .spirit h2 {
-    font-size: 23px;
-    font-size: 2.3rem;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
     color: #26499d;
     line-height: 1.5;
-    border-left: 9px solid #26499d;
-    padding-left: 10px;
-    margin: 60px 0 30px 0; }
+    border-left: 0px dotted #26499d;
+    padding-left: 0;
+    margin: 50px 0 30px 0; }
   #content .spirit p {
     font-size: 15px;
     font-size: 1.5rem;
@@ -531,23 +532,28 @@ footer {
       line-height: 1.5; }
     #content .spirit .yurai h3 {
       font-weight: bold;
-      margin-bottom: 5px; }
+      margin-bottom: 10px; }
+    #content .spirit .yurai img {
+      text-align: center;
+      float: right;
+      margin: 30px 0 40px 40px; }
   #content .spirit .require {
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
     #content .spirit .require span {
-      font-size: 30px;
-      font-size: 3rem;
+      font-size: 22px;
+      font-size: 2.2rem;
       display: inline;
       padding-right: 20px;
       padding-left: 10px; }
     #content .spirit .require h3 {
-      font-size: 20px;
-      font-size: 2rem;
+      font-size: 18px;
+      font-size: 1.8rem;
       display: inline; }
     #content .spirit .require p {
       margin-top: 6px;
       padding-top: 4px;
-      border-top: 1px solid #333; }
+      border-top: 1px solid #333;
+      line-height: 1.5; }
 #content .about {
   padding-right: 30px; }
   #content .about .companyprofile_wrap {
@@ -687,20 +693,17 @@ footer {
 /*サービスページ---------------------------
 ---------------------------------------------------*/
 .cover_area_survice {
-        /*
-        background-image: url("../images/survice/prsurvicecover.jpg");
-        background-size: cover;
-        height: 200px;
-
-        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-          background-image: url("../images/survice/prsurvicecover@2x.jpg");
-        }
-        */ }
+  background-image: url("../images/survice/prsurvicecover.jpg");
+  background-size: cover;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_survice {
+      background-image: url("../images/survice/prsurvicecover@2x.jpg"); } }
   .cover_area_survice .page_title {
     text-align: center;
     font-size: 30px;
     font-size: 3rem;
-    color: #26499d;
+    color: #fdfcf9;
     font-weight: bold;
     padding-top: 100px;
     letter-spacing: 0.5rem; }
@@ -738,47 +741,144 @@ footer {
       background-image: url("../images/survice/crisishero@2x.jpg"); } }
 
 .prsurvice {
-  padding: 60px 30px 0 0; }
-  .prsurvice .survicecategory p {
-    background-color: #8ba4de;
-    color: #fff;
-    margin-bottom: 10px;
-    padding-left: 5px; }
-  .prsurvice .survicecategory .categoryicons {
-    display: flex;
-    flex-wrap: wrap; }
-    .prsurvice .survicecategory .categoryicons li {
-      width: 183px;
-      height: 100px;
-      text-align: center;
-      margin-bottom: 10px; }
-      .prsurvice .survicecategory .categoryicons li img, .prsurvice .survicecategory .categoryicons li a {
-        display: block;
-        text-decoration: none;
-        color: #26499d;
-        font-weight: bold; }
-      .prsurvice .survicecategory .categoryicons li a:hover {
-        background-color: #8ba4de; }
-  .prsurvice .prmenu p {
+  padding: 50px 30px 0 0;
+  /*  ver.1の没部分
+          .survicedescription {	
+              display: flex;	
+              flex-wrap: wrap;	
+              margin-bottom: 100px; 
+              a {	
+                  width: 50%;	
+                  display: block;	
+                  text-decoration: none;	
+                  padding: 5px;	
+                  box-sizing: border-box; 
+              }
+              p {	
+                  color: #333;	
+                  line-height: 1.5; 
+              }
+              li {	
+                  padding: 10px;	
+                  border: 1px solid $blue2;
+              }
+              .corporatepr {	
+                  background-image: url("../images/survice/corporateimage.jpg");	
+                  background-color: rgba(0, 0, 0, 0.5); 
+              }
+              .marketingpr {	
+                  background-image: url("../images/survice/marketingimage.jpg");	
+                  background-color: rgba(0, 0, 0, 0.5); 
+              }
+              .hospitalpr {	
+                  background-image: url("../images/survice/hospitalimage.jpg");	
+                  background-color: rgba(0, 0, 0, 0.5); 
+              }
+              .crisispr {	
+                  background-image: url("../images/survice/crisisimage.jpg");	
+                  background-color: rgba(0, 0, 0, 0.5); 
+              }
+          }
+  */
+  /* ver.1で没になった部分
+           .survicemenu {	
+              overflow: hidden;	
+              margin: 10px 0 30px 0; 
+                  h3 {
+                      @include fontsize(18);
+                      border-color: $blue1;	
+                      border-style: solid;	
+                      border-width: 1px 0;
+                      margin-bottom: 10px;
+                  }
+                  p {
+                      line-height: 1.8;
+                  }
+                  .note {
+                      padding: 20px 0;
+                      color: #26499d;	
+                      font-size: 12px;	
+                      font-size: 1.2rem;
+                  }
+           }
+           .photo_left{
+              img {
+              float: left;	
+              margin: 0 20px 20px 0;
+              }
+              .note {
+                  padding: 10px;	
+                  margin-left: 275px;	
+                  margin-top: 10px;	
+                  background-color: #e6e6e6;	
+                  border-radius: 6px;
+              }
+          }
+          #release_description , #seminar_description , #training_description , 
+          #tour_description , #forum_description , #ad_description , #creative_description , 
+          #lecturer_description {
+              margin-top: -113px;
+              padding-top: 113px;
+          }
+  */ }
+  .prsurvice .read {
     color: #26499d;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.5; }
+  .prsurvice .iconarea {
+    padding: 10px;
+    background-color: #dae2f5;
+    margin: 30px 0; }
+  .prsurvice .survicecategory {
+    margin-bottom: 30px; }
+    .prsurvice .survicecategory h4 {
+      margin: 0 0 10px;
+      color: #333; }
+    .prsurvice .survicecategory .categoryicons {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #fdfcf9;
+      padding: 10px; }
+      .prsurvice .survicecategory .categoryicons li {
+        width: 182px;
+        height: 100px;
+        text-align: center;
+        margin-bottom: 10px; }
+        .prsurvice .survicecategory .categoryicons li img, .prsurvice .survicecategory .categoryicons li a {
+          display: block;
+          text-decoration: none;
+          color: #26499d;
+          font-weight: bold; }
+      .prsurvice .survicecategory .categoryicons li:hover {
+        background-color: #dae2f5; }
+  .prsurvice .prmenu h4 {
+    margin-bottom: 10px;
+    color: #333; }
   .prsurvice .prmenu .prmenuicons {
     display: flex; }
     .prsurvice .prmenu .prmenuicons li {
       width: 127px;
       text-align: center;
-      background-color: #26499d;
-      border-right: 1px solid #fdfcf9;
-      padding: 10px 0; }
+      background-color: #8ba4de;
+      border-right: 2px solid #dae2f5;
+      padding: 20px 0; }
       .prsurvice .prmenu .prmenuicons li a {
         color: #fff;
-        text-decoration: none; }
-  .prsurvice .read {
-    color: #26499d;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-size: 2rem;
-    line-height: 1.5; }
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 1.2; }
+    .prsurvice .prmenu .prmenuicons li:hover {
+      background-color: #547ad5; }
+  .prsurvice .smalltext {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-top: 10px; }
+    .prsurvice .smalltext span {
+      border-bottom: 1px dotted #333; }
   .prsurvice h2 {
     font-size: 26px;
     font-size: 2.6rem;
@@ -792,78 +892,32 @@ footer {
     line-height: 2;
     font-weight: bold; }
   .prsurvice h4 {
-    margin: 20px 0 5px;
-    font-size: 18px;
-    font-size: 1.8rem;
+    margin: 30px 0 5px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
     color: #26499d; }
-  .prsurvice .survicedescription {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 100px; }
-    .prsurvice .survicedescription a {
-      width: 50%;
-      display: block;
+    .prsurvice h4 .linkbutton {
+      font-size: 13px;
+      font-size: 1.3rem;
       text-decoration: none;
-      padding: 5px;
-      box-sizing: border-box; }
-    .prsurvice .survicedescription p {
-      color: #333;
-      line-height: 1.5; }
-    .prsurvice .survicedescription li {
-      padding: 10px;
-      border: 1px solid #8ba4de; }
-    .prsurvice .survicedescription .corporatepr {
-      background-image: url("../images/survice/corporateimage.jpg");
-      background-color: rgba(0, 0, 0, 0.5); }
-    .prsurvice .survicedescription .marketingpr {
-      background-image: url("../images/survice/marketingimage.jpg");
-      background-color: rgba(0, 0, 0, 0.5); }
-    .prsurvice .survicedescription .hospitalpr {
-      background-image: url("../images/survice/hospitalimage.jpg");
-      background-color: rgba(0, 0, 0, 0.5); }
-    .prsurvice .survicedescription .crisispr {
-      background-image: url("../images/survice/crisisimage.jpg");
-      background-color: rgba(0, 0, 0, 0.5); }
-  .prsurvice .survicemenu {
-    overflow: hidden;
-    margin: 10px 0 30px 0; }
-    .prsurvice .survicemenu h3 {
-      font-size: 18px;
-      font-size: 1.8rem;
-      border-color: #26499d;
-      border-style: solid;
-      border-width: 1px 0;
-      margin-bottom: 10px; }
-    .prsurvice .survicemenu p {
-      line-height: 1.8; }
-    .prsurvice .survicemenu .note {
-      padding: 20px 0;
-      color: #26499d;
-      font-size: 12px;
-      font-size: 1.2rem; }
-  .prsurvice .photo_left img {
-    float: left;
-    margin: 0 20px 20px 0; }
-  .prsurvice .photo_left .note {
-    padding: 10px;
-    margin-left: 275px;
-    margin-top: 10px;
-    background-color: #e6e6e6;
-    border-radius: 6px; }
-  .prsurvice #release_description, .prsurvice #seminar_description, .prsurvice #training_description,
-  .prsurvice #tour_description, .prsurvice #forum_description, .prsurvice #ad_description, .prsurvice #creative_description,
-  .prsurvice #lecturer_description {
-    margin-top: -113px;
-    padding-top: 113px; }
-  .prsurvice .flow, .prsurvice .contract {
-    margin-top: 30px; }
-    .prsurvice .flow table tr, .prsurvice .contract table tr {
-      border: 1px solid #26499d; }
-      .prsurvice .flow table tr th, .prsurvice .contract table tr th {
-        width: 200px;
-        padding: 15px; }
-      .prsurvice .flow table tr td, .prsurvice .contract table tr td {
-        padding: 15px; }
+      padding: 0 5px; }
+  .prsurvice #flow, .prsurvice #contract {
+    margin-top: 50px; }
+    .prsurvice #flow table, .prsurvice #contract table {
+      margin-bottom: 20px; }
+      .prsurvice #flow table tr, .prsurvice #contract table tr {
+        border: 2px solid #26499d; }
+        .prsurvice #flow table tr th, .prsurvice #contract table tr th {
+          width: 200px;
+          padding: 15px;
+          vertical-align: middle;
+          border-right: 1px solid #26499d;
+          background-color: #8ba4de;
+          color: #fff; }
+        .prsurvice #flow table tr td, .prsurvice #contract table tr td {
+          padding: 15px;
+          line-height: 1.5; }
 
 .eachsurvice {
   margin-top: 80px;
