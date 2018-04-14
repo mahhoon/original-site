@@ -650,6 +650,7 @@ footer {
     }
 
 //カバーエリア
+    
     .cover_area_about {
         background-image: url("../images/about/cover_about.jpg");
         background-size: cover;
@@ -659,6 +660,7 @@ footer {
           background-image: url("../images/about/cover_about@2x.jpg");
         }
     }
+    
     .page_title {
         text-align: center;
         @include fontsize(30);
@@ -936,6 +938,7 @@ footer {
 ---------------------------------------------------*/
 //カバーエリア
     .cover_area_survice {
+        /*
         background-image: url("../images/survice/prsurvicecover.jpg");
         background-size: cover;
         height: 200px;
@@ -943,11 +946,12 @@ footer {
         @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
           background-image: url("../images/survice/prsurvicecover@2x.jpg");
         }
+        */
         
         .page_title {
             text-align: center;
             @include fontsize(30);
-            color: #fff;
+            color: $blue1;
             font-weight: bold;
             padding-top: 100px;
             letter-spacing: 0.5rem;
@@ -992,6 +996,54 @@ footer {
 //PRサービス全体ページ    
     .prsurvice {
         padding: 60px 30px 0 0;
+        .survicecategory {
+            p {
+                background-color: $blue2;
+                color: #fff;
+                margin-bottom: 10px;
+                padding-left: 5px;
+            }
+            .categoryicons {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 183px;
+                    height: 100px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    img , a {
+                        display: block;
+                        text-decoration: none;
+                        color: $blue1;
+                        font-weight: bold;
+                    }
+                    a:hover {
+                        background-color: $blue2;
+                    }
+                }
+            }
+        }
+        .prmenu {
+            p {
+                color: $blue1;
+                font-weight: bold;
+            }
+            .prmenuicons {
+                display: flex;
+                li {
+                    width: 127px;
+                    text-align: center;
+                    background-color: $blue1;
+                    border-right: 1px solid $base_white;
+                    padding: 10px 0;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    
+                }
+            }
+        }
         .read {
             color: $blue1;
             margin-bottom: 20px;

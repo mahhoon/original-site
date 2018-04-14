@@ -687,17 +687,20 @@ footer {
 /*サービスページ---------------------------
 ---------------------------------------------------*/
 .cover_area_survice {
-  background-image: url("../images/survice/prsurvicecover.jpg");
-  background-size: cover;
-  height: 200px; }
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_survice {
-      background-image: url("../images/survice/prsurvicecover@2x.jpg"); } }
+        /*
+        background-image: url("../images/survice/prsurvicecover.jpg");
+        background-size: cover;
+        height: 200px;
+
+        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+          background-image: url("../images/survice/prsurvicecover@2x.jpg");
+        }
+        */ }
   .cover_area_survice .page_title {
     text-align: center;
     font-size: 30px;
     font-size: 3rem;
-    color: #fff;
+    color: #26499d;
     font-weight: bold;
     padding-top: 100px;
     letter-spacing: 0.5rem; }
@@ -736,6 +739,40 @@ footer {
 
 .prsurvice {
   padding: 60px 30px 0 0; }
+  .prsurvice .survicecategory p {
+    background-color: #8ba4de;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-left: 5px; }
+  .prsurvice .survicecategory .categoryicons {
+    display: flex;
+    flex-wrap: wrap; }
+    .prsurvice .survicecategory .categoryicons li {
+      width: 183px;
+      height: 100px;
+      text-align: center;
+      margin-bottom: 10px; }
+      .prsurvice .survicecategory .categoryicons li img, .prsurvice .survicecategory .categoryicons li a {
+        display: block;
+        text-decoration: none;
+        color: #26499d;
+        font-weight: bold; }
+      .prsurvice .survicecategory .categoryicons li a:hover {
+        background-color: #8ba4de; }
+  .prsurvice .prmenu p {
+    color: #26499d;
+    font-weight: bold; }
+  .prsurvice .prmenu .prmenuicons {
+    display: flex; }
+    .prsurvice .prmenu .prmenuicons li {
+      width: 127px;
+      text-align: center;
+      background-color: #26499d;
+      border-right: 1px solid #fdfcf9;
+      padding: 10px 0; }
+      .prsurvice .prmenu .prmenuicons li a {
+        color: #fff;
+        text-decoration: none; }
   .prsurvice .read {
     color: #26499d;
     margin-bottom: 20px;
