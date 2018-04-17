@@ -678,8 +678,7 @@ footer {
 .cover_area_survice {
   background-image: url("../images/survice/prsurvicecover.jpg");
   background-size: cover;
-  height: 200px;
-  opacity: 0.5; }
+  height: 200px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .cover_area_survice {
       background-image: url("../images/survice/prsurvicecover@2x.jpg"); } }
@@ -692,119 +691,8 @@ footer {
     padding-top: 100px;
     letter-spacing: 0.5rem; }
 
-.cover_area_corporatepr {
-  background-image: url("../images/survice/corporatehero.jpg");
-  background-size: cover;
-  height: 200px; }
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_corporatepr {
-      background-image: url("../images/survice/corporatehero@2x.jpg"); } }
-
-.cover_area_marketingpr {
-  background-image: url("../images/survice/marketinghero.jpg");
-  background-size: cover;
-  height: 200px; }
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_marketingpr {
-      background-image: url("../images/survice/marketinghero@2x.jpg"); } }
-
-.cover_area_hospitalpr {
-  background-image: url("../images/survice/hospitalhero.jpg");
-  background-size: cover;
-  height: 200px; }
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_hospitalpr {
-      background-image: url("../images/survice/hospitalhero@2x.jpg"); } }
-
-.cover_area_crisispr {
-  background-image: url("../images/survice/crisishero.jpg");
-  background-size: cover;
-  height: 200px; }
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_crisispr {
-      background-image: url("../images/survice/crisishero@2x.jpg"); } }
-
 .prsurvice {
-  padding: 50px 30px 0 0;
-  /*  ver.1の没部分
-          .survicedescription {	
-              display: flex;	
-              flex-wrap: wrap;	
-              margin-bottom: 100px; 
-              a {	
-                  width: 50%;	
-                  display: block;	
-                  text-decoration: none;	
-                  padding: 5px;	
-                  box-sizing: border-box; 
-              }
-              p {	
-                  color: #333;	
-                  line-height: 1.5; 
-              }
-              li {	
-                  padding: 10px;	
-                  border: 1px solid $blue2;
-              }
-              .corporatepr {	
-                  background-image: url("../images/survice/corporateimage.jpg");	
-                  background-color: rgba(0, 0, 0, 0.5); 
-              }
-              .marketingpr {	
-                  background-image: url("../images/survice/marketingimage.jpg");	
-                  background-color: rgba(0, 0, 0, 0.5); 
-              }
-              .hospitalpr {	
-                  background-image: url("../images/survice/hospitalimage.jpg");	
-                  background-color: rgba(0, 0, 0, 0.5); 
-              }
-              .crisispr {	
-                  background-image: url("../images/survice/crisisimage.jpg");	
-                  background-color: rgba(0, 0, 0, 0.5); 
-              }
-          }
-  */
-  /* ver.1で没になった部分
-           .survicemenu {	
-              overflow: hidden;	
-              margin: 10px 0 30px 0; 
-                  h3 {
-                      @include fontsize(18);
-                      border-color: $blue1;	
-                      border-style: solid;	
-                      border-width: 1px 0;
-                      margin-bottom: 10px;
-                  }
-                  p {
-                      line-height: 1.8;
-                  }
-                  .note {
-                      padding: 20px 0;
-                      color: #26499d;	
-                      font-size: 12px;	
-                      font-size: 1.2rem;
-                  }
-           }
-           .photo_left{
-              img {
-              float: left;	
-              margin: 0 20px 20px 0;
-              }
-              .note {
-                  padding: 10px;	
-                  margin-left: 275px;	
-                  margin-top: 10px;	
-                  background-color: #e6e6e6;	
-                  border-radius: 6px;
-              }
-          }
-          #release_description , #seminar_description , #training_description , 
-          #tour_description , #forum_description , #ad_description , #creative_description , 
-          #lecturer_description {
-              margin-top: -113px;
-              padding-top: 113px;
-          }
-  */ }
+  padding: 50px 30px 0 0; }
   .prsurvice .read {
     color: #26499d;
     font-weight: bold;
@@ -906,40 +794,45 @@ footer {
 .eachsurvice {
   margin-top: 50px;
   padding-right: 30px; }
-  .eachsurvice .eachsurviceicon {
-    border-right: 1px solid #26499d;
-    margin-right: 20px; }
   .eachsurvice h2 {
     font-size: 30px;
     font-size: 3rem;
     color: #26499d;
     font-weight: bold;
-    margin-bottom: 20px;
-    baseline-shift: 50%; }
-  .eachsurvice p {
-    font-size: 15px;
-    font-size: 1.5rem;
-    line-height: 2; }
+    margin: 20px 0 40px; }
+  .eachsurvice h3 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    color: #26499d;
+    margin-bottom: 20px; }
+  .eachsurvice .category_midashi {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #26499d;
+    line-height: 1.5; }
 
 .more_detailsmenu {
   background-color: #8ba4de;
   padding: 10px;
   margin-top: 40px; }
   .more_detailsmenu ul li {
-    background-color: #fff;
-    padding: 20px;
+    background-color: #fdfcf9;
+    padding: 15px;
     margin-bottom: 10px; }
   .more_detailsmenu h2 {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 17px;
+    font-size: 1.7rem;
     color: #26499d;
     font-weight: bold;
     margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid; }
+    padding-left: 5px;
+    border-left: 5px solid #26499d; }
+    .more_detailsmenu h2 a {
+      text-decoration: none;
+      color: #26499d; }
   .more_detailsmenu p {
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5; }
 
 .strong {
