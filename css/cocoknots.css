@@ -104,35 +104,46 @@ body {
   z-index: 1000; }
 
 #cover_area {
-  background-image: url("../images/top/knots_coverimage2@2x.jpg");
+  background-image: url("../images/top/people.jpg");
   background-position: center center;
-  background-size: cover; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
   #cover_area .cover_content {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
-    height: 426px; }
+    height: 426px;
+    /*
+    .seal {
+    text-align: right;
+    
+        .seal_sp {
+            display: none;
+        }
+    }
+    */ }
     #cover_area .cover_content .cover_title {
-      padding-top: 40px; }
-      #cover_area .cover_content .cover_title .readmore {
-        background-color: #26499d;
-        padding-top: 6px;
-        text-decoration: none;
-        color: #fff;
-        border-radius: 10px;
-        font-size: 14px;
-        font-size: 1.4rem;
-        display: block;
-        width: 100px;
-        height: 20px;
-        text-align: center;
-        margin-top: 10px; }
-      #cover_area .cover_content .cover_title a:hover {
-        background-color: #8ba4de; }
-    #cover_area .cover_content .seal {
-      text-align: right; }
-      #cover_area .cover_content .seal .seal_sp {
-        display: none; }
+      padding-top: 40px;
+      text-align: center;
+      /*
+      .readmore {
+          background-color: $blue1;
+          padding-top: 6px;
+          text-decoration: none;
+          color: #fff;
+          border-radius: 10px;
+          @include fontsize(14);
+          display: block;
+          width: 100px;
+          height: 20px;
+          text-align: center;
+          margin-top: 10px;
+      }
+      
+      a:hover{
+          background-color: $blue2;
+      }
+      */ }
 
 #from_issue {
   background-color: #8ba4de; }
@@ -799,7 +810,7 @@ footer {
     font-size: 3rem;
     color: #26499d;
     font-weight: bold;
-    margin: 20px 0 40px; }
+    margin-bottom: 40px; }
   .eachsurvice h3 {
     font-size: 24px;
     font-size: 2.4rem;

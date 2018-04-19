@@ -152,9 +152,10 @@ body{
 //cover area
 
     #cover_area {
-        background-image: url("../images/top/knots_coverimage2@2x.jpg");
+        background-image: url("../images/top/people.jpg");
         background-position: center center;
-        background-size: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
         
         .cover_content {
             width: 96%;
@@ -164,7 +165,9 @@ body{
             
             .cover_title {
                 padding-top: 40px;
+                text-align: center;
                 
+                /*
                 .readmore {
                     background-color: $blue1;
                     padding-top: 6px;
@@ -182,8 +185,10 @@ body{
                 a:hover{
                     background-color: $blue2;
                 }
+                */
             }
             
+            /*
             .seal {
             text-align: right;
             
@@ -191,6 +196,7 @@ body{
                     display: none;
                 }
             }
+            */
         }
     }
 
@@ -1085,7 +1091,7 @@ footer {
         @include fontsize(30);
         color: $blue1;
         font-weight: bold;
-        margin: 20px 0 40px;
+        margin-bottom: 40px;
       }
       
       h3 {
