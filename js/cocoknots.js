@@ -11,14 +11,18 @@ $(function(){
 
 /*グロナビ固定*/
 
-$(function(){
+$(function() {
     var nav = $('#header'),
-	offset = nav.offset();
+    //navの位置
+	navTOP = nav.offset().top;
+	//スクロールするたびに実行
 	$(window).scroll(function () {
-	  if($(window).scrollTop() > offset.top) {
-	    nav.addClass('fixed');
-	  } else {
-	    nav.removeClass('fixed');
+	    var winTOP=$(this).scrollTop();
+	    //スクロールの位置がnavの位置より下だったらクラスfixedを追加
+	  if(winTop>=navTop) {
+	      nav.addClass('.fixed')
+	  } else if(winTop<=navTop) {
+	    nav.removeClass('fixed')
 	  }
 	});
 });
