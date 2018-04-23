@@ -111,7 +111,9 @@ body {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
+    padding-left: 300px;
     height: 426px;
+    display: flex;
     /*
     .seal {
     text-align: right;
@@ -123,7 +125,6 @@ body {
     */ }
     #cover_area .cover_content .cover_title {
       padding-top: 30px;
-      text-align: center;
       /*
       .readmore {
           background-color: $blue1;
@@ -149,6 +150,8 @@ body {
       font-weight: bold;
       font-size: 13px;
       font-size: 1.3rem; }
+    #cover_area .cover_content .pr3seal_pc {
+      margin-top: 10px; }
 
 #from_issue {
   background-color: #8ba4de; }
@@ -176,6 +179,10 @@ body {
       text-decoration: none;
       line-height: 1.5;
       color: #fff; }
+    .wrap_issue .letscontact a:hover {
+      color: #26499d; }
+      .wrap_issue .letscontact a:hover .underline {
+        border-bottom: 3px solid #26499d; }
   .wrap_issue .underline {
     font-size: 18px;
     font-size: 1.8rem;
@@ -238,11 +245,11 @@ body {
 #detail_button {
   text-decoration: none;
   color: #333;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 13px;
+  font-size: 1.3rem;
   display: block;
-  width: 200px;
-  height: 20px;
+  width: 180px;
+  height: 18px;
   margin: 10px auto 30px;
   padding: 7px 0 0 0;
   border: 1px solid #333;
@@ -304,67 +311,82 @@ body {
     }
 }
 */
+/*
+// トップページおすすめ
 #recommend {
-  background-color: none; }
-  #recommend a {
-    text-decoration: none;
-    color: #333; }
+    background-color: none;
+    
+    a{
+        text-decoration: none;
+        color: #333;
+    }
+}
 
 .recommends_wrap {
-  width: 98%;
-  max-width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between; }
-  .recommends_wrap .content_thumbnail_1, .recommends_wrap .content_thumbnail_2, .recommends_wrap .content_thumbnail_3 {
-    width: 33.33%;
-    margin: 20px 10px;
-    background-color: #fff;
-    box-shadow: 1px 1px 8px #a6a6a6; }
-    .recommends_wrap .content_thumbnail_1 .content_thumbnail_image, .recommends_wrap .content_thumbnail_2 .content_thumbnail_image, .recommends_wrap .content_thumbnail_3 .content_thumbnail_image {
-      height: 130px;
-      text-align: center; }
-      .recommends_wrap .content_thumbnail_1 .content_thumbnail_image img, .recommends_wrap .content_thumbnail_2 .content_thumbnail_image img, .recommends_wrap .content_thumbnail_3 .content_thumbnail_image img {
-        max-width: 100%; }
-    .recommends_wrap .content_thumbnail_1 h3, .recommends_wrap .content_thumbnail_2 h3, .recommends_wrap .content_thumbnail_3 h3 {
-      font-size: 16px;
-      font-size: 1.6rem;
-      padding: 20px 0 10px;
-      height: 20px;
-      text-align: center;
-      line-height: 1.2; }
-    .recommends_wrap .content_thumbnail_1 P, .recommends_wrap .content_thumbnail_2 P, .recommends_wrap .content_thumbnail_3 P {
-      padding: 20px;
-      line-height: 1.5;
-      font-size: 13px;
-      font-size: 1.3rem; }
-  .recommends_wrap .ribbon_over {
-    position: relative; }
-  .recommends_wrap p.ribbon {
-    position: absolute;
-    padding: 2px;
-    top: 4px;
-    left: -8px;
-    background-color: #26499d;
-    color: #fff;
-    font-size: 12px;
-    font-size: 1.2rem; }
-  .recommends_wrap p.ribbon:before {
-    position: absolute;
-    content: '';
-    top: 100%;
-    left: 0;
-    border: none;
-    border-bottom: solid 10px transparent;
-    border-right: solid 8px black; }
+    width: 98%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+    .content_thumbnail_1,.content_thumbnail_2,.content_thumbnail_3 {
+            width: 33.33%;
+            margin: 20px 10px;
+            background-color: #fff;
+            box-shadow: 1px 1px 8px #a6a6a6;
+            
+            .content_thumbnail_image {
+                height: 130px;
+                text-align: center;
+                img {
+                    max-width: 100%;
+                }
+            }
+            
+            h3 {
+                @include fontsize(16);
+                padding: 20px 0 10px;
+                height: 20px;
+                text-align: center;
+                line-height: 1.2;
+            }
+            P {
+                padding: 20px;
+                line-height: 1.5;
+                @include fontsize(13);
+            }
+    }
+    .ribbon_over {
+        position: relative;
+    }
+    p.ribbon {
+        position: absolute;
+        padding: 2px;
+        top: 4px;
+        left: -8px;
+        background-color: $blue1;
+        color: #fff;
+        @include fontsize(12);
+    }
+    p.ribbon:before {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 0;
+        border: none;
+        border-bottom: solid 10px transparent;
+        border-right: solid 8px darken($blue1 , 50%);
+    }
+}
 
 .recommends_wrap_sp {
-  display: none; }
-
+    display: none;
+}
+*/
 #news {
   width: 96%;
   max-width: 1024px;
-  margin: 50px auto 80px;
+  margin: 100px auto 80px;
   text-align: center; }
   #news .news_table {
     text-align: left;
@@ -708,120 +730,174 @@ footer {
 /*サービスページ---------------------------
 ---------------------------------------------------*/
 .cover_area_survice {
-  background-image: url("../images/survice/prsurvicecover.jpg");
+  /*
+  background-image: url("../images/survice/survicetopimage.jpg");
   background-size: cover;
-  height: 150px; }
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_survice {
-      background-image: url("../images/survice/prsurvicecover@2x.jpg"); } }
+  */
+  height: 150px;
+  background-color: #dae2f5;
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+    background-image: url("../images/survice/survicetopimage@2x.jpg");
+  }
+  */ }
   .cover_area_survice .page_title {
     text-align: center;
     font-size: 30px;
     font-size: 3rem;
-    color: #fdfcf9;
+    color: #26499d;
     font-weight: bold;
     padding-top: 100px;
     letter-spacing: 0.5rem; }
 
-.prsurvice {
+.prsurvice, .prmenu_content {
   padding: 50px 30px 0 0; }
-  .prsurvice .read {
+  .prsurvice .read, .prmenu_content .read {
     color: #26499d;
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 20px;
     font-size: 2rem;
     line-height: 1.5; }
-  .prsurvice .iconarea {
+  .prsurvice .iconarea, .prmenu_content .iconarea {
     padding: 10px;
     background-color: #dae2f5;
     margin: 30px 0; }
-  .prsurvice .survicecategory {
+  .prsurvice .survicecategory, .prmenu_content .survicecategory {
     margin-bottom: 30px; }
-    .prsurvice .survicecategory h4 {
+    .prsurvice .survicecategory h4, .prmenu_content .survicecategory h4 {
       margin: 0 0 10px;
       color: #333; }
-    .prsurvice .survicecategory .categoryicons {
+    .prsurvice .survicecategory .categoryicons, .prmenu_content .survicecategory .categoryicons {
       display: flex;
       flex-wrap: wrap;
       background-color: #fdfcf9;
-      padding: 10px; }
-      .prsurvice .survicecategory .categoryicons li {
+      padding: 5px; }
+      .prsurvice .survicecategory .categoryicons li, .prmenu_content .survicecategory .categoryicons li {
         width: 182px;
         height: 100px;
         text-align: center;
         margin-bottom: 10px; }
-        .prsurvice .survicecategory .categoryicons li img, .prsurvice .survicecategory .categoryicons li a {
+        .prsurvice .survicecategory .categoryicons li img, .prsurvice .survicecategory .categoryicons li a, .prmenu_content .survicecategory .categoryicons li img, .prmenu_content .survicecategory .categoryicons li a {
           display: block;
           text-decoration: none;
           color: #26499d;
           font-weight: bold; }
-      .prsurvice .survicecategory .categoryicons li:hover {
+      .prsurvice .survicecategory .categoryicons li:hover, .prmenu_content .survicecategory .categoryicons li:hover {
         background-color: #dae2f5; }
-  .prsurvice .prmenu h4 {
+  .prsurvice .prmenu h4, .prmenu_content .prmenu h4 {
     margin-bottom: 10px;
     color: #333; }
-  .prsurvice .prmenu .prmenuicons {
-    display: flex; }
-    .prsurvice .prmenu .prmenuicons li {
-      width: 127px;
-      text-align: center;
-      background-color: #8ba4de;
-      border-right: 2px solid #dae2f5;
-      padding: 20px 0; }
-      .prsurvice .prmenu .prmenuicons li a {
-        color: #fff;
+    .prsurvice .prmenu h4 span, .prmenu_content .prmenu h4 span {
+      font-size: 13px;
+      font-size: 1.3rem;
+      font-weight: normal;
+      margin-left: 5px;
+      color: #26499d; }
+  .prsurvice .prmenu .prmenuicons, .prmenu_content .prmenu .prmenuicons {
+    background-color: #fdfcf9;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px; }
+    .prsurvice .prmenu .prmenuicons li, .prmenu_content .prmenu .prmenuicons li {
+      width: 31%;
+      padding: 5px; }
+      .prsurvice .prmenu .prmenuicons li a, .prmenu_content .prmenu .prmenuicons li a {
+        color: #26499d;
         text-decoration: none;
-        font-weight: bold;
-        line-height: 1.2; }
-    .prsurvice .prmenu .prmenuicons li:hover {
-      background-color: #547ad5; }
-  .prsurvice .smalltext {
+        line-height: 1.2;
+        font-size: 14px;
+        font-size: 1.4rem; }
+      .prsurvice .prmenu .prmenuicons li a:hover, .prmenu_content .prmenu .prmenuicons li a:hover {
+        text-decoration: underline; }
+  .prsurvice .smalltext, .prmenu_content .smalltext {
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.5;
     margin-top: 10px; }
-    .prsurvice .smalltext span {
+    .prsurvice .smalltext span, .prmenu_content .smalltext span {
       border-bottom: 1px dotted #333; }
-  .prsurvice h2 {
+  .prsurvice h2, .prmenu_content h2 {
     font-size: 26px;
     font-size: 2.6rem;
     margin-bottom: 5px; }
-    .prsurvice h2 span {
+    .prsurvice h2 span, .prmenu_content h2 span {
       padding-right: 10px; }
-  .prsurvice h3 {
+  .prsurvice h3, .prmenu_content h3 {
     font-size: 20px;
     font-size: 2rem;
     color: #26499d;
     line-height: 2;
     font-weight: bold; }
-  .prsurvice h4 {
+  .prsurvice h4, .prmenu_content h4 {
     margin: 30px 0 5px;
     font-size: 16px;
     font-size: 1.6rem;
     font-weight: bold;
     color: #26499d; }
-    .prsurvice h4 .linkbutton {
-      font-size: 13px;
-      font-size: 1.3rem;
+    .prsurvice h4 .linkbutton, .prmenu_content h4 .linkbutton {
+      font-size: 12px;
+      font-size: 1.2rem;
       text-decoration: none;
-      padding: 0 5px; }
-  .prsurvice #flow, .prsurvice #contract {
+      padding: 2px 10px 0;
+      color: #26499d; }
+    .prsurvice h4 a:hover.linkbutton, .prmenu_content h4 a:hover.linkbutton {
+      background-color: #dae2f5; }
+  .prsurvice #flow, .prsurvice #contract, .prmenu_content #flow, .prmenu_content #contract {
     margin-top: 50px; }
-    .prsurvice #flow table, .prsurvice #contract table {
+    .prsurvice #flow table, .prsurvice #contract table, .prmenu_content #flow table, .prmenu_content #contract table {
       margin-bottom: 20px; }
-      .prsurvice #flow table tr, .prsurvice #contract table tr {
+      .prsurvice #flow table tr, .prsurvice #contract table tr, .prmenu_content #flow table tr, .prmenu_content #contract table tr {
         border: 2px solid #26499d; }
-        .prsurvice #flow table tr th, .prsurvice #contract table tr th {
+        .prsurvice #flow table tr th, .prsurvice #contract table tr th, .prmenu_content #flow table tr th, .prmenu_content #contract table tr th {
           width: 200px;
           padding: 15px;
           vertical-align: middle;
           border-right: 1px solid #26499d;
           background-color: #8ba4de;
           color: #fff; }
-        .prsurvice #flow table tr td, .prsurvice #contract table tr td {
+        .prsurvice #flow table tr td, .prsurvice #contract table tr td, .prmenu_content #flow table tr td, .prmenu_content #contract table tr td {
           padding: 15px;
           line-height: 1.5; }
+
+.survicemenu_wrap {
+  margin-top: 60px; }
+
+.prmenu_content h4 {
+  margin-top: 10px; }
+.prmenu_content .read {
+  font-size: 17px;
+  font-size: 1.7rem; }
+.prmenu_content .survicemenu {
+  overflow: hidden;
+  margin: 10px 0 30px 0; }
+  .prmenu_content .survicemenu h3 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    border-color: #26499d;
+    border-style: solid;
+    border-width: 1px 1px 0 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    line-height: 1.8; }
+  .prmenu_content .survicemenu p {
+    line-height: 1.8;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .prmenu_content .survicemenu .note {
+    padding: 20px 0;
+    color: #26499d;
+    font-size: 12px;
+    font-size: 1.2rem; }
+.prmenu_content .photo_left img {
+  float: left;
+  margin: 0 20px 20px 0; }
+.prmenu_content .photo_left .note {
+  padding: 10px;
+  margin-left: 275px;
+  margin-top: 10px;
+  background-color: #e6e6e6;
+  border-radius: 6px; }
 
 .eachsurvice {
   margin-top: 50px;
