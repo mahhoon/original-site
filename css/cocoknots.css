@@ -719,13 +719,18 @@ footer {
   #sidebar #sidemenu a:hover li {
     background-color: #ededed; }
   #sidebar #sidemenu .sidemenucate1 {
-    background-color: #cfd9f3;
+    background-color: #a9a9a9;
     padding: 10px 5px;
-    border: none; }
+    border: none;
+    color: #fff; }
   #sidebar #sidemenu .sidemenucate2 {
     background-color: #cfd9f3;
     padding: 10px 5px;
     border: 1px solid #fff; }
+  #sidebar #sidemenu .sidemenucate3 {
+    background-color: #cfd9f3;
+    padding: 10px 5px;
+    border-bottom: 1px solid #fff; }
 
 /*サービスページ---------------------------
 ---------------------------------------------------*/
@@ -903,7 +908,9 @@ footer {
   margin-top: 50px;
   padding-right: 30px; }
   .eachsurvice .eachsurvice_title .eachsurvice_image {
-    float: right; }
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px; }
   .eachsurvice .eachsurvice_title h2 {
     font-size: 30px;
     font-size: 3rem;
@@ -918,10 +925,11 @@ footer {
   .eachsurvice .eachsurvice_title .category_read {
     clear: both;
     padding-top: 10px;
-    font-size: 18px;
-    font-size: 1.8rem;
-    color: #26499d;
-    line-height: 1.5; }
+    font-size: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.8;
+    border-top: 2px dashed #26499d; }
 
 .more_detailsmenu {
   background-color: #8ba4de;
@@ -943,8 +951,8 @@ footer {
       text-decoration: none;
       color: #26499d; }
   .more_detailsmenu p {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 1.5; }
 
 .strong {
@@ -1260,10 +1268,12 @@ footer {
 .cover_area_whatispr {
   background-image: url("../images/whatispr/whatisprcover.jpg");
   background-size: cover;
-  height: 200px; }
+  height: 150px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .cover_area_whatispr {
       background-image: url("../images/whatispr/whatisprcover@2x.jpg"); } }
+  .cover_area_whatispr h2 {
+    color: #fff; }
 
 .whatispr_navi_area {
   background-color: #26499d;
@@ -1434,8 +1444,8 @@ footer {
   width: 758px;
   margin: 50px auto; }
   #content_pr3 h2, .qs_read h2 {
-    font-size: 50px;
-    font-size: 5rem;
+    font-size: 30px;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 30px; }
   #content_pr3 .small, .qs_read .small {
