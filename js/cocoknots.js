@@ -12,19 +12,18 @@ $(function(){
 /*グロナビ固定*/
 
 $(function() {
-    var nav = $('#header'),
-    //navの位置
-	navTOP = nav.offset().top;
-	//スクロールするたびに実行
-	$(window).scroll(function () {
-	    var winTOP=$(this).scrollTop();
-	    //スクロールの位置がnavの位置より下だったらクラスfixedを追加
-	  if(winTop>=navTop) {
-	      nav.addClass('.fixed')
-	  } else if(winTop<=navTop) {
-	    nav.removeClass('fixed')
-	  }
-	});
+var bt = $("#header").offset().top; 
+var ds = 0;
+ 
+$(document).scroll(function(){ 
+    ds = $(this).scrollTop(); 
+ 
+    if (bt <= ds) {  
+        $("#header").addClass('.fixed'); 
+    } else if (bt >= ds) { 
+        $("#header").removeClass('.fixed'); 
+    }
+    });
 });
 
 /*サイドナビ固定
@@ -43,14 +42,7 @@ $(function() {
     main = $('#content'), //固定する要素を収める範囲
      sideTop = side.offset().top;
      fixTop = fix.offset().top,
-     mainTop = main.offset().top,
-     w = $(window);
-      
-     var adjust = function(){
-     fixTop = fix.css('position') === 'static' ? sideTop + fix.position().top : fixTop;
-     var fixHeight = fix.outerHeight(true),
-     mainHeight = main.outerHeight(),
-     winTop = w.scrollTop();
+     PRsa-bisu 
      if(winTop + fixHeight > mainTop + mainHeight){
      fix.css({
      position: 'absolute',
@@ -70,29 +62,9 @@ $(function() {
  */
  
  /*toggle button*/
+ 
  $(document).ready(function(){
   $(".menu_icon").click(function(){
     $(".sp_menu_toggle").slideToggle();
   });
 });
-
-
-<!-- スムーズスクロール部分の記述 -->
-<script>
-$(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 400; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
