@@ -776,7 +776,7 @@ footer {
       background-color: #fdfcf9;
       padding: 5px; }
       .prsurvice .survicecategory .categoryicons li, .prmenu_content .survicecategory .categoryicons li {
-        width: 179px;
+        width: 178px;
         height: 100px;
         text-align: center;
         margin-bottom: 10px; }
@@ -819,6 +819,8 @@ footer {
     margin-top: 10px; }
     .prsurvice .smalltext span, .prmenu_content .smalltext span {
       border-bottom: 1px dotted #333; }
+    .prsurvice .smalltext .midashi, .prmenu_content .smalltext .midashi {
+      font-weight: bold; }
   .prsurvice h2, .prmenu_content h2 {
     font-size: 26px;
     font-size: 2.6rem;
@@ -845,22 +847,26 @@ footer {
       color: #26499d; }
     .prsurvice h4 a:hover.linkbutton, .prmenu_content h4 a:hover.linkbutton {
       background-color: #dae2f5; }
-  .prsurvice #flow, .prsurvice #contract, .prmenu_content #flow, .prmenu_content #contract {
+  .prsurvice #flow_pc, .prsurvice #contract, .prmenu_content #flow_pc, .prmenu_content #contract {
     margin-top: 50px; }
-    .prsurvice #flow table, .prsurvice #contract table, .prmenu_content #flow table, .prmenu_content #contract table {
+    .prsurvice #flow_pc img, .prsurvice #contract img, .prmenu_content #flow_pc img, .prmenu_content #contract img {
+      max-width: 100%; }
+    .prsurvice #flow_pc table, .prsurvice #contract table, .prmenu_content #flow_pc table, .prmenu_content #contract table {
       margin-bottom: 20px; }
-      .prsurvice #flow table tr, .prsurvice #contract table tr, .prmenu_content #flow table tr, .prmenu_content #contract table tr {
+      .prsurvice #flow_pc table tr, .prsurvice #contract table tr, .prmenu_content #flow_pc table tr, .prmenu_content #contract table tr {
         border: 2px solid #26499d; }
-        .prsurvice #flow table tr th, .prsurvice #contract table tr th, .prmenu_content #flow table tr th, .prmenu_content #contract table tr th {
+        .prsurvice #flow_pc table tr th, .prsurvice #contract table tr th, .prmenu_content #flow_pc table tr th, .prmenu_content #contract table tr th {
           width: 200px;
           padding: 15px;
           vertical-align: middle;
           border-right: 1px solid #26499d;
           background-color: #8ba4de;
           color: #fff; }
-        .prsurvice #flow table tr td, .prsurvice #contract table tr td, .prmenu_content #flow table tr td, .prmenu_content #contract table tr td {
+        .prsurvice #flow_pc table tr td, .prsurvice #contract table tr td, .prmenu_content #flow_pc table tr td, .prmenu_content #contract table tr td {
           padding: 15px;
           line-height: 1.5; }
+  .prsurvice #flow_sp, .prmenu_content #flow_sp {
+    display: none; }
 
 .survicemenu_wrap {
   margin-top: 60px; }
@@ -1563,24 +1569,21 @@ footer {
       padding-top: 5px; }
       #headerwrap #head_navi_sp ul.head_contact_sp li {
         display: inline-block;
-        padding: 0;
-        vertical-align: middle; }
+        padding: 0 0 0 5px;
+        height: 40px; }
         #headerwrap #head_navi_sp ul.head_contact_sp li a {
           color: #26499d;
           text-decoration: none; }
         #headerwrap #head_navi_sp ul.head_contact_sp li span {
-          font-size: 30px;
-          font-size: 3rem;
+          font-size: 28px;
+          font-size: 2.8rem;
           color: #26499d;
           baseline-shift: 5px; }
         #headerwrap #head_navi_sp ul.head_contact_sp li .access_button {
-          background-color: #26499d;
-          border-radius: 2px;
-          color: #fff;
+          color: #26499d;
           font-weight: bold;
-          font-size: 14px;
-          font-size: 1.4rem;
-          padding: 5px; }
+          font-size: 16px;
+          font-size: 1.6rem; }
     #headerwrap ul.sp_menu_toggle {
       width: 100%;
       position: absolute;
@@ -1636,16 +1639,21 @@ footer {
         font-size: 1.2rem;
         margin: 10px 0 20px; }
 
-  .cover_area_about {
+  .cover_area_about, .cover_area_survice {
+    /*
     background-image: url("../images/top/cover_about_sp.jpg");
     background-size: cover;
-    height: 150px; } }
-  @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-    .cover_area_about {
-      background-image: url("../images/about/cover_about_sp@2x.jpg"); } }
-@media (max-width: 767px) {
-    .cover_area_about .page_title {
-      padding: 75px 0; }
+    */
+    height: 100px;
+    /*
+    @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+     background-image: url("../images/about/cover_about_sp@2x.jpg");
+    }
+    */ }
+    .cover_area_about .page_title, .cover_area_survice .page_title {
+      padding: 50px 0;
+      font-size: 26px;
+      font-size: 2.6rem; }
 
   .wrap_issue {
     display: block;
@@ -1702,7 +1710,6 @@ footer {
       display: none; }
     #survicecategory .survice_wrap_sp {
       display: block;
-      text-align: center;
       display: flex;
       flex-wrap: wrap;
       /*
@@ -1730,17 +1737,17 @@ footer {
       #survicecategory .survice_wrap_sp .survice {
         padding-left: 10px;
         height: 75px;
-        width: 40%;
+        width: 30%;
         padding-top: 10px;
-        padding-right: 20px;
         margin-bottom: 10px;
-        line-height: 1.5; }
+        line-height: 1.5;
+        text-align: center; }
       #survicecategory .survice_wrap_sp a {
         display: block;
         text-decoration: none;
         color: #333;
-        font-size: 13px;
-        font-size: 1.3rem; }
+        font-size: 12px;
+        font-size: 1.2rem; }
 
   /*
       //PRメニュー(mobile)
@@ -1929,38 +1936,53 @@ footer {
       width: 100%; }
       #content #sidebar #sidemenu {
         margin-left: 0; }
-    #content .spirit, #content .about {
+    #content .spirit, #content .about, #content .prsurvice {
       padding-right: 0;
       width: 100%; }
-      #content .spirit h2, #content .about h2 {
-        font-size: 20px;
-        font-size: 2rem;
+      #content .spirit h2, #content .about h2, #content .prsurvice h2 {
+        font-size: 16px;
+        font-size: 1.6rem;
         margin: 30px 0 20px; }
-      #content .spirit p, #content .about p {
+      #content .spirit p, #content .about p, #content .prsurvice p {
         line-height: 1.5; }
-      #content .spirit .require, #content .about .require {
+      #content .spirit .require, #content .about .require, #content .prsurvice .require {
         margin-bottom: 20px; }
-        #content .spirit .require h3, #content .about .require h3 {
+        #content .spirit .require h3, #content .about .require h3, #content .prsurvice .require h3 {
           font-size: 16px;
           font-size: 1.6rem; }
-        #content .spirit .require span, #content .about .require span {
+        #content .spirit .require span, #content .about .require span, #content .prsurvice .require span {
           font-size: 26px;
           font-size: 2.6rem;
           padding-right: 10px;
           padding-left: 5px; }
-      #content .spirit .companyprofile_wrap, #content .about .companyprofile_wrap {
+      #content .spirit .companyprofile_wrap, #content .about .companyprofile_wrap, #content .prsurvice .companyprofile_wrap {
         margin-bottom: 50px; }
-        #content .spirit .companyprofile_wrap .companyprofile th, #content .about .companyprofile_wrap .companyprofile th {
+        #content .spirit .companyprofile_wrap .companyprofile th, #content .about .companyprofile_wrap .companyprofile th, #content .prsurvice .companyprofile_wrap .companyprofile th {
           width: 80px; }
-        #content .spirit .companyprofile_wrap .map, #content .about .companyprofile_wrap .map {
+        #content .spirit .companyprofile_wrap .map, #content .about .companyprofile_wrap .map, #content .prsurvice .companyprofile_wrap .map {
           height: 250px;
           margin: 0; }
-        #content .spirit .companyprofile_wrap .accesstext, #content .about .companyprofile_wrap .accesstext {
+        #content .spirit .companyprofile_wrap .accesstext, #content .about .companyprofile_wrap .accesstext, #content .prsurvice .companyprofile_wrap .accesstext {
           padding: 0; }
-        #content .spirit .companyprofile_wrap .entrance, #content .about .companyprofile_wrap .entrance {
+        #content .spirit .companyprofile_wrap .entrance, #content .about .companyprofile_wrap .entrance, #content .prsurvice .companyprofile_wrap .entrance {
           float: none;
           margin-bottom: 10px; }
-      #content .spirit .otoiawase_sp, #content .about .otoiawase_sp {
-        display: none; } }
+      #content .spirit .otoiawase_sp, #content .about .otoiawase_sp, #content .prsurvice .otoiawase_sp {
+        display: none; }
+
+  /*サービスページ（mobile）--------------------*/
+  .prsurvice {
+    padding: 0; }
+    .prsurvice .survicecategory .categoryicons li {
+      width: 45%; }
+    .prsurvice .prmenu .prmenuicons li {
+      width: 80%; }
+    .prsurvice #flow_pc {
+      display: none; }
+    .prsurvice #flow_sp, .prsurvice #contract {
+      display: block;
+      margin-top: 20px; }
+      .prsurvice #flow_sp img, .prsurvice #contract img {
+        width: 100%; } }
 
 /*# sourceMappingURL=cocoknots.css.map */

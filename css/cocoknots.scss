@@ -1020,7 +1020,7 @@ footer {
                 background-color: $base_white;
                 padding: 5px;
                 li {
-                    width: 179px;
+                    width: 178px;
                     height: 100px;
                     text-align: center;
                     margin-bottom: 10px;
@@ -1076,6 +1076,9 @@ footer {
             span {
                 border-bottom: 1px dotted #333;
             }
+            .midashi {
+                font-weight: bold;
+            }
         }
         h2 {
             @include fontsize(26);
@@ -1106,8 +1109,11 @@ footer {
             }
         }
         
-        #flow , #contract {
+        #flow_pc , #contract {
             margin-top: 50px;
+            img {
+                max-width: 100%;
+            }
             
             table {
                 margin-bottom: 20px;
@@ -1128,7 +1134,9 @@ footer {
                 }
             }
         }
-        
+        #flow_sp {
+            display: none;
+        }
     }//prsurvice
     
 //PRメニューページ追記
@@ -2064,26 +2072,23 @@ footer {
             
             ul.head_contact_sp li {
                 display: inline-block;
-                padding: 0;
-                vertical-align: middle;
+                padding: 0 0 0 5px;
+                height: 40px;
                 
                 a{
                     color: $blue1;
                     text-decoration: none;
                 }
                 span {
-                        @include fontsize(30);
+                        @include fontsize(28);
                         color: $blue1;
                         baseline-shift: 5px;
                     }
                 
                 .access_button {
-                    background-color: $blue1;
-                    border-radius: 2px;
-                    color: #fff;
+                    color: $blue1;
                     font-weight: bold;
-                    @include fontsize(14);
-                    padding: 5px;
+                    @include fontsize(16);
                 }
             }
         }
@@ -2159,6 +2164,9 @@ footer {
                         @include fontsize(12);
                         margin: 10px 0 20px;
                     }
+                    img {
+                       
+                    }
                }
                
         
@@ -2166,19 +2174,25 @@ footer {
         }
     }
     
-    .cover_area_about {
+    .cover_area_about , .cover_area_survice {
+        /*
         background-image: url("../images/top/cover_about_sp.jpg");
         background-size: cover;
-        height: 150px;
-        
+        */
+        height: 100px;
+        /*
         @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
          background-image: url("../images/about/cover_about_sp@2x.jpg");
         }
+        */
         
         .page_title {
-            padding: 75px 0;
+            padding: 50px 0;
+            @include fontsize(26);
         }
     }
+    
+
     
     //課題から(mobile)
     .wrap_issue {
@@ -2250,24 +2264,23 @@ footer {
         
         .survice_wrap_sp {
             display: block;
-            text-align: center;
             display: flex;
             flex-wrap: wrap;
             
             .survice {
                 padding-left: 10px;
                 height: 75px;
-                width: 40%;
+                width: 30%;
                 padding-top: 10px;
-                padding-right: 20px;
                 margin-bottom: 10px;
                 line-height: 1.5;
+                text-align: center;
             }
             a {
                 display: block;
                 text-decoration: none;
                 color: #333;
-                @include fontsize(13);
+                @include fontsize(12);
             }
             /*
             .no1 {
@@ -2527,11 +2540,11 @@ footer {
             }
         }
         
-        .spirit , .about {
+        .spirit , .about , .prsurvice {
             padding-right: 0;
             width: 100%;
             h2 {
-                @include fontsize(20);
+                @include fontsize(16);
                 margin: 30px 0 20px;
             }
             p {
@@ -2572,6 +2585,30 @@ footer {
             }
         }
 
+    }
+    
+    /*サービスページ（mobile）--------------------*/
+    .prsurvice {
+        padding: 0;
+        
+        .survicecategory .categoryicons li {
+            width: 45%;
+        }
+        .prmenu .prmenuicons li {
+            width: 80%;
+        }
+        
+        #flow_pc {
+            display: none;
+        }
+        #flow_sp, #contract {
+            display: block;
+            margin-top: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
     }
     
     
