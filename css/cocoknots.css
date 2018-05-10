@@ -10,8 +10,8 @@ body {
   font-size: 1.4rem;
   border-top: 5px solid #26499d; }
   body p {
-    font-size: 15px;
-    font-size: 1.5rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 2; }
 
 #headerwrap {
@@ -166,7 +166,7 @@ body {
     .wrap_issue .issue p {
       font-size: 16px;
       font-size: 1.6rem;
-      color: #fff;
+      color: #26499d;
       font-weight: bold;
       line-height: 1;
       margin: 10px 0; }
@@ -175,17 +175,17 @@ body {
     .wrap_issue .letscontact a {
       text-decoration: none;
       line-height: 1.5;
-      color: #fff; }
-    .wrap_issue .letscontact a:hover {
       color: #26499d; }
+    .wrap_issue .letscontact a:hover {
+      color: #fff; }
       .wrap_issue .letscontact a:hover .underline {
-        border-bottom: 3px solid #26499d; }
+        border-bottom: 3px solid #fff; }
   .wrap_issue .underline {
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 2;
     font-weight: bold;
-    border-bottom: 3px solid #fff; }
+    border-bottom: 3px solid #26499d; }
   .wrap_issue .arrow {
     margin: 0 20px; }
 
@@ -754,12 +754,18 @@ footer {
 
 .prsurvice, .prmenu_content {
   padding: 50px 30px 0 0; }
-  .prsurvice .read, .prmenu_content .read {
+  .prsurvice h2.read, .prmenu_content h2.read {
     color: #26499d;
     font-weight: bold;
     margin-bottom: 20px;
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 17px;
+    font-size: 1.7rem;
+    line-height: 1.5; }
+  .prsurvice p.read, .prmenu_content p.read {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5; }
   .prsurvice .iconarea, .prmenu_content .iconarea {
     padding: 10px;
@@ -928,28 +934,37 @@ footer {
   .eachsurvice .eachsurvice_title .category_read {
     clear: both;
     padding-top: 10px;
-    font-size: 15px;
-    font-size: 1.5rem;
     color: #333;
     line-height: 1.8;
     border-top: 2px dashed #26499d; }
+  .eachsurvice .eachsurvice_title a.column_link {
+    font-size: 13px;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #b3c3e9;
+    border-radius: 8px;
+    padding: 5px;
+    color: #333; }
 
 .more_detailsmenu {
-  background-color: #8ba4de;
-  padding: 10px;
   margin-top: 40px; }
   .more_detailsmenu ul li {
     background-color: #fdfcf9;
-    padding: 15px;
-    margin-bottom: 10px; }
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-color: #7d9adf;
+    border-style: solid;
+    border-width: 4px 0 0; }
   .more_detailsmenu h2 {
-    font-size: 17px;
-    font-size: 1.7rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     color: #26499d;
     font-weight: bold;
     margin-bottom: 10px;
-    padding-left: 5px;
-    border-left: 5px solid #26499d; }
+    border-bottom: 1px solid #7d9adf;
+    padding-bottom: 4px; }
     .more_detailsmenu h2 a {
       text-decoration: none;
       color: #26499d; }
@@ -1281,34 +1296,57 @@ footer {
 .whatispr_navi_area {
   background-color: #26499d;
   height: 60px; }
-  .whatispr_navi_area .whatispr_navi {
+  .whatispr_navi_area .whatispr_navtab {
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
-    .whatispr_navi_area .whatispr_navi li {
+    .whatispr_navi_area .whatispr_navtab li {
       display: inline-block;
       box-sizing: border-box;
       padding: 20px 0;
       background-color: #547ad5;
       width: 240px;
       height: 50px;
-      margin: 5px 10px;
-      border-radius: 6px;
-      text-align: center; }
-    .whatispr_navi_area .whatispr_navi a {
+      margin: 10px 10px 0;
+      text-align: center;
+      border-top-right-radius: 6px; }
+    .whatispr_navi_area .whatispr_navtab a {
       text-decoration: none;
       color: #fff; }
-    .whatispr_navi_area .whatispr_navi .a2l {
+    .whatispr_navi_area .whatispr_navtab .selected {
+      background-color: #fdfcf9; }
+      .whatispr_navi_area .whatispr_navtab .selected a {
+        font-size: 16px;
+        font-size: 1.6rem;
+        border-bottom: 2px solid #26499d;
+        color: #333; }
+    .whatispr_navi_area .whatispr_navtab .a2l {
       padding: 7px 0;
       line-height: 1.3; }
-      .whatispr_navi_area .whatispr_navi .a2l span {
-        font-size: 10px;
-        font-size: 1rem; }
+      .whatispr_navi_area .whatispr_navtab .a2l span {
+        font-size: 11px;
+        font-size: 1.1rem; }
 
 #content_whatispr {
   width: 758px;
   margin: 50px auto; }
+  #content_whatispr .thinkaboutpr_index {
+    border-bottom: 1px solid #26499d;
+    padding: 10px;
+    line-height: 1.5;
+    margin-bottom: 40px; }
+    #content_whatispr .thinkaboutpr_index h2 {
+      font-size: 17px;
+      font-size: 1.7rem;
+      border-left: 5px solid #26499d;
+      padding-left: 10px;
+      line-height: 1; }
+    #content_whatispr .thinkaboutpr_index a {
+      text-decoration: none;
+      color: #26499d;
+      font-size: 16px;
+      font-size: 1.6rem; }
   #content_whatispr h2 {
     margin: 20px 0 10px;
     font-size: 26px;
@@ -1482,11 +1520,13 @@ footer {
   padding: 20px;
   display: flex; }
   .qs_info .midashi, .qs_info .midashi_2 {
-    width: 20%;
+    width: 15%;
     margin-right: 50px;
     text-align: center;
     height: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 5px; }
   .qs_info .midashi {
     color: #fff;
     background-color: #26499d; }
@@ -1498,14 +1538,6 @@ footer {
     font-size: 2rem; }
   .qs_info .qs_new {
     font-weight: bold; }
-    .qs_info .qs_new .button {
-      text-decoration: none;
-      background-color: #fff;
-      border-radius: 16px;
-      padding: 10px;
-      display: block;
-      width: 100px;
-      margin-top: 20px; }
   .qs_info .qs_past {
     border-bottom: 1px solid #333;
     padding: 10px 0; }
@@ -1983,6 +2015,10 @@ footer {
       display: block;
       margin-top: 20px; }
       .prsurvice #flow_sp img, .prsurvice #contract img {
-        width: 100%; } }
+        width: 100%; }
+
+  /*PRとはページ（mobile）----------------------*/
+  #content_whatispr {
+    width: 96%; } }
 
 /*# sourceMappingURL=cocoknots.css.map */
