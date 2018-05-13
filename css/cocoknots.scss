@@ -55,7 +55,7 @@ body{
             display: inline-block;
             @include fontsize(15);
             font-weight: bold;
-            margin: 5px 0 20px 20px;
+            margin: 5px 0 20px 10px;
             color: $blue1;
             
             a{
@@ -65,10 +65,10 @@ body{
             
             .access_button {
                 background-color: $blue1;
-                border-radius: 2px;
+                border-radius: 4px;
                 color: #fff;
                 padding: 1px 6px;
-                @include fontsize(14);
+                @include fontsize(11);
             }
         }
         ul.head_nav {
@@ -119,6 +119,11 @@ body{
             border-bottom: none;
             }
             
+            li.submenu {
+                height: 15px;
+                padding-left: 20px;
+            }
+            
             li:hover {
                 border-bottom: none;
             }
@@ -132,6 +137,12 @@ body{
                 text-decoration: underline;
             }
         }
+        
+        ul.navichild_survice {
+            width: 200px;
+
+        }
+        
     } //nav#head_navi
     #head_navi_sp {
         display: none;
@@ -161,7 +172,7 @@ body{
             width: 96%;
             max-width: 1024px;
             margin: 0 auto;
-            padding-left: 300px;
+            padding-left: 20%;
             height: 426px;
             display: flex;
             
@@ -350,64 +361,6 @@ width: 30%;
         border-radius: 14px;
 }
 
-
-/*
-//トップページ　PRメニュー
-#prmenu {
-    width: 96%;
-    max-width: 1024px;
-    margin: 60px auto;
-}
-.prmenu_title  {
-    margin-bottom: 15px;
-    
-    .sikaku , p , h3 {
-        display: inline-block;
-    }
-    
-    .sikaku {
-        width: 20px;
-        height: 2px;
-        background-color: $blue1;
-    }
-    
-    h3 {
-        @include fontsize(20);
-        font-weight: bold;
-    }
-    
-    p {
-        @include fontsize(15);
-        margin-left: 20px;
-    }
-}
-
-.menues_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    
-    li {
-        background-color: $blue1;
-        width: 25%;
-        height: 45px;
-        border: 1px solid #fff;
-        box-sizing: border-box;
-        text-align: center;
-        padding-top: 16px;
-    }
-    
-    a {
-        text-decoration: none;
-        color: #fff;
-        @include fontsize(15);
-    }
-    
-    a:hover {
-        color: $blue2;
-    }
-}
-*/
-
 /*
 // トップページおすすめ
 #recommend {
@@ -567,7 +520,7 @@ footer {
                 h3 {
                     color: #fff;
                     font-weight: bold;  
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                     border-top: 1px solid #fff;
                     padding-top: 10px;
                 }
@@ -588,14 +541,14 @@ footer {
                     font-weight: bold; 
                     border-top: 1px solid #fff;
                     padding-top: 10px;
-                    margin-top: 20px;
+                    margin-top: 40px;
                     line-height: 2rem;
                 }
             }
         }
         
         .footwrap2 {
-            margin-top: 20px;
+            margin-top: 25px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
@@ -687,7 +640,7 @@ footer {
         background-size: cover;
         */
         height: 150px;
-        background-color: lighten($blue1, 50%);
+        background-color: lighten($blue1, 20%);
         
         /*
         @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
@@ -699,7 +652,7 @@ footer {
     .page_title {
         text-align: center;
         @include fontsize(30);
-        color: $blue1;
+        color: #fff;
         font-weight: bold;
         padding-top: 100px;
         letter-spacing: 0.5rem;
@@ -970,7 +923,7 @@ footer {
         background-size: cover;
         */
         height: 150px;
-        background-color: lighten($blue2, 20%);
+        background-color: lighten($blue1, 20%);
         
         /*
         @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
@@ -982,7 +935,7 @@ footer {
         .page_title {
             text-align: center;
             @include fontsize(30);
-            color: $blue1;
+            color: #fff;
             font-weight: bold;
             padding-top: 100px;
             letter-spacing: 0.5rem;
@@ -1104,15 +1057,6 @@ footer {
             @include fontsize(16);
             font-weight: bold;
             color: $blue1;
-            .linkbutton {
-                @include fontsize(12);
-                text-decoration: none;
-                padding: 2px 10px 0;
-                color: $blue1;
-            }
-            a:hover.linkbutton {
-                background-color: lighten($blue2 , 20%);
-            }
         }
         
         #flow_pc , #contract {
@@ -1147,7 +1091,8 @@ footer {
     
 //PRメニューページ追記
     .survicemenu_wrap {
-        margin-top: 60px;
+            margin-top: 60px;
+            
     }
     
     .prmenu_content {
@@ -1159,15 +1104,15 @@ footer {
             @include fontsize(17);
         }
 
-        
         .survicemenu {	
             overflow: hidden;	
-            margin: 10px 0 30px 0; 
+            margin: 10px 0 50px 0;
+
                 h3 {
                     @include fontsize(16);
                     border-color: $blue1;	
                     border-style: solid;	
-                    border-width: 1px 1px 0 10px ;
+                    border-width: 0 0 0 10px ;
                     margin-bottom: 10px;
                     padding-left: 5px;
                     line-height: 1.8;
@@ -1183,6 +1128,7 @@ footer {
                     font-size: 1.2rem;
                 }
          }
+         
          .photo_left{
             img {
             float: left;	
@@ -1196,7 +1142,9 @@ footer {
                 border-radius: 6px;
             }
         }
+        
     }
+    
 
 
 //個別サービスページ
@@ -1224,27 +1172,29 @@ footer {
               margin-bottom: 20px;
           }
       
-          .category_read {
-              clear: both;
-              padding-top: 10px;
-              color: #333;
-              line-height: 1.8;
-              border-top: 2px dashed $blue1;
+         .category_read {
+            clear: both;
+            padding-top: 10px;
+            color: #333;
+            line-height: 1.8;
+            border-top: 2px dashed $blue1;
+            margin-bottom: 15px;
           }
-          a.column_link {
-              @include fontsize(13);
-              display: inline-block;
-              margin-top: 10px;
-              text-decoration: none;
-              background-color: lighten($blue2 , 10%);
-              border-radius: 8px;
-              padding: 5px;
-              color: #333;
-          }
+        .linkbutton {
+            @include fontsize(14);
+            text-decoration: none;
+            padding: 2px 10px 0;
+            color: $blue1;
+            font-weight: bold;
+            border: 1px solid $blue1;
+        }
+        a:hover.linkbutton {
+            background-color: lighten($blue2 , 20%);
+        }
       }
   }
   .more_detailsmenu {
-      margin-top: 40px;
+      margin-top: 50px;
       ul li{
         background-color: $base_white;
         padding: 10px 0;
@@ -1925,10 +1875,43 @@ footer {
         
         .pnaviarea{
             display: inline-block;
-            width: 400px;
-            height: 50px;
-            background-color: #eee;
-            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            
+            .gopre , .gonext {
+                padding: 5px 15px 0;
+                background-color: lighten($blue2 , 20%);
+                line-height: 40px;
+                margin: 0 5px;
+                a{
+                    text-decoration: none;
+                    color: #333;
+                    display: inline-block;
+                }
+                a:hover {
+                color: $blue1;
+                }
+            }
+            
+            .gopre {
+                left: 25px;
+            }
+            
+            .righttriangle {
+                  display: inline-block;
+                  border-top: 8px solid transparent;
+                  border-bottom: 8px solid transparent;
+                  border-left: 10px solid $blue1;
+                  margin-left: 5px;
+            }
+            .lefttriangle {
+                  display: inline-block;
+                  border-top: 8px solid transparent;
+                  border-bottom: 8px solid transparent;
+                  border-right: 10px solid $blue1;
+                  margin-right: 5px;
+            }
         }
         .goindex {
                 display: inline-block;
@@ -1936,12 +1919,16 @@ footer {
                 width: 100px;
                 height: 14px;
                 line-height: 14px;
-                padding: 5px;
-                border-radius: 6px;
+                padding: 5px 10px;
+                border-radius: 10px;
                 border: 1px solid #333;
                 text-decoration: none;
                 color: #333;
+                @include fontsize(14);
             }
+        a.goindex:hover {
+            background-color: lighten($blue2 , 20%);
+        }
     }
 }
 
@@ -2132,7 +2119,7 @@ footer {
         ul.sp_menu_toggle {
             width: 100%;
             position: absolute;
-            top: 80px;
+            top: 60px;
             right: 0px;
             text-align: left;
             padding: 0px;
@@ -2141,13 +2128,18 @@ footer {
             z-index: 100;
             display: none;
             
-            a {
-                text-decoration: none;
-                display: block;
-                padding: 14px;
-                @include fontsize(14);
+            li {
+                a {
+                    text-decoration: none;
+                    padding-left: 14px;
+                    @include fontsize(13);
+                    color: #333;
+                    line-height: 2;
+                }
                 border-bottom: 1px solid #a9a9a9;
-                color: #524c3e;
+            }
+            li.sub_list_sp {
+                border: none;
             }
         }
     } 
@@ -2317,70 +2309,10 @@ footer {
                 color: #333;
                 @include fontsize(12);
             }
-            /*
-            .no1 {
-                background-image: url("../images/top/corporate-icon.png");
-                background-repeat: no-repeat;
-                background-position: 5% 50%;
-            }
-            .no2 {
-                background-image: url("../images/top/marketing-icon.png");
-                background-repeat: no-repeat;
-                background-position: 5% 50%;
-            }
-            .no3 {
-                background-image: url("../images/top/hospital-icon.png");
-                background-repeat: no-repeat;
-                background-position: 5% 50%;
-            }
-            .no4 {
-                background-image: url("../images/top/crisis-icon.png");
-                background-repeat: no-repeat;
-                background-position: 5% 50%;
-            }
-            */
         }
     }
 
 /*
-    //PRメニュー(mobile)
-    #prmenu {
-        max-width: 100%;
-        margin: 50px 10px;
-    }
-    .prmenu_title  {
-        
-        p {
-            display: block;
-            @include fontsize(13);
-            margin: 0;
-        }
-        
-        .sikaku {
-            height: 2px;
-        }
-        
-        h3 {
-            @include fontsize(20);
-            font-wight: bold;
-            margin-bottom: 10px;
-        }
-    }
-    
-    .menues_wrap {
-        
-        li {
-            width: 50%;
-            height: 60px;
-            border: 2px solid #fff;
-            padding: 20px 10px 10px;
-        }
-        
-        a {
-            @include fontsize(13);
-        }
-    }
-
     //おすすめ(mobile)
     #recommend {
         padding: 10px 10px;

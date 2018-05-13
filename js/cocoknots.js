@@ -11,17 +11,17 @@ $(function(){
 
 /*グロナビ固定*/
 
-$(function() {
-var bt = $("#header").offset().top; 
-var ds = 0;
+$(function() { //htmlを読み込んで
+var nav = $("#header"); 
+var navTOP = nav.offset().top; //#headerのtopからの位置を取得
  
-$(document).scroll(function(){ 
-    ds = $(this).scrollTop(); 
+    $(window).scroll(function(){ //ドキュメントをスクロールしたら以下を実行します
+        var winTOP  = $(this).scrollTop(); //要素topからのscroll位置を取得する
  
-    if (bt <= ds) {  
-        $("#header").addClass('.fixed'); 
-    } else if (bt >= ds) { 
-        $("#header").removeClass('.fixed'); 
+    if (winTOP >= navTOP) {  //scroll位置が#headerの位置を超えていたら
+        $("#header").addClass('fixed'); 
+    } else if (winTOP <= navTOP) { 
+        $("#header").removeClass('fixed'); 
     }
     });
 });

@@ -35,18 +35,18 @@ body {
       font-size: 15px;
       font-size: 1.5rem;
       font-weight: bold;
-      margin: 5px 0 20px 20px;
+      margin: 5px 0 20px 10px;
       color: #26499d; }
       #headerwrap #head_navi ul.head_contact_pc li a {
         color: #26499d;
         text-decoration: none; }
       #headerwrap #head_navi ul.head_contact_pc li .access_button {
         background-color: #26499d;
-        border-radius: 2px;
+        border-radius: 4px;
         color: #fff;
         padding: 1px 6px;
-        font-size: 14px;
-        font-size: 1.4rem; }
+        font-size: 11px;
+        font-size: 1.1rem; }
     #headerwrap #head_navi ul.head_nav li {
       display: inline-block;
       font-size: 15px;
@@ -82,6 +82,9 @@ body {
         padding: 10px 0 0 10px;
         border-right: none;
         border-bottom: none; }
+      #headerwrap #head_navi ul.navichild li.submenu {
+        height: 15px;
+        padding-left: 20px; }
       #headerwrap #head_navi ul.navichild li:hover {
         border-bottom: none; }
       #headerwrap #head_navi ul.navichild a {
@@ -90,6 +93,8 @@ body {
         font-weight: normal; }
       #headerwrap #head_navi ul.navichild a:hover {
         text-decoration: underline; }
+    #headerwrap #head_navi ul.navichild_survice {
+      width: 200px; }
   #headerwrap #head_navi_sp {
     display: none; }
 
@@ -111,7 +116,7 @@ body {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
-    padding-left: 300px;
+    padding-left: 20%;
     height: 426px;
     display: flex; }
     #cover_area .cover_content .cover_title {
@@ -253,62 +258,6 @@ body {
   border-radius: 14px; }
 
 /*
-//トップページ　PRメニュー
-#prmenu {
-    width: 96%;
-    max-width: 1024px;
-    margin: 60px auto;
-}
-.prmenu_title  {
-    margin-bottom: 15px;
-    
-    .sikaku , p , h3 {
-        display: inline-block;
-    }
-    
-    .sikaku {
-        width: 20px;
-        height: 2px;
-        background-color: $blue1;
-    }
-    
-    h3 {
-        @include fontsize(20);
-        font-weight: bold;
-    }
-    
-    p {
-        @include fontsize(15);
-        margin-left: 20px;
-    }
-}
-
-.menues_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    
-    li {
-        background-color: $blue1;
-        width: 25%;
-        height: 45px;
-        border: 1px solid #fff;
-        box-sizing: border-box;
-        text-align: center;
-        padding-top: 16px;
-    }
-    
-    a {
-        text-decoration: none;
-        color: #fff;
-        @include fontsize(15);
-    }
-    
-    a:hover {
-        color: $blue2;
-    }
-}
-*/
-/*
 // トップページおすすめ
 #recommend {
     background-color: none;
@@ -441,7 +390,7 @@ footer {
         footer #footnavi .footwrap1 div h3 {
           color: #fff;
           font-weight: bold;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
           border-top: 1px solid #fff;
           padding-top: 10px; }
         footer #footnavi .footwrap1 div a {
@@ -456,10 +405,10 @@ footer {
           font-weight: bold;
           border-top: 1px solid #fff;
           padding-top: 10px;
-          margin-top: 20px;
+          margin-top: 40px;
           line-height: 2rem; }
     footer #footnavi .footwrap2 {
-      margin-top: 20px;
+      margin-top: 25px;
       display: flex;
       justify-content: space-between;
       align-items: flex-end; }
@@ -527,7 +476,7 @@ footer {
   background-size: cover;
   */
   height: 150px;
-  background-color: #cfd9f3;
+  background-color: #547ad5;
   /*
   @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
     background-image: url("../images/about/spiritheroimage@2x.jpg");
@@ -538,7 +487,7 @@ footer {
   text-align: center;
   font-size: 30px;
   font-size: 3rem;
-  color: #26499d;
+  color: #fff;
   font-weight: bold;
   padding-top: 100px;
   letter-spacing: 0.5rem; }
@@ -737,7 +686,7 @@ footer {
   background-size: cover;
   */
   height: 150px;
-  background-color: #dae2f5;
+  background-color: #547ad5;
   /*
   @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
     background-image: url("../images/survice/survicetopimage@2x.jpg");
@@ -747,7 +696,7 @@ footer {
     text-align: center;
     font-size: 30px;
     font-size: 3rem;
-    color: #26499d;
+    color: #fff;
     font-weight: bold;
     padding-top: 100px;
     letter-spacing: 0.5rem; }
@@ -845,14 +794,6 @@ footer {
     font-size: 1.6rem;
     font-weight: bold;
     color: #26499d; }
-    .prsurvice h4 .linkbutton, .prmenu_content h4 .linkbutton {
-      font-size: 12px;
-      font-size: 1.2rem;
-      text-decoration: none;
-      padding: 2px 10px 0;
-      color: #26499d; }
-    .prsurvice h4 a:hover.linkbutton, .prmenu_content h4 a:hover.linkbutton {
-      background-color: #dae2f5; }
   .prsurvice #flow_pc, .prsurvice #contract, .prmenu_content #flow_pc, .prmenu_content #contract {
     margin-top: 50px; }
     .prsurvice #flow_pc img, .prsurvice #contract img, .prmenu_content #flow_pc img, .prmenu_content #contract img {
@@ -884,13 +825,13 @@ footer {
   font-size: 1.7rem; }
 .prmenu_content .survicemenu {
   overflow: hidden;
-  margin: 10px 0 30px 0; }
+  margin: 10px 0 50px 0; }
   .prmenu_content .survicemenu h3 {
     font-size: 16px;
     font-size: 1.6rem;
     border-color: #26499d;
     border-style: solid;
-    border-width: 1px 1px 0 10px;
+    border-width: 0 0 0 10px;
     margin-bottom: 10px;
     padding-left: 5px;
     line-height: 1.8; }
@@ -936,20 +877,21 @@ footer {
     padding-top: 10px;
     color: #333;
     line-height: 1.8;
-    border-top: 2px dashed #26499d; }
-  .eachsurvice .eachsurvice_title a.column_link {
-    font-size: 13px;
-    font-size: 1.3rem;
-    display: inline-block;
-    margin-top: 10px;
+    border-top: 2px dashed #26499d;
+    margin-bottom: 15px; }
+  .eachsurvice .eachsurvice_title .linkbutton {
+    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: none;
-    background-color: #b3c3e9;
-    border-radius: 8px;
-    padding: 5px;
-    color: #333; }
+    padding: 2px 10px 0;
+    color: #26499d;
+    font-weight: bold;
+    border: 1px solid #26499d; }
+  .eachsurvice .eachsurvice_title a:hover.linkbutton {
+    background-color: #dae2f5; }
 
 .more_detailsmenu {
-  margin-top: 40px; }
+  margin-top: 50px; }
   .more_detailsmenu ul li {
     background-color: #fdfcf9;
     padding: 10px 0;
@@ -1465,21 +1407,49 @@ footer {
     margin-top: 50px; }
     #content_prqa .page_navi .pnaviarea {
       display: inline-block;
-      width: 400px;
-      height: 50px;
-      background-color: #eee;
-      padding-top: 10px; }
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      #content_prqa .page_navi .pnaviarea .gopre, #content_prqa .page_navi .pnaviarea .gonext {
+        padding: 5px 15px 0;
+        background-color: #dae2f5;
+        line-height: 40px;
+        margin: 0 5px; }
+        #content_prqa .page_navi .pnaviarea .gopre a, #content_prqa .page_navi .pnaviarea .gonext a {
+          text-decoration: none;
+          color: #333;
+          display: inline-block; }
+        #content_prqa .page_navi .pnaviarea .gopre a:hover, #content_prqa .page_navi .pnaviarea .gonext a:hover {
+          color: #26499d; }
+      #content_prqa .page_navi .pnaviarea .gopre {
+        left: 25px; }
+      #content_prqa .page_navi .pnaviarea .righttriangle {
+        display: inline-block;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 10px solid #26499d;
+        margin-left: 5px; }
+      #content_prqa .page_navi .pnaviarea .lefttriangle {
+        display: inline-block;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 10px solid #26499d;
+        margin-right: 5px; }
     #content_prqa .page_navi .goindex {
       display: inline-block;
       margin-top: 20px;
       width: 100px;
       height: 14px;
       line-height: 14px;
-      padding: 5px;
-      border-radius: 6px;
+      padding: 5px 10px;
+      border-radius: 10px;
       border: 1px solid #333;
       text-decoration: none;
-      color: #333; }
+      color: #333;
+      font-size: 14px;
+      font-size: 1.4rem; }
+    #content_prqa .page_navi a.goindex:hover {
+      background-color: #dae2f5; }
 
 #content_pr3, .qs_read {
   width: 758px;
@@ -1619,7 +1589,7 @@ footer {
     #headerwrap ul.sp_menu_toggle {
       width: 100%;
       position: absolute;
-      top: 80px;
+      top: 60px;
       right: 0px;
       text-align: left;
       padding: 0px;
@@ -1627,14 +1597,17 @@ footer {
       background: #fff;
       z-index: 100;
       display: none; }
-      #headerwrap ul.sp_menu_toggle a {
-        text-decoration: none;
-        display: block;
-        padding: 14px;
-        font-size: 14px;
-        font-size: 1.4rem;
-        border-bottom: 1px solid #a9a9a9;
-        color: #524c3e; }
+      #headerwrap ul.sp_menu_toggle li {
+        border-bottom: 1px solid #a9a9a9; }
+        #headerwrap ul.sp_menu_toggle li a {
+          text-decoration: none;
+          padding-left: 14px;
+          font-size: 13px;
+          font-size: 1.3rem;
+          color: #333;
+          line-height: 2; }
+      #headerwrap ul.sp_menu_toggle li.sub_list_sp {
+        border: none; }
 
   #cover_area {
     background-image: url("../images/top/people_sp.jpg");
@@ -1743,29 +1716,7 @@ footer {
     #survicecategory .survice_wrap_sp {
       display: block;
       display: flex;
-      flex-wrap: wrap;
-      /*
-      .no1 {
-          background-image: url("../images/top/corporate-icon.png");
-          background-repeat: no-repeat;
-          background-position: 5% 50%;
-      }
-      .no2 {
-          background-image: url("../images/top/marketing-icon.png");
-          background-repeat: no-repeat;
-          background-position: 5% 50%;
-      }
-      .no3 {
-          background-image: url("../images/top/hospital-icon.png");
-          background-repeat: no-repeat;
-          background-position: 5% 50%;
-      }
-      .no4 {
-          background-image: url("../images/top/crisis-icon.png");
-          background-repeat: no-repeat;
-          background-position: 5% 50%;
-      }
-      */ }
+      flex-wrap: wrap; }
       #survicecategory .survice_wrap_sp .survice {
         padding-left: 10px;
         height: 75px;
@@ -1782,44 +1733,6 @@ footer {
         font-size: 1.2rem; }
 
   /*
-      //PRメニュー(mobile)
-      #prmenu {
-          max-width: 100%;
-          margin: 50px 10px;
-      }
-      .prmenu_title  {
-          
-          p {
-              display: block;
-              @include fontsize(13);
-              margin: 0;
-          }
-          
-          .sikaku {
-              height: 2px;
-          }
-          
-          h3 {
-              @include fontsize(20);
-              font-wight: bold;
-              margin-bottom: 10px;
-          }
-      }
-      
-      .menues_wrap {
-          
-          li {
-              width: 50%;
-              height: 60px;
-              border: 2px solid #fff;
-              padding: 20px 10px 10px;
-          }
-          
-          a {
-              @include fontsize(13);
-          }
-      }
-  
       //おすすめ(mobile)
       #recommend {
           padding: 10px 10px;
