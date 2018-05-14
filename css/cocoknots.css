@@ -17,7 +17,7 @@ body {
 #headerwrap {
   width: 96%;
   max-width: 1024px;
-  margin: 0px auto 20px;
+  margin: 0px auto 10px;
   display: flex;
   justify-content: space-between; }
   #headerwrap #pc_title_logo {
@@ -110,15 +110,16 @@ body {
 
 #cover_area {
   background-image: url("../images/top/people.jpg");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
   #cover_area .cover_content {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
-    padding-left: 20%;
     height: 426px;
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
     #cover_area .cover_content .cover_title {
       padding-top: 30px;
       /*
@@ -143,23 +144,26 @@ body {
       #cover_area .cover_content .cover_title .cover_title_img_sp {
         display: none; }
     #cover_area .cover_content .cocoknotsis {
-      margin-top: 5px;
+      margin-top: 10px;
       color: #26499d;
       font-weight: bold;
       font-size: 13px;
-      font-size: 1.3rem; }
-    #cover_area .cover_content .seal .pr3seal_pc {
-      margin-top: 10px; }
-    #cover_area .cover_content .seal .pr3seal_sp {
-      display: none; }
-    #cover_area .cover_content .seal p {
-      display: none; }
+      font-size: 1.3rem;
+      line-height: 1.4; }
+    #cover_area .cover_content .seal {
+      margin-top: 20px; }
+      #cover_area .cover_content .seal .pr3seal_pc {
+        margin-top: 10px; }
+      #cover_area .cover_content .seal .pr3seal_sp {
+        display: none; }
+      #cover_area .cover_content .seal p {
+        display: none; }
 
 #from_issue {
   background-color: #8ba4de; }
 
 .wrap_issue {
-  height: 120px;
+  height: 90px;
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
@@ -169,30 +173,28 @@ body {
     text-align: right;
     margin: 0 10px; }
     .wrap_issue .issue p {
-      font-size: 16px;
-      font-size: 1.6rem;
-      color: #26499d;
-      font-weight: bold;
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #fff;
       line-height: 1;
       margin: 10px 0; }
   .wrap_issue .letscontact {
     margin: 0 20px; }
     .wrap_issue .letscontact a {
       text-decoration: none;
-      line-height: 1.5;
-      color: #26499d; }
+      color: #fff; }
     .wrap_issue .letscontact a:hover {
       color: #fff; }
       .wrap_issue .letscontact a:hover .underline {
-        border-bottom: 3px solid #fff; }
-  .wrap_issue .underline {
-    font-size: 18px;
-    font-size: 1.8rem;
-    line-height: 2;
-    font-weight: bold;
-    border-bottom: 3px solid #26499d; }
-  .wrap_issue .arrow {
+        border-bottom: 1px solid #fff; }
+    .wrap_issue .letscontact .underline {
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 2; }
+  .wrap_issue .arrow_pc {
     margin: 0 20px; }
+  .wrap_issue .arrow_sp {
+    display: none; }
 
 #survicecategory {
   max-width: 1024px;
@@ -353,7 +355,7 @@ body {
 #news_sp {
   display: none; }
 
-#links {
+#links_pc {
   border-top: 1px solid #8ba4de;
   padding-top: 5px;
   max-width: 1024px;
@@ -362,11 +364,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 80px; }
-  #links .link_banner_pc {
+  #links_pc .link_banner_pc {
     display: inline-block;
     margin: 0 10px; }
-  #links .link_banner_sp {
-    display: none; }
+
+#links_sp {
+  display: none; }
 
 footer {
   margin-top: 50px; }
@@ -1560,10 +1563,9 @@ footer {
     #headerwrap #sp_title_logo {
       display: block;
       width: 50%; }
-      #headerwrap #sp_title_logo p {
-        margin-top: 0;
-        font-size: 14px;
-        font-size: 1.4rem; }
+      #headerwrap #sp_title_logo img {
+        width: 120px;
+        height: auto; }
     #headerwrap #head_navi {
       display: none; }
     #headerwrap #head_navi_sp {
@@ -1572,7 +1574,7 @@ footer {
       #headerwrap #head_navi_sp ul.head_contact_sp li {
         display: inline-block;
         padding: 0 0 0 5px;
-        height: 40px; }
+        height: 30px; }
         #headerwrap #head_navi_sp ul.head_contact_sp li a {
           color: #26499d;
           text-decoration: none; }
@@ -1586,32 +1588,37 @@ footer {
           font-weight: bold;
           font-size: 16px;
           font-size: 1.6rem; }
+        #headerwrap #head_navi_sp ul.head_contact_sp li img {
+          height: 20px;
+          width: auto; }
     #headerwrap ul.sp_menu_toggle {
       width: 100%;
       position: absolute;
-      top: 60px;
+      top: 56px;
       right: 0px;
       text-align: left;
-      padding: 0px;
-      border: 1px solid #a9a9a9;
-      background: #fff;
+      border: 1px solid #26499d;
+      background: #dae2f5;
       z-index: 100;
       display: none; }
       #headerwrap ul.sp_menu_toggle li {
-        border-bottom: 1px solid #a9a9a9; }
+        border-bottom: 1px solid #26499d;
+        padding-left: 10px; }
         #headerwrap ul.sp_menu_toggle li a {
           text-decoration: none;
           padding-left: 14px;
-          font-size: 13px;
-          font-size: 1.3rem;
+          font-size: 12px;
+          font-size: 1.2rem;
           color: #333;
           line-height: 2; }
       #headerwrap ul.sp_menu_toggle li.sub_list_sp {
         border: none; }
+      #headerwrap ul.sp_menu_toggle .survicearea {
+        padding-left: 30px; }
 
   #cover_area {
     background-image: url("../images/top/people_sp.jpg");
-    background-size: 100%; }
+    background-size: cover; }
     #cover_area .cover_content {
       max-width: 100%;
       height: 250px;
@@ -1619,9 +1626,7 @@ footer {
       position: relative;
       padding-left: 10px; }
       #cover_area .cover_content .cover_title {
-        padding: 20px 20px 0 0;
-        margin-top: 10px;
-        width: 300px;
+        padding-top: 20px;
         /*
         .readmore {
         margin-left: 10px;
@@ -1633,16 +1638,18 @@ footer {
           display: block; }
         #cover_area .cover_content .cover_title p {
           display: none; }
-      #cover_area .cover_content .seal .pr3seal_pc {
-        display: none; }
-      #cover_area .cover_content .seal .pr3seal_sp {
-        display: block; }
-      #cover_area .cover_content .seal p {
-        display: block;
-        line-height: 1.5;
-        font-size: 12px;
-        font-size: 1.2rem;
-        margin: 10px 0 20px; }
+      #cover_area .cover_content .seal {
+        margin-top: 10px; }
+        #cover_area .cover_content .seal .pr3seal_pc {
+          display: none; }
+        #cover_area .cover_content .seal .pr3seal_sp {
+          display: block; }
+        #cover_area .cover_content .seal p {
+          display: block;
+          line-height: 1.5;
+          font-size: 12px;
+          font-size: 1.2rem;
+          margin-bottom: 5px; }
 
   .cover_area_about, .cover_area_survice {
     /*
@@ -1662,7 +1669,7 @@ footer {
 
   .wrap_issue {
     display: block;
-    height: 180px;
+    height: 140px;
     padding: 10px 0;
     text-align: center; }
     .wrap_issue .issue {
@@ -1670,17 +1677,23 @@ footer {
       line-height: 1; }
       .wrap_issue .issue p {
         margin: 5px 0;
-        font-size: 14px;
-        font-size: 1.4rem; }
-    .wrap_issue .arrow {
-      text-align: center;
-      transform: rotate(90deg); }
+        font-size: 13px;
+        font-size: 1.3rem; }
+    .wrap_issue .arrow_pc {
+      display: none; }
+    .wrap_issue .arrow_sp {
+      display: block;
+      margin: 5px 0; }
+      .wrap_issue .arrow_sp img {
+        height: 20px;
+        width: auto; }
     .wrap_issue .letscontact {
       text-align: center;
       line-height: 1; }
       .wrap_issue .letscontact .underline {
         font-size: 14px;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        border-bottom: 1px solid #fff; }
 
   .top_sectiontitle {
     border-bottom: 4px solid #c9c9c9;
@@ -1693,10 +1706,10 @@ footer {
     bottom: -4px; }
 
   #detail_button {
-    font-size: 14px;
-    font-size: 1.4rem;
-    width: 200px;
-    height: 20px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    width: 150px;
+    height: 16px;
     margin: 20px auto;
     padding: 6px 0 0 0;
     border: 1px solid #333;
@@ -1796,26 +1809,36 @@ footer {
       #news_sp .news_block .news_title {
         font-weight: bold; }
 
-  #links {
+  #links_pc {
+    display: none; }
+
+  #links_sp {
     max-width: 100%;
     background: none;
     margin: 30px 10px;
     display: block;
     text-align: center;
-    height: auto; }
-    #links .link_banner_pc {
-      display: none; }
-    #links .link_banner_sp {
+    height: auto;
+    border-top: 1px solid #333;
+    padding-top: 5px; }
+    #links_sp h2 {
+      font-size: 16px;
+      font-size: 1.6rem;
+      text-align: left; }
+    #links_sp .banner_wrap_sp {
+      display: flex; }
+    #links_sp .link_banner_sp {
       display: block;
-      text-decoration: none; }
-      #links .link_banner_sp .tanabebanner_sp {
-        max-width: 100%; }
-      #links .link_banner_sp h3 {
-        font-weight: bold;
+      text-decoration: none;
+      width: 30%;
+      padding: 5px; }
+      #links_sp .link_banner_sp img {
+        width: 100%; }
+      #links_sp .link_banner_sp h3 {
         text-align: left;
         color: #333;
-        font-size: 13px;
-        font-size: 1.3rem;
+        font-size: 12px;
+        font-size: 1.2rem;
         margin-bottom: 5px; }
 
   footer {
@@ -1836,11 +1859,11 @@ footer {
           margin: 10px;
           padding: 10px; }
           footer #footnavi .footwrap3 .contact span {
-            font-size: 30px;
-            font-size: 3rem; }
-          footer #footnavi .footwrap3 .contact h2 {
             font-size: 26px;
-            font-size: 2.6rem;
+            font-size: 2.6rem; }
+          footer #footnavi .footwrap3 .contact h2 {
+            font-size: 22px;
+            font-size: 2.2rem;
             font-weight: bold;
             margin-bottom: 5px; }
           footer #footnavi .footwrap3 .contact a {
@@ -1850,7 +1873,9 @@ footer {
             font-size: 16px;
             font-size: 1.6rem; }
         footer #footnavi .footwrap3 img {
-          margin: 20px 0 10px 0; }
+          margin: 20px 0 10px 0;
+          width: 150px;
+          height: auto; }
         footer #footnavi .footwrap3 h1 {
           font-size: 14px;
           font-size: 1.4rem; }
@@ -1912,6 +1937,10 @@ footer {
         #content .spirit .companyprofile_wrap .entrance, #content .about .companyprofile_wrap .entrance, #content .prsurvice .companyprofile_wrap .entrance {
           float: none;
           margin-bottom: 10px; }
+        #content .spirit .companyprofile_wrap .exective_profile, #content .about .companyprofile_wrap .exective_profile, #content .prsurvice .companyprofile_wrap .exective_profile {
+          padding: 20px 20px 0; }
+        #content .spirit .companyprofile_wrap .history th, #content .about .companyprofile_wrap .history th, #content .prsurvice .companyprofile_wrap .history th {
+          width: 100px; }
       #content .spirit .otoiawase_sp, #content .about .otoiawase_sp, #content .prsurvice .otoiawase_sp {
         display: none; }
 
@@ -1929,6 +1958,8 @@ footer {
       margin-top: 20px; }
       .prsurvice #flow_sp img, .prsurvice #contract img {
         width: 100%; }
+      .prsurvice #flow_sp .contract1 th, .prsurvice #contract .contract1 th {
+        width: 80px; }
 
   /*PRとはページ（mobile）----------------------*/
   #content_whatispr {
