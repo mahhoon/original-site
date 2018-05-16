@@ -1273,6 +1273,9 @@ footer {
         font-size: 11px;
         font-size: 1.1rem; }
 
+.whatispr_navi_area_sp {
+  display: none; }
+
 #content_whatispr {
   width: 758px;
   margin: 50px auto; }
@@ -1667,6 +1670,13 @@ footer {
       font-size: 26px;
       font-size: 2.6rem; }
 
+  .cover_area_whatispr {
+    height: 100px; }
+    .cover_area_whatispr .page_title {
+      padding: 50px 0;
+      font-size: 26px;
+      font-size: 2.6rem; }
+
   .wrap_issue {
     display: block;
     height: 140px;
@@ -1961,8 +1971,76 @@ footer {
       .prsurvice #flow_sp .contract1 th, .prsurvice #contract .contract1 th {
         width: 80px; }
 
+  .eachsurvice {
+    padding: 0;
+    margin-top: 20px; }
+    .eachsurvice .eachsurvice_title img.eachsurvice_image {
+      float: none;
+      margin: 0;
+      width: 100%; }
+    .eachsurvice .eachsurvice_title h2 {
+      font-size: 20px;
+      font-size: 2rem;
+      display: inline; }
+    .eachsurvice .eachsurvice_title .category_read {
+      margin-top: 10px; }
+
+  .prmenu_content {
+    padding: 0; }
+    .prmenu_content p.read {
+      margin: 10px 0; }
+    .prmenu_content .iconarea {
+      margin-top: 0; }
+      .prmenu_content .iconarea .prmenu .prmenuicons {
+        display: block; }
+        .prmenu_content .iconarea .prmenu .prmenuicons li {
+          width: 100%;
+          padding: 0;
+          height: 25px; }
+    .prmenu_content .survicemenu_wrap .photo_left img {
+      float: none; }
+    .prmenu_content .survicemenu_wrap .photo_left .note {
+      margin: 10px 0; }
+
   /*PRとはページ（mobile）----------------------*/
+  .whatispr_navi_area {
+    display: none; }
+
+  .whatispr_navi_area_sp {
+    display: block; }
+    .whatispr_navi_area_sp .whatispr_navtab_sp {
+      padding: 10px 10px 0;
+      background-color: #26499d;
+      display: flex;
+      justify-content: space-between; }
+      .whatispr_navi_area_sp .whatispr_navtab_sp li {
+        width: 24%;
+        text-align: center;
+        background-color: #547ad5;
+        padding: 5px;
+        border-color: #26499d;
+        border-width: 1px 1px 0;
+        border-style: solid;
+        border-top-right-radius: 6px; }
+        .whatispr_navi_area_sp .whatispr_navtab_sp li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 12px;
+          font-size: 1.2rem; }
+      .whatispr_navi_area_sp .whatispr_navtab_sp .selected {
+        background-color: #fdfcf9; }
+        .whatispr_navi_area_sp .whatispr_navtab_sp .selected a {
+          color: #333; }
+    .whatispr_navi_area_sp h2 {
+      padding: 30px 10px 0;
+      font-size: 26px;
+      font-size: 2.6rem; }
+
   #content_whatispr {
-    width: 96%; } }
+    width: 96%;
+    margin-top: 10px; }
+    #content_whatispr h2 {
+      font-size: 20px;
+      font-size: 2rem; } }
 
 /*# sourceMappingURL=cocoknots.css.map */

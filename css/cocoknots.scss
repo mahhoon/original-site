@@ -1705,6 +1705,10 @@ footer {
     }
 }
 
+.whatispr_navi_area_sp {
+    display: none;
+}
+
 //PRとは
 #content_whatispr {
     width: 758px;
@@ -2232,6 +2236,14 @@ footer {
         }
     }
     
+    .cover_area_whatispr {
+        height: 100px;
+        .page_title {
+            padding: 50px 0;
+            @include fontsize(26);
+        }
+    }
+    
 
     
     //課題から(mobile)
@@ -2626,8 +2638,105 @@ footer {
             }
         }
     }
+    
+    .eachsurvice {
+        padding: 0;
+        margin-top: 20px;
+        
+        .eachsurvice_title {
+            img.eachsurvice_image {
+                float: none;
+                margin: 0;
+                width: 100%;
+            }
+            h2 {
+                @include fontsize(20);
+                display: inline;
+            }
+            .category_read {
+                margin-top: 10px;
+            }
+        }
+    }
+    
+    .prmenu_content {
+        padding: 0;
+        p.read {
+            margin: 10px 0;
+        }
+        .iconarea {
+            margin-top: 0;
+            .prmenu {
+                .prmenuicons {
+                    display: block;
+                    li {
+                        width: 100%;
+                        padding: 0;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        .survicemenu_wrap{
+            .photo_left {
+                img {
+                    float: none;
+                }
+                .note {
+                    margin: 10px 0;
+                }
+            }
+        }
+
+    }
+    
+    
     /*PRとはページ（mobile）----------------------*/
+    .whatispr_navi_area {
+        display: none;
+    }
+    .whatispr_navi_area_sp {
+        display: block;
+        .whatispr_navtab_sp {
+            padding: 10px 10px 0;
+            background-color: $blue1;
+            display: flex;
+            justify-content: space-between;
+            li {
+                width: 24%;
+                text-align: center;
+                background-color: lighten($blue1, 20%);
+                padding: 5px;
+                border-color: $blue1;
+                border-width: 1px 1px 0;
+                border-style: solid;
+                border-top-right-radius: 6px;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    @include fontsize(12);
+                }
+            }
+            .selected {
+                background-color: $base-white;
+                a { 
+                    color: #333;
+                }
+            }
+        }
+        h2 {
+            padding: 30px 10px 0;
+            @include fontsize(26);
+            
+        }
+    }
+    
     #content_whatispr {
-    width: 96%;
+        width: 96%;
+        margin-top: 10px;
+    
+        h2 {
+            @include fontsize(20);
+        }
     }
 }
