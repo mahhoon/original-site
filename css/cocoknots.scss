@@ -366,7 +366,7 @@ width: 30%;
         border-radius: 14px;
 }
 
-/*
+
 // トップページおすすめ
 #recommend {
     background-color: none;
@@ -382,6 +382,7 @@ width: 30%;
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
+    padding-top: 30px;
     justify-content: space-between;
     
     .content_thumbnail_1,.content_thumbnail_2,.content_thumbnail_3 {
@@ -434,6 +435,7 @@ width: 30%;
     }
 }
 
+/*
 .recommends_wrap_sp {
     display: none;
 }
@@ -1038,7 +1040,9 @@ footer {
             line-height: 1.5;
             margin-top: 10px;
             span {
-                border-bottom: 1px dotted #333;
+                border-bottom: 2px dotted #333;
+                margin-bottom: 5px;
+                display: inline-block;
             }
             .midashi {
                 font-weight: bold;
@@ -1132,6 +1136,13 @@ footer {
                     font-size: 12px;	
                     font-size: 1.2rem;
                 }
+         }
+         
+         #enlightenment_description , #training_description , #innerpr_description ,
+         #crisis_description , #construction_description , #release_description ,
+         #seminar_description , #tour_description , #forum_description , #lecturer_description {
+             padding-top: 110px;
+             margin-top: -110px;
          }
          
          .photo_left{
@@ -1745,18 +1756,16 @@ footer {
             margin-bottom: 20px;
     }
     p {
-        @include fontsize(16);
-        line-height: 2;
         margin-bottom: 50px;
         .teigi {
             margin-top: 20px;
             display: block;
             border: 1px dashed #333;
             padding: 10px;
-            @include fontsize(15);
             .source {
             @include fontsize(12);
             padding-left: 20px;
+            line-height: 1.2;
             }
         }
         .bold {
@@ -2737,6 +2746,85 @@ footer {
     
         h2 {
             @include fontsize(20);
+        }
+        
+        
+        .require {
+            h3 {
+                @include fontsize(15);
+            }
+        }
+    }
+    
+    #content_pr3 {
+        width: 96%;
+        margin: 0;
+        padding: 10px;
+        
+        h2 {
+            @include fontsize(20);
+            margin: 20px 0;
+        }
+       
+        img {
+            width: 100%;
+        }
+    }
+    
+    #content_prqa {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        
+        .q_area {
+            width: 100%;
+            padding: 10px;
+            .q_list {
+                @include fontsize(14);
+                tr {
+                    padding: 10px 5px;
+                    td , th {
+                        padding: 10px 5px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .content_qs {
+        width: 96%;
+        margin: 0;
+        padding: 10px;
+        display: block;
+        
+        .qs_read {
+            width: 100%;
+            padding: 0;
+            p {
+                line-height: 1.5;
+            }
+        }
+        
+        .qsimage {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    
+    .qs_info , .qs_info_new {
+        width: 100%;
+        margin: 10px;
+        display: block;
+        padding: 10px;
+        
+        .midashi , .midashi_2 {
+            margin: 0;
+        }
+        
+        .qs_past {
+            p {
+                @include fontsize(13);
+            }
         }
     }
 }

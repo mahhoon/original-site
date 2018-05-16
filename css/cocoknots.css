@@ -259,74 +259,62 @@ body {
   border: 1px solid #333;
   border-radius: 14px; }
 
-/*
-// トップページおすすめ
 #recommend {
-    background-color: none;
-    
-    a{
-        text-decoration: none;
-        color: #333;
-    }
-}
+  background-color: none; }
+  #recommend a {
+    text-decoration: none;
+    color: #333; }
 
 .recommends_wrap {
-    width: 98%;
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    
-    .content_thumbnail_1,.content_thumbnail_2,.content_thumbnail_3 {
-            width: 33.33%;
-            margin: 20px 10px;
-            background-color: #fff;
-            box-shadow: 1px 1px 8px #a6a6a6;
-            
-            .content_thumbnail_image {
-                height: 130px;
-                text-align: center;
-                img {
-                    max-width: 100%;
-                }
-            }
-            
-            h3 {
-                @include fontsize(16);
-                padding: 20px 0 10px;
-                height: 20px;
-                text-align: center;
-                line-height: 1.2;
-            }
-            P {
-                padding: 20px;
-                line-height: 1.5;
-                @include fontsize(13);
-            }
-    }
-    .ribbon_over {
-        position: relative;
-    }
-    p.ribbon {
-        position: absolute;
-        padding: 2px;
-        top: 4px;
-        left: -8px;
-        background-color: $blue1;
-        color: #fff;
-        @include fontsize(12);
-    }
-    p.ribbon:before {
-        position: absolute;
-        content: '';
-        top: 100%;
-        left: 0;
-        border: none;
-        border-bottom: solid 10px transparent;
-        border-right: solid 8px darken($blue1 , 50%);
-    }
-}
+  width: 98%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between; }
+  .recommends_wrap .content_thumbnail_1, .recommends_wrap .content_thumbnail_2, .recommends_wrap .content_thumbnail_3 {
+    width: 33.33%;
+    margin: 20px 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px #a6a6a6; }
+    .recommends_wrap .content_thumbnail_1 .content_thumbnail_image, .recommends_wrap .content_thumbnail_2 .content_thumbnail_image, .recommends_wrap .content_thumbnail_3 .content_thumbnail_image {
+      height: 130px;
+      text-align: center; }
+      .recommends_wrap .content_thumbnail_1 .content_thumbnail_image img, .recommends_wrap .content_thumbnail_2 .content_thumbnail_image img, .recommends_wrap .content_thumbnail_3 .content_thumbnail_image img {
+        max-width: 100%; }
+    .recommends_wrap .content_thumbnail_1 h3, .recommends_wrap .content_thumbnail_2 h3, .recommends_wrap .content_thumbnail_3 h3 {
+      font-size: 16px;
+      font-size: 1.6rem;
+      padding: 20px 0 10px;
+      height: 20px;
+      text-align: center;
+      line-height: 1.2; }
+    .recommends_wrap .content_thumbnail_1 P, .recommends_wrap .content_thumbnail_2 P, .recommends_wrap .content_thumbnail_3 P {
+      padding: 20px;
+      line-height: 1.5;
+      font-size: 13px;
+      font-size: 1.3rem; }
+  .recommends_wrap .ribbon_over {
+    position: relative; }
+  .recommends_wrap p.ribbon {
+    position: absolute;
+    padding: 2px;
+    top: 4px;
+    left: -8px;
+    background-color: #26499d;
+    color: #fff;
+    font-size: 12px;
+    font-size: 1.2rem; }
+  .recommends_wrap p.ribbon:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 8px black; }
 
+/*
 .recommends_wrap_sp {
     display: none;
 }
@@ -776,7 +764,9 @@ footer {
     line-height: 1.5;
     margin-top: 10px; }
     .prsurvice .smalltext span, .prmenu_content .smalltext span {
-      border-bottom: 1px dotted #333; }
+      border-bottom: 2px dotted #333;
+      margin-bottom: 5px;
+      display: inline-block; }
     .prsurvice .smalltext .midashi, .prmenu_content .smalltext .midashi {
       font-weight: bold; }
   .prsurvice h2, .prmenu_content h2 {
@@ -847,6 +837,11 @@ footer {
     color: #26499d;
     font-size: 12px;
     font-size: 1.2rem; }
+.prmenu_content #enlightenment_description, .prmenu_content #training_description, .prmenu_content #innerpr_description,
+.prmenu_content #crisis_description, .prmenu_content #construction_description, .prmenu_content #release_description,
+.prmenu_content #seminar_description, .prmenu_content #tour_description, .prmenu_content #forum_description, .prmenu_content #lecturer_description {
+  padding-top: 110px;
+  margin-top: -110px; }
 .prmenu_content .photo_left img {
   float: left;
   margin: 0 20px 20px 0; }
@@ -1307,21 +1302,17 @@ footer {
     font-weight: bold;
     margin-bottom: 20px; }
   #content_whatispr p {
-    font-size: 16px;
-    font-size: 1.6rem;
-    line-height: 2;
     margin-bottom: 50px; }
     #content_whatispr p .teigi {
       margin-top: 20px;
       display: block;
       border: 1px dashed #333;
-      padding: 10px;
-      font-size: 15px;
-      font-size: 1.5rem; }
+      padding: 10px; }
       #content_whatispr p .teigi .source {
         font-size: 12px;
         font-size: 1.2rem;
-        padding-left: 20px; }
+        padding-left: 20px;
+        line-height: 1.2; }
     #content_whatispr p .bold {
       font-weight: bold; }
   #content_whatispr .require span {
@@ -2041,6 +2032,60 @@ footer {
     margin-top: 10px; }
     #content_whatispr h2 {
       font-size: 20px;
-      font-size: 2rem; } }
+      font-size: 2rem; }
+    #content_whatispr .require h3 {
+      font-size: 15px;
+      font-size: 1.5rem; }
+
+  #content_pr3 {
+    width: 96%;
+    margin: 0;
+    padding: 10px; }
+    #content_pr3 h2 {
+      font-size: 20px;
+      font-size: 2rem;
+      margin: 20px 0; }
+    #content_pr3 img {
+      width: 100%; }
+
+  #content_prqa {
+    width: 100%;
+    margin: 0;
+    padding: 10px; }
+    #content_prqa .q_area {
+      width: 100%;
+      padding: 10px; }
+      #content_prqa .q_area .q_list {
+        font-size: 14px;
+        font-size: 1.4rem; }
+        #content_prqa .q_area .q_list tr {
+          padding: 10px 5px; }
+          #content_prqa .q_area .q_list tr td, #content_prqa .q_area .q_list tr th {
+            padding: 10px 5px; }
+
+  .content_qs {
+    width: 96%;
+    margin: 0;
+    padding: 10px;
+    display: block; }
+    .content_qs .qs_read {
+      width: 100%;
+      padding: 0; }
+      .content_qs .qs_read p {
+        line-height: 1.5; }
+    .content_qs .qsimage {
+      width: 100%;
+      margin: 0; }
+
+  .qs_info, .qs_info_new {
+    width: 100%;
+    margin: 10px;
+    display: block;
+    padding: 10px; }
+    .qs_info .midashi, .qs_info .midashi_2, .qs_info_new .midashi, .qs_info_new .midashi_2 {
+      margin: 0; }
+    .qs_info .qs_past p, .qs_info_new .qs_past p {
+      font-size: 13px;
+      font-size: 1.3rem; } }
 
 /*# sourceMappingURL=cocoknots.css.map */
