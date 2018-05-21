@@ -11,7 +11,7 @@ html{
 
 $ja_font : "メイリオ", Meiryo UI , Meiryo,Osaka , YuGothic, "游ゴシック","ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic",sans-serif;
 $blue1 : #5a4498;//紫
-$blue2 : #f39800;//オレンジ
+$blue2 : #3cb371;//オレンジ
 $blue3 : #4169e1;
 $base_white : #fdfcf9;
 
@@ -99,7 +99,7 @@ body{
         }
         
         ul.navichild {
-            background-color: lighten( $blue2, 15% );
+            background-color: lighten( $blue2, 30% );
             border-top: 10px solid $base_white;
             position: absolute;
             width: 170px;
@@ -642,18 +642,18 @@ footer {
 //カバーエリア
     
     .cover_area_about {
-        /*
+        
         background-image: url("../images/about/spiritheroimage.jpg");
         background-size: cover;
-        */
+        
         height: 150px;
         background-color: lighten($blue1, 20%);
         
-        /*
+        
         @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
           background-image: url("../images/about/spiritheroimage@2x.jpg");
         }
-        */
+        
     }
     
     .page_title {
@@ -896,7 +896,7 @@ footer {
             }
             a:hover {
                 li {
-                    background-color: #ededed;
+                    background-color: lighten($blue2, 30%);
                 }
             }
             
@@ -925,18 +925,16 @@ footer {
 ---------------------------------------------------*/
 //カバーエリア
     .cover_area_survice {
-        /*
-        background-image: url("../images/survice/survicetopimage.jpg");
+        background-image: url("../images/about/spiritheroimage.jpg");
         background-size: cover;
-        */
+        
         height: 150px;
         background-color: lighten($blue1, 20%);
         
-        /*
+        
         @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-          background-image: url("../images/survice/survicetopimage@2x.jpg");
+          background-image: url("../images/about/spiritheroimage@2x.jpg");
         }
-        */
         
         
         .page_title {
@@ -955,7 +953,6 @@ footer {
         padding: 50px 30px 0 0;
         
         h2.read {
-            color: $blue1;
             font-weight: bold;
             margin-bottom: 20px;
             @include fontsize(17);
@@ -1083,7 +1080,7 @@ footer {
                         padding: 15px;
                         vertical-align: middle;
                         border-right: 1px solid $blue1;
-                        background-color: $blue2;
+                        background-color: lighten($blue1,20%);
                         color: #fff;
                     }
                     td {
@@ -1130,14 +1127,9 @@ footer {
                     line-height: 1.8;
                     @include fontsize(14);
                 }
-                .note {
-                    padding: 20px 0;
-                    color: #26499d;	
-                    font-size: 12px;	
-                    font-size: 1.2rem;
-                }
+
          }
-         
+         //ページ内リンク時のヘッダー固定高さ分調整
          #enlightenment_description , #training_description , #innerpr_description ,
          #crisis_description , #construction_description , #release_description ,
          #seminar_description , #tour_description , #forum_description , #lecturer_description {
@@ -1146,17 +1138,24 @@ footer {
          }
          
          .photo_left{
+            float: left;
+            width: 255px;
+            margin-right: 20px;
             img {
-            float: left;	
-            margin: 0 20px 20px 0;
+            margin-bottom: 10px;
+            
             }
             .note {
                 padding: 10px;	
-                margin-left: 275px;	
-                margin-top: 10px;	
                 background-color: #e6e6e6;	
                 border-radius: 6px;
+                color: #26499d;	
+                @include fontsize(12);
             }
+        }
+        
+        .prmenudescription {
+            
         }
         
     }
@@ -1708,7 +1707,7 @@ footer {
             box-sizing: border-box;
             padding: 20px 0;
             background-color: lighten($blue1, 20%);
-            width: 30%;
+            width: 40%;
             height: 50px;
             margin: 10px 10px 0;
             text-align: center;
@@ -1719,14 +1718,7 @@ footer {
             text-decoration: none;
             color: #fff;
         }   
-        .selected {
-            background-color: $base-white;
-            a {
-                @include fontsize(16);
-                border-bottom: 2px solid $blue1;
-                color: #333;
-            }
-        }
+        
         
         .a2l {
             padding: 7px 0;
@@ -1734,6 +1726,17 @@ footer {
         
             span {
                 @include fontsize(11);
+            }
+        }
+        .selected {
+            background-color: $base-white;
+            a {
+                @include fontsize(16);
+                border-bottom: 2px solid $blue1;
+                color: #333;
+            }
+            span {
+                border-bottom: 0;
             }
         }
     }
@@ -2184,7 +2187,7 @@ footer {
             right: 0px;
             text-align: left;
             border: 1px solid $blue1;
-            background: lighten($blue2,20%);
+            background: lighten($blue2,30%);
             z-index: 100;
             display: none;
             
@@ -2738,12 +2741,10 @@ footer {
         }
         .survicemenu_wrap{
             .photo_left {
-                img {
-                    float: none;
-                }
-                .note {
-                    margin: 10px 0;
-                }
+                float: none;
+            }
+            .note {
+                margin-bottom: 10px;
             }
         }
 
@@ -2762,7 +2763,8 @@ footer {
             display: flex;
             justify-content: space-between;
             li {
-                width: 30%;
+                width: 45%;
+                height: 20px;
                 text-align: center;
                 background-color: lighten($blue1, 20%);
                 padding: 5px;
@@ -2796,6 +2798,7 @@ footer {
     
         h2 {
             @include fontsize(20);
+            margin-top: 0;
         }
         
         .pr3_title {
@@ -2805,6 +2808,7 @@ footer {
         .pr3_subtitle {
             @include fontsize(18);
             font-weight: bold;
+            margin: 30px 0 10px;
         }
         
         
@@ -2842,9 +2846,15 @@ footer {
 */
     
     #content_prqa {
-        width: 100%;
+        width: 96%;
         margin: 0;
         padding: 10px;
+        
+        .prqa_toptitle {
+            @include fontsize(30);
+            font-weight: bold;
+            text-align: left;
+        }
         
         .q_area {
             width: 100%;
@@ -2856,6 +2866,15 @@ footer {
                     td , th {
                         padding: 10px 5px;
                     }
+                }
+            }
+        }
+        
+        .page_navi {
+            .gonext , .gopre {
+                a {
+                    line-height: 1.2;
+                    @include fontsize(11);
                 }
             }
         }
@@ -2876,13 +2895,13 @@ footer {
         }
         
         .qsimage {
-            width: 100%;
+            width: 96%;
             margin: 0;
         }
     }
     
     .qs_info , .qs_info_new {
-        width: 100%;
+        width: 96%;
         margin: 10px;
         display: block;
         padding: 10px;
