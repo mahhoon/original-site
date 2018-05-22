@@ -36,12 +36,12 @@ body {
       font-size: 1.5rem;
       font-weight: bold;
       margin: 5px 0 20px 10px;
-      color: #3cb371; }
+      color: #f3981d; }
       #headerwrap #head_navi ul.head_contact_pc li a {
-        color: #3cb371;
+        color: #f3981d;
         text-decoration: none; }
       #headerwrap #head_navi ul.head_contact_pc li .access_button {
-        background-color: #3cb371;
+        background-color: #f3981d;
         border-radius: 4px;
         color: #fff;
         padding: 1px 6px;
@@ -64,9 +64,9 @@ body {
     #headerwrap #head_navi ul.head_nav li.about {
       border-left: 1px solid #333; }
     #headerwrap #head_navi ul.head_nav li:hover {
-      border-bottom: 3px solid #3cb371; }
+      border-bottom: 3px solid #f3981d; }
     #headerwrap #head_navi ul.navichild {
-      background-color: #a7e1c1;
+      background-color: #fbdaae;
       border-top: 10px solid #fdfcf9;
       position: absolute;
       width: 170px;
@@ -160,7 +160,7 @@ body {
         display: none; }
 
 #from_issue {
-  background-color: #3cb371; }
+  background-color: #f3981d; }
 
 .wrap_issue {
   height: 90px;
@@ -212,7 +212,7 @@ body {
     padding: 0 10px; }
     #survicecategory .survice_wrap a {
       text-decoration: none;
-      color: #5a4498;
+      color: #333;
       font-size: 16px;
       font-size: 1.6rem;
       line-height: 50px;
@@ -232,7 +232,7 @@ body {
     display: none; }
 
 .top_sectiontitle {
-  border-bottom: 4px solid #3cb371;
+  border-bottom: 4px solid #f3981d;
   display: inline-block;
   position: relative;
   height: 32px;
@@ -496,7 +496,7 @@ footer {
     font-weight: bold;
     color: #5a4498;
     line-height: 1.5;
-    border-left: 5px solid #3cb371;
+    border-left: 5px solid #f3981d;
     padding-left: 20px;
     margin: 50px 0 30px 0; }
   #content .spirit p {
@@ -649,7 +649,7 @@ footer {
     #sidebar #sidemenu a li.sidemenu_top {
       border-top: 1px #a9a9a9 solid; }
   #sidebar #sidemenu a:hover li {
-    background-color: #a7e1c1; }
+    background-color: #fbdaae; }
   #sidebar #sidemenu .sidemenucate1 {
     background-color: #a9a9a9;
     padding: 10px 5px;
@@ -699,7 +699,7 @@ footer {
     line-height: 1.5; }
   .prsurvice .iconarea, .prmenu_content .iconarea {
     padding: 10px;
-    background-color: #80d5a6;
+    background-color: #907dc5;
     margin: 30px 0; }
   .prsurvice .survicecategory, .prmenu_content .survicecategory {
     margin-bottom: 30px; }
@@ -719,10 +719,10 @@ footer {
         .prsurvice .survicecategory .categoryicons li img, .prsurvice .survicecategory .categoryicons li a, .prmenu_content .survicecategory .categoryicons li img, .prmenu_content .survicecategory .categoryicons li a {
           display: block;
           text-decoration: none;
-          color: #5a4498;
+          color: #333;
           font-weight: bold; }
       .prsurvice .survicecategory .categoryicons li:hover, .prmenu_content .survicecategory .categoryicons li:hover {
-        background-color: #80d5a6; }
+        background-color: #fbdaae; }
   .prsurvice .prmenu h4, .prmenu_content .prmenu h4 {
     margin-bottom: 10px;
     color: #333; }
@@ -730,8 +730,7 @@ footer {
       font-size: 13px;
       font-size: 1.3rem;
       font-weight: normal;
-      margin-left: 5px;
-      color: #5a4498; }
+      margin-left: 5px; }
   .prsurvice .prmenu .prmenuicons, .prmenu_content .prmenu .prmenuicons {
     background-color: #fdfcf9;
     display: flex;
@@ -889,7 +888,7 @@ footer {
       border-bottom: 2px dotted #5a4498;
       margin: 5px; }
     .eachsurvice .eachsurvice_read a:hover.linkbutton {
-      background-color: #80d5a6; }
+      background-color: #f8c47e; }
 
 .more_detailsmenu {
   margin-top: 50px; }
@@ -1093,7 +1092,7 @@ footer {
 
 .cover_area_blog .page_title {
   box-sizing: border-box;
-  background-color: #3cb371;
+  background-color: #f3981d;
   height: 120px;
   padding-top: 50px; }
 .cover_area_blog .blog_navi {
@@ -1428,7 +1427,7 @@ footer {
       width: 100%; }
       #content_prqa .page_navi .pnaviarea .gopre, #content_prqa .page_navi .pnaviarea .gonext {
         padding: 5px 15px 0;
-        background-color: #80d5a6;
+        background-color: #f8c47e;
         line-height: 40px;
         margin: 0 5px; }
         #content_prqa .page_navi .pnaviarea .gopre a, #content_prqa .page_navi .pnaviarea .gonext a {
@@ -1465,7 +1464,7 @@ footer {
       font-size: 14px;
       font-size: 1.4rem; }
     #content_prqa .page_navi a.goindex:hover {
-      background-color: #80d5a6; }
+      background-color: #f8c47e; }
 
 #content_pr3, .qs_read {
   width: 758px;
@@ -1533,12 +1532,12 @@ footer {
     font-weight: bold; }
 
 .qs_info_new {
-  background-color: #6dce98; }
+  background-color: #f7b966; }
 
 /*お知らせページ------------------------------------------------
 ------------------------------------------------------*/
 .cover_area_news {
-  background-color: #3cb371;
+  background-color: #f3981d;
   height: 120px; }
   .cover_area_news .page_title {
     padding-top: 60px; }
@@ -1611,7 +1610,7 @@ footer {
       right: 0px;
       text-align: left;
       border: 1px solid #5a4498;
-      background: #a7e1c1;
+      background: #fbdaae;
       z-index: 100;
       display: none; }
       #headerwrap ul.sp_menu_toggle li {
