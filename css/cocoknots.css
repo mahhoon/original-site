@@ -209,6 +209,7 @@ body {
   #survicecategory .survice_wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 0 10px; }
     #survicecategory .survice_wrap a {
       text-decoration: none;
@@ -225,8 +226,8 @@ body {
     #survicecategory .survice_wrap a:hover img {
       opacity: .7; }
     #survicecategory .survice_wrap .survice {
-      width: 25%;
-      text-align: left;
+      width: 22%;
+      text-align: center;
       margin-bottom: 10px; }
   #survicecategory .survice_wrap_sp {
     display: none; }
@@ -699,7 +700,7 @@ footer {
     line-height: 1.5; }
   .prsurvice .iconarea, .prmenu_content .iconarea {
     padding: 10px;
-    background-color: #907dc5;
+    background-color: #ccc;
     margin: 30px 0; }
   .prsurvice .survicecategory, .prmenu_content .survicecategory {
     margin-bottom: 30px; }
@@ -709,18 +710,22 @@ footer {
     .prsurvice .survicecategory .categoryicons, .prmenu_content .survicecategory .categoryicons {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       background-color: #fdfcf9;
-      padding: 5px; }
+      padding: 5px 5px 0 5px; }
       .prsurvice .survicecategory .categoryicons li, .prmenu_content .survicecategory .categoryicons li {
-        width: 178px;
+        width: 24%;
         height: 100px;
         text-align: center;
         margin-bottom: 10px; }
-        .prsurvice .survicecategory .categoryicons li img, .prsurvice .survicecategory .categoryicons li a, .prmenu_content .survicecategory .categoryicons li img, .prmenu_content .survicecategory .categoryicons li a {
-          display: block;
+        .prsurvice .survicecategory .categoryicons li a, .prmenu_content .survicecategory .categoryicons li a {
           text-decoration: none;
           color: #333;
-          font-weight: bold; }
+          font-weight: bold;
+          padding-bottom: 10px; }
+          .prsurvice .survicecategory .categoryicons li a img, .prmenu_content .survicecategory .categoryicons li a img {
+            width: 60px;
+            margin: 5px 0; }
       .prsurvice .survicecategory .categoryicons li:hover, .prmenu_content .survicecategory .categoryicons li:hover {
         background-color: #fbdaae; }
   .prsurvice .prmenu h4, .prmenu_content .prmenu h4 {
@@ -744,9 +749,10 @@ footer {
         text-decoration: none;
         line-height: 1.2;
         font-size: 14px;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        font-weight: bold; }
       .prsurvice .prmenu .prmenuicons li a:hover, .prmenu_content .prmenu .prmenuicons li a:hover {
-        text-decoration: underline; }
+        background-color: #fbdaae; }
   .prsurvice .smalltext, .prmenu_content .smalltext {
     font-size: 14px;
     font-size: 1.4rem;
