@@ -605,6 +605,52 @@ footer {
 }
 }
 
+/*プライバシーポリシー*/
+.cover_area_privacy {
+
+    padding: 50px 30px;
+    text-align: center;
+        .page_title {
+            color: #333;
+            padding: 0 10px;
+            display: inline;
+            @include fontsize(26);
+            border-bottom: 3px solid $blue1;
+            letter-spacing: 0;
+        }
+}
+
+#content_privacy{
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    
+    .privacy_read {
+        @include fontsize(15);
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+    .privacy_honbun {
+        h3 {
+            @include fontsize(18);
+            margin-bottom: 5px;
+            color: $blue1;
+        }
+        p{
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    }
+    .privacy_tel {
+        width: 230px;
+        line-height: 2;
+        border-top: 1px solid $blue1;
+        padding-top: 10px;
+        margin-top: 30px;
+    }
+}
+
 /*企業案内ページ---------------------------
 ---------------------------------------------------*/
 
@@ -2257,6 +2303,9 @@ footer {
                     }
                     .pr3seal_sp {
                     display: block;
+                    img {
+                        height: 80px;
+                    }
                     }
                     p {
                         display: block;
