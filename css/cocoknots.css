@@ -109,19 +109,19 @@ body {
   z-index: 1000; }
 
 #cover_area {
-  background-image: url("../images/top/people.jpg");
-  background-size: 100%;
+  background-image: url("../images/top/topheroimg_y.svg");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
   #cover_area .cover_content {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
-    height: 426px;
+    height: 300px;
     display: flex;
     justify-content: space-around; }
     #cover_area .cover_content .cover_title {
-      padding-top: 30px;
+      padding-top: 100px;
       /*
       .readmore {
           background-color: $blue1;
@@ -147,17 +147,21 @@ body {
       margin-top: 10px;
       color: #5a4498;
       font-weight: bold;
-      font-size: 13px;
-      font-size: 1.3rem;
+      font-size: 15px;
+      font-size: 1.5rem;
       line-height: 1.4; }
     #cover_area .cover_content .seal {
-      margin-top: 20px; }
+      margin-top: 100px; }
+      #cover_area .cover_content .seal a {
+        opacity: 0.8; }
       #cover_area .cover_content .seal .pr3seal_pc {
         margin-top: 10px; }
       #cover_area .cover_content .seal .pr3seal_sp {
         display: none; }
       #cover_area .cover_content .seal p {
         display: none; }
+      #cover_area .cover_content .seal a:hover {
+        opacity: 1; }
 
 #from_issue {
   background-color: #f3981d; }
@@ -182,7 +186,8 @@ body {
     margin: 0 20px; }
     .wrap_issue .letscontact a {
       text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      border-bottom: 1px solid #fff; }
     .wrap_issue .letscontact a:hover {
       color: #fff; }
       .wrap_issue .letscontact a:hover .underline {
@@ -209,26 +214,30 @@ body {
   #survicecategory .survice_wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0 10px; }
     #survicecategory .survice_wrap a {
       text-decoration: none;
       color: #333;
       font-size: 16px;
       font-size: 1.6rem;
-      line-height: 50px;
       font-weight: bold; }
       #survicecategory .survice_wrap a img {
         vertical-align: middle;
-        margin-right: 10px; }
+        margin-right: 10px;
+        width: 40px;
+        margin-bottom: 10px; }
     #survicecategory .survice_wrap a:hover {
       text-decoration: underline; }
     #survicecategory .survice_wrap a:hover img {
       opacity: .7; }
     #survicecategory .survice_wrap .survice {
-      width: 22%;
+      width: 24%;
       text-align: center;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      border: #a9a9a9 solid 1px;
+      padding: 10px 0;
+      box-sizing: border-box; }
   #survicecategory .survice_wrap_sp {
     display: none; }
 
@@ -1672,14 +1681,14 @@ footer {
         padding-left: 30px; }
 
   #cover_area {
-    background-image: url("../images/top/people_sp.jpg");
+    background-image: url("../images/top/topheroimg_sp_y.svg");
     background-size: cover; }
     #cover_area .cover_content {
       max-width: 100%;
       height: 250px;
       display: block;
       position: relative;
-      padding-left: 10px; }
+      padding-left: 20px; }
       #cover_area .cover_content .cover_title {
         padding-top: 20px;
         /*
@@ -1704,8 +1713,8 @@ footer {
         #cover_area .cover_content .seal p {
           display: block;
           line-height: 1.5;
-          font-size: 12px;
-          font-size: 1.2rem;
+          font-size: 14px;
+          font-size: 1.4rem;
           margin-bottom: 5px; }
 
   .cover_area_about, .cover_area_survice {
@@ -1808,6 +1817,8 @@ footer {
         color: #333;
         font-size: 12px;
         font-size: 1.2rem; }
+        #survicecategory .survice_wrap_sp a img {
+          width: 40px; }
 
   #recommend {
     padding: 10px 10px;
@@ -1879,11 +1890,12 @@ footer {
       font-size: 1.6rem;
       text-align: left; }
     #links_sp .banner_wrap_sp {
-      display: flex; }
+      display: flex;
+      justify-content: space-around; }
     #links_sp .link_banner_sp {
       display: block;
       text-decoration: none;
-      width: 30%;
+      width: 100px;
       padding: 5px; }
       #links_sp .link_banner_sp img {
         width: 100%; }
@@ -1952,7 +1964,8 @@ footer {
 
   /*企業理念ページ以下（mobile）--------------------*/
   #content {
-    display: block; }
+    display: block;
+    width: 90%; }
     #content article {
       width: 100%; }
     #content #sidebar {
@@ -2088,7 +2101,7 @@ footer {
       font-size: 2.6rem; }
 
   #content_whatispr {
-    width: 96%;
+    width: 90%;
     margin-top: 10px; }
     #content_whatispr h2 {
       font-size: 20px;
@@ -2113,7 +2126,7 @@ footer {
 
   /*pr3.0個別ページ
       #content_pr3 {
-          width: 96%;
+          width: 90%;
           margin: 0;
           padding: 10px;
           
@@ -2128,8 +2141,8 @@ footer {
       }
   */
   #content_prqa {
-    width: 96%;
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
     padding: 10px; }
     #content_prqa .prqa_toptitle {
       font-size: 30px;
@@ -2152,7 +2165,7 @@ footer {
       font-size: 1.1rem; }
 
   .content_qs {
-    width: 96%;
+    width: 90%;
     margin: 0;
     padding: 10px;
     display: block; }
@@ -2162,11 +2175,11 @@ footer {
       .content_qs .qs_read p {
         line-height: 1.5; }
     .content_qs .qsimage {
-      width: 96%;
+      width: 90%;
       margin: 0; }
 
   .qs_info, .qs_info_new {
-    width: 96%;
+    width: 90%;
     margin: 10px;
     display: block;
     padding: 10px; }

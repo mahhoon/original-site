@@ -164,8 +164,8 @@ body{
 //cover area
 
     #cover_area {
-        background-image: url("../images/top/people.jpg");
-        background-size: 100%;
+        background-image: url("../images/top/topheroimg_y.svg");
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         
@@ -174,13 +174,13 @@ body{
             max-width: 1024px;
             margin: 0 auto;
             
-            height: 426px;
+            height: 300px;
             display: flex;
             justify-content: space-around;
             
             
             .cover_title {
-                padding-top: 30px;
+                padding-top: 100px;
 
                 .cover_title_img_sp {
                     display: none;
@@ -211,12 +211,15 @@ body{
                 margin-top: 10px;
                 color: $blue1;
                 font-weight: bold;
-                @include fontsize(13);
+                @include fontsize(15);
                 line-height: 1.4;
             }
             
             .seal {
-                margin-top: 20px;
+                margin-top: 100px;
+                a {
+                    opacity: 0.8;
+                }
                 .pr3seal_pc {
                     margin-top: 10px;
                 }
@@ -225,6 +228,9 @@ body{
                 }
                 p {
                     display: none;
+                }
+                a:hover {
+                    opacity: 1;
                 }
             }
 
@@ -257,11 +263,13 @@ body{
      
      .letscontact {
         margin: 0 20px;
+        
 
         
         a {
             text-decoration: none;
             color: #fff;
+            border-bottom: 1px solid #fff;
         }
         a:hover {
             color: #fff;
@@ -304,18 +312,20 @@ body{
     .survice_wrap {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         padding: 0 10px;
         
         a {
             text-decoration: none;
             color: #333;
             @include fontsize(16);
-            line-height: 50px;
             font-weight: bold;
+            
             img {
                 vertical-align: middle;
                 margin-right: 10px;
+                width: 40px;
+                margin-bottom: 10px;
             }
             
         }
@@ -327,9 +337,12 @@ body{
         }
     
         .survice {
-            width: 22%;
+            width: 24%;
             text-align: center;
             margin-bottom: 10px;
+            border: #a9a9a9 solid 1px;
+            padding: 10px 0;
+            box-sizing: border-box;
         }
     }
     
@@ -2268,7 +2281,7 @@ footer {
         
     //カバーエリア(mobile)
     #cover_area {
-        background-image: url("../images/top/people_sp.jpg");
+        background-image: url("../images/top/topheroimg_sp_y.svg");
         background-size: cover;
         
         .cover_content {
@@ -2276,7 +2289,7 @@ footer {
             height: 250px;
             display: block;
             position: relative;
-            padding-left: 10px;
+            padding-left: 20px;
                 
                 .cover_title {
                     padding-top: 20px;
@@ -2310,7 +2323,7 @@ footer {
                     p {
                         display: block;
                         line-height: 1.5;
-                        @include fontsize(12);
+                        @include fontsize(14);
                         margin-bottom: 5px;
                     }
                     img {
@@ -2447,6 +2460,9 @@ footer {
                 text-decoration: none;
                 color: #333;
                 @include fontsize(12);
+                img {
+                    width: 40px;
+                }
             }
         }
     }
@@ -2546,12 +2562,13 @@ footer {
          
         .banner_wrap_sp{
            display: flex; 
+           justify-content: space-around;
         }
          
         .link_banner_sp{
                 display: block;
                 text-decoration: none;
-                width: 30%;
+                width: 100px;
                 padding: 5px;
             
             img {
@@ -2648,6 +2665,7 @@ footer {
     //1カラム設定
     #content {
         display: block;
+        width: 90%;
         
         article {
             width: 100%;
@@ -2848,7 +2866,7 @@ footer {
     }
     
     #content_whatispr {
-        width: 96%;
+        width: 90%;
         margin-top: 10px;
     
         h2 {
@@ -2885,7 +2903,7 @@ footer {
 
 /*pr3.0個別ページ
     #content_pr3 {
-        width: 96%;
+        width: 90%;
         margin: 0;
         padding: 10px;
         
@@ -2901,8 +2919,8 @@ footer {
 */
     
     #content_prqa {
-        width: 96%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
         padding: 10px;
         
         .prqa_toptitle {
@@ -2936,7 +2954,7 @@ footer {
     }
     
     .content_qs {
-        width: 96%;
+        width: 90%;
         margin: 0;
         padding: 10px;
         display: block;
@@ -2950,13 +2968,13 @@ footer {
         }
         
         .qsimage {
-            width: 96%;
+            width: 90%;
             margin: 0;
         }
     }
     
     .qs_info , .qs_info_new {
-        width: 96%;
+        width: 90%;
         margin: 10px;
         display: block;
         padding: 10px;
