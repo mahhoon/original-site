@@ -26,6 +26,10 @@
   <link rel="stylesheet" href="css/cocoknots.css">
   <link rel="stylesheet" href="css/animate.css">
   
+  <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  
   <!-- FontAwesome
   ------------------------------------------------------------ -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,6 +38,9 @@
   ------------------------------------------------------------ -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 　<script src="js/cocoknots.js"></script>
+　
+　<!-- Owl Carousel JS -->
+        <script src="owlcarousel/owl.carousel.min.js"></script>
 
     
 </head>
@@ -42,7 +49,7 @@
     <header id="header">
     <div id="headerwrap">
         <div id="pc_title_logo">
-            <h1><a href="index.html"><img src="images/common/logo_p.png" alt="Cocoknots" srcset="images/common/logo_p@2x.png 2x"/></a></h1>
+            <h1><a href="index.html"><img src="images/common/logo.png" alt="Cocoknots" srcset="images/common/logo_p@2x.png 2x"/></a></h1>
             <p>株式会社ココノッツ</p>
         </div>
         <div id="sp_title_logo">
@@ -95,8 +102,8 @@
                     </li><!--inline-block要素の謎の隙間を埋める
                  --><li><a href="#">ブログ</a>
                         <ul class="navichild">
-                            <li><a href="http://www.cocoknots.co.jp/blog/">ココノッツ代表ブログ</a></li>
-                            <li><a href="http://www.cocoknots.co.jp/cocolunch/">ココランチ</a></li>
+                            <li><a href="http://www.cocoknots.co.jp/blog/" target="_blank">ココノッツ代表ブログ</a></li>
+                            <li><a href="http://www.cocoknots.co.jp/cocolunch/" target="_blank">ココランチ</a></li>
                         </ul>
                     </li>
 
@@ -130,8 +137,8 @@
 <!--Q's
                     <li><a href="qs.html">医療広報勉強会「Q's」</a></li>
 -->
-                    <li class="sub_list_sp"><a href="http://www.cocoknots.co.jp/blog/">ココノッツ代表ブログ</a></li>
-                    <li><a href="http://www.cocoknots.co.jp/cocolunch/">ココランチ</a></li>
+                    <li class="sub_list_sp"><a href="http://www.cocoknots.co.jp/blog/" target="_blank">ココノッツ代表ブログ</a></li>
+                    <li><a href="http://www.cocoknots.co.jp/cocolunch/" target="_blank">ココランチ</a></li>
                 </ul>
         </nav>
     </div> <!--headerwrap-->
@@ -140,8 +147,8 @@
     <div id="cover_area">
         <div class="cover_content">
             <div class="cover_title">
-                <img class="cover_title_img wow fadeIn" data-wow-duration="2s" src="images/top/maincopy2.png" alt="医療と人びとを結ぶコミュニケーションを" srcset="images/top/maincopy2@2x.png 2x"/>
-                <img class="cover_title_img_sp" src="images/top/maincopy2_sp.png" alt="医療と人びとを結ぶコミュニケーションを" srcset="images/top/maincopy2_sp@2x.png 2x"/>
+                <img class="cover_title_img wow fadeIn" data-wow-duration="2s" src="images/top/maincopy2c.png" alt="医療と人びとを結ぶコミュニケーションを" srcset="images/top/maincopy2c@2x.png 2x"/>
+                <img class="cover_title_img_sp" src="images/top/maincopy2c_sp.png" alt="医療と人びとを結ぶコミュニケーションを" srcset="images/top/maincopy2c_sp@2x.png 2x"/>
                 <p class="cocoknotsis wow fadeIn" data-wow-duration="2s">ココノッツは、医療・ヘルスケアを専門とする<br>広報コンサルティングファームです</p>
                 <!--
                 <a class="readmore" href="pr3.html">Read More</a>
@@ -149,8 +156,10 @@
             </div>
             <div class="seal">
             <p>ココノッツは、<br>医療・ヘルスケアを専門とする<br>広報コンサルティングファームです</p>
+<!--
             <a class="pr3seal_pc" href="whatispr.html"><img class="wow jackInTheBox" src="images/top/pr3top.png" alt="コラム　ヘルスケア広報３.０" srcset="images/top/pr3top@2x.png 2x"/></a>
             <a class="pr3seal_sp"href="whatispr.html"><img src="images/top/pr3top.png" alt="コラム　ヘルスケア広報３.０" srcset="images/top/pr3top@2x.png 2x"/></a>
+-->
             </div>
         </div>
     </div>
@@ -158,6 +167,7 @@
     
     <section id="from_issue">
         <div class="wrap_issue">
+<!--
             <div class="issue">
                 <p>医療広報のプロに相談したい..</p>
                 <p>自社のネタを報道に結び付けたい..</p>
@@ -169,10 +179,12 @@
                 <a href="contact.html"><span class="underline">広報の「困った」</span><br>
                 <span class="underline">まずはお気軽にご相談ください。</span></a>
             </p>
+-->
+            <a class="thinkaboutpr" href="whatispr.html">私たちは、こう考えます</a>
         </div>
     </section>
     
-    <section id="survicecategory" class="wow fadeInUp">
+    <section id="survicecategory" > <!-- sectionタグに挿入 class="wow fadeInUp"-->
         <div class="survicecate_title">
             <h2><span class="top_sectiontitle">PRサービス</span></h2>
             <p class="read">医療・ヘルスケア分野での多くの経験とノウハウを生かし課題解決のサポートをいたします</p>
@@ -283,16 +295,16 @@
     </section>
     
     <section id="links_pc">
-        <a class="link_banner_pc" href="#"><img src="images/top/top-kimibloghero.jpg" alt="ココノッツ代表ブログ"></a>
-        <a class="link_banner_pc" href="#"><img src="images/top/top-cocolunchhero.jpg" alt="ココランチ"></a>
-        <a class="link_banner_pc" href="#"><img src="images/top/top-tanabe.jpg" alt="田辺功ブログ"></a>
+        <a class="link_banner_pc" href="#"><img src="images/top/top-kimibloghero.jpg" alt="ココノッツ代表ブログ" target="_blank"></a>
+        <a class="link_banner_pc" href="#"><img src="images/top/top-cocolunchhero.jpg" alt="ココランチ" target="_blank"></a>
+        <a class="link_banner_pc" href="#"><img src="images/top/top-tanabe.jpg" alt="田辺功ブログ" target="_blank"></a>
     </section>
     <section id="links_sp">
         <h2>リンク</h2>
         <div class="banner_wrap_sp">
-            <a class="link_banner_sp" href="http://www.cocoknots.co.jp/blog/"><img src="images/top/cocoblogbanner_sp.jpg" alt="ココノッツブログ"><h3>ココノッツ代表ブログ</h3></a>
-            <a class="link_banner_sp" href="http://www.cocoknots.co.jp/cocolunch/"><img src="images/top/cocolunchbanner_sp.jpg" alt="ココランチ"><h3>ココランチ</h3></a>
-            <a class="link_banner_sp" href="http://www.cocoknots.co.jp/tanabe/"><img src="images/top/tanabebanner_sp.jpg" alt="田辺功ブログ"><h3>医療ジャーナリスト 田辺功</h3></a>
+            <a class="link_banner_sp" href="http://www.cocoknots.co.jp/blog/"><img src="images/top/cocoblogbanner_sp.jpg" alt="ココノッツブログ" target="_blank"><h3>ココノッツ代表ブログ</h3></a>
+            <a class="link_banner_sp" href="http://www.cocoknots.co.jp/cocolunch/"><img src="images/top/cocolunchbanner_sp.jpg" alt="ココランチ" target="_blank"><h3>ココランチ</h3></a>
+            <a class="link_banner_sp" href="http://www.cocoknots.co.jp/tanabe/"><img src="images/top/tanabebanner_sp.jpg" alt="田辺功ブログ" target="_blank"><h3>医療ジャーナリスト 田辺功</h3></a>
         </div>
     </section>
     
@@ -329,9 +341,9 @@
 
                 <div>
                     <h3>ブログ</h3>
-                    <a href="http://www.cocoknots.co.jp/blog/">ココノッツ代表ブログ</a>
-                    <a href="http://www.cocoknots.co.jp/cocolunch/">ココランチ</a>
-                    <a class="tanabe" href="http://www.cocoknots.co.jp/tanabe/">医療ジャーナリスト<br>田辺功のページ (外部リンク）</a>
+                    <a href="http://www.cocoknots.co.jp/blog/" target="_blank">ココノッツ代表ブログ</a>
+                    <a href="http://www.cocoknots.co.jp/cocolunch/" target="_blank">ココランチ</a>
+                    <a class="tanabe" href="http://www.cocoknots.co.jp/tanabe/" target="_blank">医療ジャーナリスト<br>田辺功のページ (外部リンク）</a>
                 </div>
 
             </div>

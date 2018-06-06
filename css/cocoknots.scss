@@ -10,7 +10,7 @@ html{
 }
 
 $ja_font : "メイリオ", Meiryo UI , Meiryo,Osaka , YuGothic, "游ゴシック","ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic",sans-serif;
-$blue1 : #5a4498;//紫
+$blue1 : #26499d;//オリエンタルブルー
 $blue2 : #f3981d;//オレンジ
 $blue3 : #4169e1;
 $base_white : #fdfcf9;
@@ -164,8 +164,8 @@ body{
 //cover area
 
     #cover_area {
-        background-image: url("../images/top/topheroimg_y.svg");
-        background-size: cover;
+        background-image: url("../images/top/people.jpg");
+        background-size: 100%;
         background-position: center center;
         background-repeat: no-repeat;
         
@@ -175,12 +175,14 @@ body{
             margin: 0 auto;
             
             height: 300px;
+            /*
             display: flex;
             justify-content: space-around;
-            
+            */
             
             .cover_title {
-                padding-top: 100px;
+                padding-top: 10px;
+                text-align: center;
 
                 .cover_title_img_sp {
                     display: none;
@@ -249,7 +251,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
+    //私たちはこう考えます
+    .thinkaboutpr {
+        text-decoration: none;
+        @include fontsize(20);
+        color: #333;
+        letter-spacing: 0.5rem;
+        font-weight: bold;
+        border-style: solid;
+        border-width: 0 3px;
+        border-color: #333;
+        padding: 3px 15px 1px 18px;
+    }
+    .thinkaboutpr:hover {
+        color: #fff;
+        border-color: #fff;
+    }
+    
      .issue {
          text-align: right;
          margin: 0 10px;
@@ -2186,7 +2205,7 @@ footer {
     
 /* mobile 設定 toppage----------------------------------------
 ------------------------------------------------------*/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     
     //ヘッダー(mobile)
     #headerwrap {
@@ -2281,24 +2300,26 @@ footer {
         
     //カバーエリア(mobile)
     #cover_area {
-        background-image: url("../images/top/topheroimg_sp_y.svg");
+        background-image: url("../images/top/topheroimg_sp_y3.svg");
         background-size: cover;
+        height: 200px;
         
         .cover_content {
             max-width: 100%;
-            height: 250px;
+            height: 200px;
             display: block;
             position: relative;
-            padding-left: 20px;
-                
+            text-align: center;
+            
                 .cover_title {
-                    padding-top: 20px;
+                    padding-top: 50px;
                     
                     .cover_title_img {
                     display: none;
                     }
                     .cover_title_img_sp {
-                    display: block;
+                        
+                    display: inline;
                     }
                     p {
                         display: none;
@@ -2367,10 +2388,11 @@ footer {
     //課題から(mobile)
     .wrap_issue {
         display: block;
-        height: 140px;
+        height: 23px;
         padding: 10px 0;
         text-align: center;
         
+        /*
         .issue {
             text-align: center;
             line-height: 1;
@@ -2392,7 +2414,6 @@ footer {
             }
         }
         
-        
         .letscontact {
             text-align: center;
             line-height: 1;
@@ -2402,11 +2423,15 @@ footer {
             border-bottom: 1px solid #fff;
             }
         }
+        */
+        
+        .thinkaboutpr {
+            @include fontsize(16);
+        }
     }
     
     //PRサービス（mobile)
     .top_sectiontitle {
-            border-bottom: 4px solid #c9c9c9;
             height: 26px;
             @include fontsize(20);
     }
