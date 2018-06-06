@@ -11,7 +11,7 @@ html{
 
 $ja_font : "メイリオ", Meiryo UI , Meiryo,Osaka , YuGothic, "游ゴシック","ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic",sans-serif;
 $blue1 : #26499d;//オリエンタルブルー
-$blue2 : #f3981d;//オレンジ
+$blue2 : #ebd842;//オレンジ
 $blue3 : #4169e1;
 $base_white : #fdfcf9;
 
@@ -28,19 +28,22 @@ body{
 }
 
 //header
-
-#headerwrap {
+#header {
+    
+}
+#headerwrap-1 {
         width: 96%;
         max-width: 1024px;
-        margin: 0px auto 10px;
+        margin: 0px auto ;
         display: flex;
         justify-content: space-between;
 
     #pc_title_logo {
-        width: 20%;
+        width: 40%;
         p {
-            margin-top: 2px;
             @include fontsize(13);
+            display: inline;
+            color: $blue1;
         }
     }
     
@@ -48,35 +51,39 @@ body{
         display: none;
     }
     
-    #head_navi {
-        text-align: right;
-        
-        ul.head_contact_pc li {
-            display: inline-block;
-            @include fontsize(15);
-            font-weight: bold;
-            margin: 5px 0 20px 10px;
-            color: $blue2;
-            
-            a{
-                color: $blue2;
+    .head_contact_pc {
+            width: 340px;
+            height: 30px;
+            padding-top: 10px;
+            background-color: $blue1;
+            text-align: center;
+            display: block;
+            position: relative;
+            top: -20px;
+            li {
+                display: inline-block;
+            }
+            a {
                 text-decoration: none;
             }
-            
-            .access_button {
-                background-color: $blue2;
-                border-radius: 4px;
-                color: #fff;
-                padding: 1px 6px;
-                @include fontsize(11);
-            }
-        }
+    }
+}
+    
+#head_navi {
+        max-width: 1024px;
+        width: 96%;
+        margin: 0 auto;
+        text-align: right;
+        height: 30px;
+        position: relative;
+        top: -20px;
+        
         ul.head_nav {
             li {
                 display: inline-block;
-                @include fontsize(14);
+                @include fontsize(15);
                 font-weight: bold;
-                width: 170px;
+                width: 200px;
                 border-right: 1px solid #333;
                 border-bottom: 2px solid $base_white;
                 text-align: center;
@@ -99,10 +106,10 @@ body{
         }
         
         ul.navichild {
-            background-color: lighten( $blue2, 30% );
+            background-color: lighten( $blue2, 20% );
             border-top: 10px solid $base_white;
             position: absolute;
-            width: 170px;
+            width: 200px;
             padding: 7px 0;
             box-sizing: border-box;
             margin-top: 5px;
@@ -147,7 +154,7 @@ body{
     #head_navi_sp {
         display: none;
         }
-}//#headerwrap
+
 
 //　グロナビ固定
 .fixed {
@@ -174,14 +181,15 @@ body{
             max-width: 1024px;
             margin: 0 auto;
             
-            height: 300px;
-            /*
+            height: 400px;
+        
             display: flex;
-            justify-content: space-around;
-            */
+            justify-content: center;
+            
             
             .cover_title {
-                padding-top: 10px;
+                padding-top: 20px;
+                padding-right: 50px;
                 text-align: center;
 
                 .cover_title_img_sp {
@@ -217,23 +225,8 @@ body{
                 line-height: 1.4;
             }
             
-            .seal {
-                margin-top: 100px;
-                a {
-                    opacity: 0.8;
-                }
-                .pr3seal_pc {
-                    margin-top: 10px;
-                }
-                .pr3seal_sp {
-                    display: none;
-                }
-                p {
-                    display: none;
-                }
-                a:hover {
-                    opacity: 1;
-                }
+            .pr3seal_sp {
+                display: none;
             }
 
         }
@@ -242,75 +235,91 @@ body{
 //課題から
 #from_issue {
     background-color: $blue2;
-}
+    height: 65px;
 
-.wrap_issue {
-    height: 90px;
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    //私たちはこう考えます
-    .thinkaboutpr {
-        text-decoration: none;
-        @include fontsize(20);
-        color: #333;
-        letter-spacing: 0.5rem;
-        font-weight: bold;
-        border-style: solid;
-        border-width: 0 3px;
-        border-color: #333;
-        padding: 3px 15px 1px 18px;
-    }
-    .thinkaboutpr:hover {
-        color: #fff;
-        border-color: #fff;
-    }
-    
-     .issue {
-         text-align: right;
-         margin: 0 10px;
-         p{
-             @include fontsize(14);
-             color: #fff;
-             line-height: 1;
-             margin: 10px 0;
-         }
-     }
-     
-     .letscontact {
-        margin: 0 20px;
+    .wrap_issue {
+        width: 96%;
+        max-width: 1024px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 0;
         
-
-        
-        a {
-            text-decoration: none;
-            color: #fff;
-            border-bottom: 1px solid #fff;
+        img {
+            opacity: 0.8;
         }
-        a:hover {
+        a:hover img {
+            opacity: 1;
+        }
+        
+        /*
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        */
+        
+        /*
+        //私たちはこう考えます
+        .thinkaboutpr {
+            text-decoration: none;
+            @include fontsize(20);
+            color: #333;
+            letter-spacing: 0.5rem;
+            font-weight: bold;
+            border-style: solid;
+            border-width: 0 3px;
+            border-color: #333;
+            padding: 3px 15px 1px 18px;
+        }
+        .thinkaboutpr:hover {
             color: #fff;
-            .underline {
+            border-color: #fff;
+        }
+        */
+        /*
+        //お気軽にご相談ください
+         .issue {
+             text-align: right;
+             margin: 0 10px;
+             p{
+                 @include fontsize(14);
+                 color: #fff;
+                 line-height: 1;
+                 margin: 10px 0;
+             }
+         }
+         
+         .letscontact {
+            margin: 0 20px;
+            
+            a {
+                text-decoration: none;
+                color: #fff;
                 border-bottom: 1px solid #fff;
             }
-        }
-        .underline {
-             @include fontsize(16);
-             line-height: 2;
-             
-        }
-     }
-
-     
-     .arrow_pc  {
-        margin: 0 20px;
-     }
-     .arrow_sp  {
-        display: none;
-     }
+            a:hover {
+                color: #fff;
+                .underline {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            .underline {
+                 @include fontsize(16);
+                 line-height: 2;
+                 
+            }
+         }
+         
+         .arrow_pc  {
+            margin: 0 20px;
+         }
+         .arrow_sp  {
+            display: none;
+         }
+         */
+         
 }
+}
+
 
 //トップページ　PRサービス
 #survicecategory {
@@ -334,34 +343,34 @@ body{
         justify-content: space-around;
         padding: 0 10px;
         
-        a {
-            text-decoration: none;
-            color: #333;
-            @include fontsize(16);
-            font-weight: bold;
-            
-            img {
-                vertical-align: middle;
-                margin-right: 10px;
-                width: 40px;
-                margin-bottom: 10px;
-            }
-            
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        a:hover img { 
-            opacity: .7;
-        }
-    
         .survice {
             width: 24%;
             text-align: center;
             margin-bottom: 10px;
-            border: #a9a9a9 solid 1px;
+            border-bottom: lighten($blue1,40%) solid 1px;
             padding: 10px 0;
             box-sizing: border-box;
+            background-color: $base_white;
+            /*
+            box-shadow: 2px 2px 8px #e8e8e8;
+            */
+        
+            a {
+                text-decoration: none;
+                color: #333;
+                @include fontsize(16);
+            
+                img {
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    width: 70px;
+                    margin-bottom: 10px;
+                }
+            }
+         }
+         
+         li:hover  {
+            background-color: lighten($blue1,50%);
         }
     }
     
@@ -2208,7 +2217,7 @@ footer {
 @media (max-width: 768px) {
     
     //ヘッダー(mobile)
-    #headerwrap {
+    #headerwrap-1 {
         width: 100%;
         padding: 0 10px;
         margin: 0;
@@ -2227,11 +2236,16 @@ footer {
             }
         }
         
-        #head_navi {
+        .head_contact_pc {
             display: none;
         }
+    } //#headerwrap-1
+    
+    #head_navi {
+            display: none;
+    }
         
-        #head_navi_sp {
+    #head_navi_sp {
             display: block;
             padding-top: 5px;
             
@@ -2261,7 +2275,7 @@ footer {
                     width: auto;
                 }
             }
-        }
+    }
         
         //toggle button(mobile)
         ul.sp_menu_toggle {
@@ -2294,7 +2308,7 @@ footer {
                 
             }
         }
-    } 
+     
     
 
         
