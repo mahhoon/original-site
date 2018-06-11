@@ -11,8 +11,8 @@ html{
 
 $ja_font : "メイリオ", Meiryo UI , Meiryo,Osaka , YuGothic, "游ゴシック","ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic",sans-serif;
 $blue1 : #26499d;//オリエンタルブルー
-$blue2 : #ebd842;//オレンジ
-$blue3 : #4169e1;
+$blue2 : #65ab31;//黄緑
+$blue3 : #00afcc;//水色
 $base_white : #fdfcf9;
 
 body{
@@ -176,6 +176,10 @@ body{
         background-position: center center;
         background-repeat: no-repeat;
         
+        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+        background-image: url("../images/top/people@2x.jpg");
+        }
+        
         .cover_content {
             width: 96%;
             max-width: 1024px;
@@ -275,51 +279,15 @@ body{
             border-color: #fff;
         }
         */
-        /*
-        //お気軽にご相談ください
-         .issue {
-             text-align: right;
-             margin: 0 10px;
-             p{
-                 @include fontsize(14);
-                 color: #fff;
-                 line-height: 1;
-                 margin: 10px 0;
-             }
-         }
-         
-         .letscontact {
-            margin: 0 20px;
-            
-            a {
-                text-decoration: none;
-                color: #fff;
-                border-bottom: 1px solid #fff;
-            }
-            a:hover {
-                color: #fff;
-                .underline {
-                    border-bottom: 1px solid #fff;
-                }
-            }
-            .underline {
-                 @include fontsize(16);
-                 line-height: 2;
-                 
-            }
-         }
-         
-         .arrow_pc  {
-            margin: 0 20px;
-         }
-         .arrow_sp  {
-            display: none;
-         }
-         */
+
          
 }
 }
 
+//結び目飾り
+.knotsicon {
+    margin-bottom: 10px;
+}
 
 //トップページ　PRサービス
 #survicecategory {
@@ -331,6 +299,7 @@ body{
         margin: 20px 4px 10px;
         @include fontsize(16);
     }
+        
     .survicecate_title {
         a:hover {
             background-color: lighten($blue1 , 50%);
@@ -380,13 +349,15 @@ body{
 }
 
 .top_sectiontitle {
+            /*トップセクション見出し下線
             border-bottom: 4px solid $blue2;
             display: inline-block;
             position: relative;
             height: 32px;
+            */
             @include fontsize(30);
 }
-
+/*トップセクション見出し下線
 .top_sectiontitle:after {
 position: absolute;
 content: " ";
@@ -395,6 +366,7 @@ border-bottom: solid 4px $blue1;
 bottom: -4px;
 width: 30%;
 }
+*/
 
 #detail_button {
         text-decoration: none;
@@ -408,6 +380,7 @@ width: 30%;
         border: 1px solid #333;
         border-radius: 14px;
 }
+
 
 
 // トップページおすすめ
@@ -731,17 +704,11 @@ footer {
     
     .cover_area_about {
         
-        background-image: url("../images/about/spiritheroimage.jpg");
+        background-image: url("../images/about/aboutheroimg.svg");
         background-size: cover;
+        background-position: center;
         
         height: 150px;
-        background-color: lighten($blue1, 20%);
-        
-        
-        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-          background-image: url("../images/about/spiritheroimage@2x.jpg");
-        }
-        
     }
     
     .page_title {
@@ -749,7 +716,7 @@ footer {
         @include fontsize(30);
         color: #fff;
         font-weight: bold;
-        padding-top: 100px;
+        padding-top: 75px;
         letter-spacing: 0.5rem;
         }
 
@@ -996,15 +963,24 @@ footer {
             }
             
             .sidemenucate2 {
-                background-color: lighten($blue1 , 50%);
+                background-color: lighten($blue1 , 20%);
                 padding: 10px 5px;
                 border: 1px solid #fff;
+                color: #fff;
             }
             
             .sidemenucate3 {
-                background-color: lighten($blue1 , 50%);
+                background-color: lighten($blue1 , 20%);
                 padding: 10px 5px;
                 border-bottom: 1px solid #fff;
+                color: #fff;
+            }
+            
+            .sidemenucate4 {
+                background-color: #a9a9a9;
+                padding: 10px 5px;
+                border: none;
+                color: #fff;
             }
         }
     }
@@ -1030,7 +1006,8 @@ footer {
             @include fontsize(30);
             color: #fff;
             font-weight: bold;
-            padding-top: 100px;
+            padding-top: 75
+            px;
             letter-spacing: 0.5rem;
         }
     }
@@ -1173,7 +1150,7 @@ footer {
                         padding: 15px;
                         vertical-align: middle;
                         border-right: 1px solid $blue1;
-                        background-color: lighten($blue1,20%);
+                        background-color: lighten($blue1,30%);
                         color: #fff;
                     }
                     td {
@@ -2006,6 +1983,11 @@ footer {
         margin-bottom: 10px;
     }
     
+    .prqa_toptitle {
+        @include fontsize(30);
+        text-align: left;
+    }
+    
     h3 {
          @include fontsize(15);
          color: $blue1;
@@ -2314,7 +2296,7 @@ footer {
         
     //カバーエリア(mobile)
     #cover_area {
-        background-image: url("../images/top/topheroimg_sp_y3.svg");
+        background-image: url("../images/top/people_sp.jpg");
         background-size: cover;
         height: 200px;
         
@@ -2323,10 +2305,11 @@ footer {
             height: 200px;
             display: block;
             position: relative;
-            text-align: center;
             
                 .cover_title {
-                    padding-top: 50px;
+                    padding-top: 10px;
+                    text-align: left;
+                    padding-left: 10px;
                     
                     .cover_title_img {
                     display: none;
@@ -2351,6 +2334,7 @@ footer {
                     }
                     .pr3seal_sp {
                     display: block;
+                    padding-left: 10px;
                     img {
                         height: 80px;
                     }
@@ -2400,45 +2384,15 @@ footer {
 
     
     //課題から(mobile)
+    #from_issue {
+        height: 60px;
+    }
     .wrap_issue {
         display: block;
         height: 23px;
         padding: 10px 0;
         text-align: center;
-        
-        /*
-        .issue {
-            text-align: center;
-            line-height: 1;
-            p {
-                margin: 5px 0;
-                @include fontsize(13);
-            }
-        }
-        
-        .arrow_pc {
-            display: none;
-        }
-        .arrow_sp {
-            display: block;
-            margin: 5px 0;
-            img {
-                height: 20px;
-                width: auto;
-            }
-        }
-        
-        .letscontact {
-            text-align: center;
-            line-height: 1;
-
-            .underline {
-            @include fontsize(14);
-            border-bottom: 1px solid #fff;
-            }
-        }
-        */
-        
+       
         .thinkaboutpr {
             @include fontsize(16);
         }
@@ -2490,7 +2444,7 @@ footer {
                 height: 75px;
                 width: 30%;
                 padding-top: 10px;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 line-height: 1.5;
                 text-align: center;
             }
@@ -2500,7 +2454,8 @@ footer {
                 color: #333;
                 @include fontsize(12);
                 img {
-                    width: 40px;
+                    width: 60px;
+                    margin-bottom: -10px;
                 }
             }
         }
@@ -2961,12 +2916,6 @@ footer {
         width: 90%;
         margin: 0 auto;
         padding: 10px;
-        
-        .prqa_toptitle {
-            @include fontsize(30);
-            font-weight: bold;
-            text-align: left;
-        }
         
         .q_area {
             width: 100%;

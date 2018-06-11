@@ -68,9 +68,9 @@ body {
   #head_navi ul.head_nav li.about {
     border-left: 1px solid #333; }
   #head_navi ul.head_nav li:hover {
-    border-bottom: 3px solid #ebd842; }
+    border-bottom: 3px solid #65ab31; }
   #head_navi ul.navichild {
-    background-color: #f5eb9e;
+    background-color: #99d56d;
     border-top: 10px solid #fdfcf9;
     position: absolute;
     width: 200px;
@@ -118,6 +118,9 @@ body {
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #cover_area {
+      background-image: url("../images/top/people@2x.jpg"); } }
   #cover_area .cover_content {
     width: 96%;
     max-width: 1024px;
@@ -161,7 +164,7 @@ body {
       display: none; }
 
 #from_issue {
-  background-color: #ebd842;
+  background-color: #65ab31;
   height: 65px; }
   #from_issue .wrap_issue {
     width: 96%;
@@ -191,52 +194,14 @@ body {
         color: #fff;
         border-color: #fff;
     }
-    */
-    /*
-    //お気軽にご相談ください
-     .issue {
-         text-align: right;
-         margin: 0 10px;
-         p{
-             @include fontsize(14);
-             color: #fff;
-             line-height: 1;
-             margin: 10px 0;
-         }
-     }
-     
-     .letscontact {
-        margin: 0 20px;
-        
-        a {
-            text-decoration: none;
-            color: #fff;
-            border-bottom: 1px solid #fff;
-        }
-        a:hover {
-            color: #fff;
-            .underline {
-                border-bottom: 1px solid #fff;
-            }
-        }
-        .underline {
-             @include fontsize(16);
-             line-height: 2;
-             
-        }
-     }
-     
-     .arrow_pc  {
-        margin: 0 20px;
-     }
-     .arrow_sp  {
-        display: none;
-     }
-     */ }
+    */ }
     #from_issue .wrap_issue img {
       opacity: 0.8; }
     #from_issue .wrap_issue a:hover img {
       opacity: 1; }
+
+.knotsicon {
+  margin-bottom: 10px; }
 
 #survicecategory {
   max-width: 1024px;
@@ -280,21 +245,25 @@ body {
     display: none; }
 
 .top_sectiontitle {
-  border-bottom: 4px solid #ebd842;
+  /*トップセクション見出し下線
+  border-bottom: 4px solid $blue2;
   display: inline-block;
   position: relative;
   height: 32px;
+  */
   font-size: 30px;
   font-size: 3rem; }
 
+/*トップセクション見出し下線
 .top_sectiontitle:after {
-  position: absolute;
-  content: " ";
-  display: block;
-  border-bottom: solid 4px #26499d;
-  bottom: -4px;
-  width: 30%; }
-
+position: absolute;
+content: " ";
+display: block;
+border-bottom: solid 4px $blue1;
+bottom: -4px;
+width: 30%;
+}
+*/
 #detail_button {
   text-decoration: none;
   color: #333;
@@ -546,13 +515,10 @@ footer {
   text-decoration: underline; }
 
 .cover_area_about {
-  background-image: url("../images/about/spiritheroimage.jpg");
+  background-image: url("../images/about/aboutheroimg.svg");
   background-size: cover;
-  height: 150px;
-  background-color: #547ad5; }
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_about {
-      background-image: url("../images/about/spiritheroimage@2x.jpg"); } }
+  background-position: center;
+  height: 150px; }
 
 .page_title {
   text-align: center;
@@ -560,7 +526,7 @@ footer {
   font-size: 3rem;
   color: #fff;
   font-weight: bold;
-  padding-top: 100px;
+  padding-top: 75px;
   letter-spacing: 0.5rem; }
 
 #content {
@@ -581,7 +547,7 @@ footer {
     font-weight: bold;
     color: #26499d;
     line-height: 1.5;
-    border-left: 5px solid #ebd842;
+    border-left: 5px solid #65ab31;
     padding-left: 20px;
     margin: 50px 0 30px 0; }
   #content .spirit p {
@@ -734,20 +700,27 @@ footer {
     #sidebar #sidemenu a li.sidemenu_top {
       border-top: 1px #a9a9a9 solid; }
   #sidebar #sidemenu a:hover li {
-    background-color: #faf5cc; }
+    background-color: #b5e095; }
   #sidebar #sidemenu .sidemenucate1 {
     background-color: #a9a9a9;
     padding: 10px 5px;
     border: none;
     color: #fff; }
   #sidebar #sidemenu .sidemenucate2 {
-    background-color: #cfd9f3;
+    background-color: #547ad5;
     padding: 10px 5px;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    color: #fff; }
   #sidebar #sidemenu .sidemenucate3 {
-    background-color: #cfd9f3;
+    background-color: #547ad5;
     padding: 10px 5px;
-    border-bottom: 1px solid #fff; }
+    border-bottom: 1px solid #fff;
+    color: #fff; }
+  #sidebar #sidemenu .sidemenucate4 {
+    background-color: #a9a9a9;
+    padding: 10px 5px;
+    border: none;
+    color: #fff; }
 
 /*サービスページ---------------------------
 ---------------------------------------------------*/
@@ -765,7 +738,7 @@ footer {
     font-size: 3rem;
     color: #fff;
     font-weight: bold;
-    padding-top: 100px;
+    padding-top: 75 px;
     letter-spacing: 0.5rem; }
 
 .prsurvice, .prmenu_content {
@@ -811,7 +784,7 @@ footer {
             width: 60px;
             margin: 5px 0; }
       .prsurvice .survicecategory .categoryicons li:hover, .prmenu_content .survicecategory .categoryicons li:hover {
-        background-color: #faf5cc; }
+        background-color: #b5e095; }
   .prsurvice .prmenu h4, .prmenu_content .prmenu h4 {
     margin-bottom: 10px;
     color: #333; }
@@ -836,7 +809,7 @@ footer {
         font-size: 1.4rem;
         font-weight: bold; }
       .prsurvice .prmenu .prmenuicons li a:hover, .prmenu_content .prmenu .prmenuicons li a:hover {
-        background-color: #faf5cc; }
+        background-color: #b5e095; }
   .prsurvice .smalltext, .prmenu_content .smalltext {
     font-size: 14px;
     font-size: 1.4rem;
@@ -879,7 +852,7 @@ footer {
           padding: 15px;
           vertical-align: middle;
           border-right: 1px solid #26499d;
-          background-color: #547ad5;
+          background-color: #7d9adf;
           color: #fff; }
         .prsurvice #flow_pc table tr td, .prsurvice #contract table tr td, .prmenu_content #flow_pc table tr td, .prmenu_content #contract table tr td {
           padding: 15px;
@@ -978,7 +951,7 @@ footer {
       border-bottom: 2px dotted #26499d;
       margin: 5px; }
     .eachsurvice .eachsurvice_read a:hover.linkbutton {
-      background-color: #f5eb9e; }
+      background-color: #99d56d; }
 
 .more_detailsmenu {
   margin-top: 50px; }
@@ -1182,7 +1155,7 @@ footer {
 
 .cover_area_blog .page_title {
   box-sizing: border-box;
-  background-color: #ebd842;
+  background-color: #65ab31;
   height: 120px;
   padding-top: 50px; }
 .cover_area_blog .blog_navi {
@@ -1467,7 +1440,7 @@ footer {
             text-decoration: none;
             color: #26499d; }
             #content_prqa .q_area .q_list tr th a:hover, #content_prqa .q_area .q_list tr td a:hover {
-              color: #4169e1; }
+              color: #00afcc; }
         #content_prqa .q_area .q_list tr th {
           font-weight: bold; }
       #content_prqa .q_area .q_list th:after {
@@ -1497,6 +1470,10 @@ footer {
     line-height: 2;
     padding-bottom: 10px;
     margin-bottom: 10px; }
+  #content_prqa .prqa_toptitle {
+    font-size: 30px;
+    font-size: 3rem;
+    text-align: left; }
   #content_prqa h3 {
     font-size: 15px;
     font-size: 1.5rem;
@@ -1517,7 +1494,7 @@ footer {
       width: 100%; }
       #content_prqa .page_navi .pnaviarea .gopre, #content_prqa .page_navi .pnaviarea .gonext {
         padding: 5px 15px 0;
-        background-color: #f5eb9e;
+        background-color: #99d56d;
         line-height: 40px;
         margin: 0 5px; }
         #content_prqa .page_navi .pnaviarea .gopre a, #content_prqa .page_navi .pnaviarea .gonext a {
@@ -1554,7 +1531,7 @@ footer {
       font-size: 14px;
       font-size: 1.4rem; }
     #content_prqa .page_navi a.goindex:hover {
-      background-color: #f5eb9e; }
+      background-color: #99d56d; }
 
 #content_pr3, .qs_read {
   width: 758px;
@@ -1622,12 +1599,12 @@ footer {
     font-weight: bold; }
 
 .qs_info_new {
-  background-color: #f2e687; }
+  background-color: #8ccf59; }
 
 /*お知らせページ------------------------------------------------
 ------------------------------------------------------*/
 .cover_area_news {
-  background-color: #ebd842;
+  background-color: #65ab31;
   height: 120px; }
   .cover_area_news .page_title {
     padding-top: 60px; }
@@ -1705,7 +1682,7 @@ footer {
     right: 0px;
     text-align: left;
     border: 1px solid #26499d;
-    background: #faf5cc;
+    background: #b5e095;
     z-index: 100;
     display: none; }
     ul.sp_menu_toggle li {
@@ -1724,17 +1701,18 @@ footer {
       padding-left: 30px; }
 
   #cover_area {
-    background-image: url("../images/top/topheroimg_sp_y3.svg");
+    background-image: url("../images/top/people_sp.jpg");
     background-size: cover;
     height: 200px; }
     #cover_area .cover_content {
       max-width: 100%;
       height: 200px;
       display: block;
-      position: relative;
-      text-align: center; }
+      position: relative; }
       #cover_area .cover_content .cover_title {
-        padding-top: 50px;
+        padding-top: 10px;
+        text-align: left;
+        padding-left: 10px;
         /*
         .readmore {
         margin-left: 10px;
@@ -1751,7 +1729,8 @@ footer {
         #cover_area .cover_content .seal .pr3seal_pc {
           display: none; }
         #cover_area .cover_content .seal .pr3seal_sp {
-          display: block; }
+          display: block;
+          padding-left: 10px; }
           #cover_area .cover_content .seal .pr3seal_sp img {
             height: 80px; }
         #cover_area .cover_content .seal p {
@@ -1784,43 +1763,14 @@ footer {
       font-size: 26px;
       font-size: 2.6rem; }
 
+  #from_issue {
+    height: 60px; }
+
   .wrap_issue {
     display: block;
     height: 23px;
     padding: 10px 0;
-    text-align: center;
-        /*
-        .issue {
-            text-align: center;
-            line-height: 1;
-            p {
-                margin: 5px 0;
-                @include fontsize(13);
-            }
-        }
-        
-        .arrow_pc {
-            display: none;
-        }
-        .arrow_sp {
-            display: block;
-            margin: 5px 0;
-            img {
-                height: 20px;
-                width: auto;
-            }
-        }
-        
-        .letscontact {
-            text-align: center;
-            line-height: 1;
-
-            .underline {
-            @include fontsize(14);
-            border-bottom: 1px solid #fff;
-            }
-        }
-        */ }
+    text-align: center; }
     .wrap_issue .thinkaboutpr {
       font-size: 16px;
       font-size: 1.6rem; }
@@ -1864,7 +1814,7 @@ footer {
         height: 75px;
         width: 30%;
         padding-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         line-height: 1.5;
         text-align: center; }
       #survicecategory .survice_wrap_sp a {
@@ -1874,7 +1824,8 @@ footer {
         font-size: 12px;
         font-size: 1.2rem; }
         #survicecategory .survice_wrap_sp a img {
-          width: 40px; }
+          width: 60px;
+          margin-bottom: -10px; }
 
   #recommend {
     padding: 10px 10px;
@@ -2200,11 +2151,6 @@ footer {
     width: 90%;
     margin: 0 auto;
     padding: 10px; }
-    #content_prqa .prqa_toptitle {
-      font-size: 30px;
-      font-size: 3rem;
-      font-weight: bold;
-      text-align: left; }
     #content_prqa .q_area {
       width: 100%;
       padding: 10px; }
