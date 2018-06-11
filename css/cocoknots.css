@@ -153,52 +153,24 @@ body {
       */ }
       #cover_area .cover_content .cover_title .cover_title_img_sp {
         display: none; }
-    #cover_area .cover_content .cocoknotsis {
-      margin-top: 10px;
-      color: #26499d;
-      font-weight: bold;
-      font-size: 15px;
-      font-size: 1.5rem;
-      line-height: 1.4; }
     #cover_area .cover_content .pr3seal_sp {
       display: none; }
 
-#from_issue {
-  background-color: #65ab31;
-  height: 65px; }
-  #from_issue .wrap_issue {
+#pickup_links {
+  background-color: #65ab31; }
+  #pickup_links .wrap_pickup_pc {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 0;
-    /*
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    */
-    /*
-    //私たちはこう考えます
-    .thinkaboutpr {
-        text-decoration: none;
-        @include fontsize(20);
-        color: #333;
-        letter-spacing: 0.5rem;
-        font-weight: bold;
-        border-style: solid;
-        border-width: 0 3px;
-        border-color: #333;
-        padding: 3px 15px 1px 18px;
-    }
-    .thinkaboutpr:hover {
-        color: #fff;
-        border-color: #fff;
-    }
-    */ }
-    #from_issue .wrap_issue img {
-      opacity: 0.8; }
-    #from_issue .wrap_issue a:hover img {
+    padding: 10px 0; }
+    #pickup_links .wrap_pickup_pc img {
+      opacity: 0.8;
+      padding: 0 10px; }
+    #pickup_links .wrap_pickup_pc a:hover img {
       opacity: 1; }
+  #pickup_links .wrap_pickup_sp {
+    display: none; }
 
 .knotsicon {
   margin-bottom: 10px; }
@@ -656,7 +628,7 @@ footer {
       margin: 10px 0;
       padding: 20px 10px;
       color: #26499d;
-      height: 60px;
+      height: 50px;
       text-align: center; }
       #content .about .companyprofile_wrap .contact span {
         font-size: 34px;
@@ -665,7 +637,7 @@ footer {
         font-size: 30px;
         font-size: 3rem;
         font-weight: bold;
-        margin-bottom: 10px; }
+        margin-top: 10px; }
       #content .about .companyprofile_wrap .contact a {
         text-decoration: none;
         color: #26499d; }
@@ -887,8 +859,8 @@ footer {
 .prmenu_content #enlightenment_description, .prmenu_content #training_description, .prmenu_content #innerpr_description,
 .prmenu_content #crisis_description, .prmenu_content #construction_description, .prmenu_content #release_description,
 .prmenu_content #seminar_description, .prmenu_content #tour_description, .prmenu_content #forum_description, .prmenu_content #lecturer_description {
-  padding-top: 110px;
-  margin-top: -110px; }
+  padding-top: 130px;
+  margin-top: -130px; }
 .prmenu_content .photo_left {
   float: left;
   width: 255px;
@@ -1703,7 +1675,7 @@ footer {
   #cover_area {
     background-image: url("../images/top/people_sp.jpg");
     background-size: cover;
-    height: 200px; }
+    height: 220px; }
     #cover_area .cover_content {
       max-width: 100%;
       height: 200px;
@@ -1732,13 +1704,7 @@ footer {
           display: block;
           padding-left: 10px; }
           #cover_area .cover_content .seal .pr3seal_sp img {
-            height: 80px; }
-        #cover_area .cover_content .seal p {
-          display: block;
-          line-height: 1.5;
-          font-size: 14px;
-          font-size: 1.4rem;
-          margin-bottom: 5px; }
+            width: 120px; }
 
   .cover_area_about, .cover_area_survice {
     /*
@@ -1763,17 +1729,16 @@ footer {
       font-size: 26px;
       font-size: 2.6rem; }
 
-  #from_issue {
+  #pickup_links {
     height: 60px; }
-
-  .wrap_issue {
-    display: block;
-    height: 23px;
-    padding: 10px 0;
-    text-align: center; }
-    .wrap_issue .thinkaboutpr {
-      font-size: 16px;
-      font-size: 1.6rem; }
+    #pickup_links .wrap_pickup_pc {
+      display: none; }
+    #pickup_links .wrap_pickup_sp {
+      display: block;
+      width: 96%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px 0; }
 
   .top_sectiontitle {
     height: 26px;

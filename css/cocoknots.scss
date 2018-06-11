@@ -221,14 +221,6 @@ body{
                 */
             }
             
-            .cocoknotsis {
-                margin-top: 10px;
-                color: $blue1;
-                font-weight: bold;
-                @include fontsize(15);
-                line-height: 1.4;
-            }
-            
             .pr3seal_sp {
                 display: none;
             }
@@ -236,12 +228,11 @@ body{
         }
     }
 
-//課題から
-#from_issue {
+//ピックアップ
+#pickup_links {
     background-color: $blue2;
-    height: 65px;
 
-    .wrap_issue {
+    .wrap_pickup_pc {
         width: 96%;
         max-width: 1024px;
         margin: 0 auto;
@@ -250,38 +241,16 @@ body{
         
         img {
             opacity: 0.8;
+            padding: 0 10px;
         }
         a:hover img {
             opacity: 1;
         }
-        
-        /*
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        */
-        
-        /*
-        //私たちはこう考えます
-        .thinkaboutpr {
-            text-decoration: none;
-            @include fontsize(20);
-            color: #333;
-            letter-spacing: 0.5rem;
-            font-weight: bold;
-            border-style: solid;
-            border-width: 0 3px;
-            border-color: #333;
-            padding: 3px 15px 1px 18px;
-        }
-        .thinkaboutpr:hover {
-            color: #fff;
-            border-color: #fff;
-        }
-        */
-
-         
-}
+    }
+    
+    .wrap_pickup_sp {
+        display: none;
+    }
 }
 
 //結び目飾り
@@ -718,6 +687,7 @@ footer {
         font-weight: bold;
         padding-top: 75px;
         letter-spacing: 0.5rem;
+        
         }
 
 //2カラム設定（企業案内＆サービス共通）
@@ -890,7 +860,7 @@ footer {
                     margin: 10px 0;
                     padding: 20px 10px;
                     color: $blue1;
-                    height: 60px;
+                    height: 50px;
                     text-align: center;
                     
                     span {
@@ -899,7 +869,7 @@ footer {
                     h2 {
                         @include fontsize(30); 
                         font-weight: bold;
-                        margin-bottom: 10px;
+                        margin-top: 10px;
                     }
                     a {
                         text-decoration: none;
@@ -1203,8 +1173,8 @@ footer {
          #enlightenment_description , #training_description , #innerpr_description ,
          #crisis_description , #construction_description , #release_description ,
          #seminar_description , #tour_description , #forum_description , #lecturer_description {
-             padding-top: 110px;
-             margin-top: -110px;
+             padding-top: 130px;
+             margin-top: -130px;
          }
          
          .photo_left{
@@ -2298,7 +2268,7 @@ footer {
     #cover_area {
         background-image: url("../images/top/people_sp.jpg");
         background-size: cover;
-        height: 200px;
+        height: 220px;
         
         .cover_content {
             max-width: 100%;
@@ -2336,17 +2306,8 @@ footer {
                     display: block;
                     padding-left: 10px;
                     img {
-                        height: 80px;
+                        width: 120px;
                     }
-                    }
-                    p {
-                        display: block;
-                        line-height: 1.5;
-                        @include fontsize(14);
-                        margin-bottom: 5px;
-                    }
-                    img {
-                       
                     }
                }
                
@@ -2383,20 +2344,23 @@ footer {
     
 
     
-    //課題から(mobile)
-    #from_issue {
+    //ピックアップ(mobile)
+    #pickup_links {
         height: 60px;
-    }
-    .wrap_issue {
-        display: block;
-        height: 23px;
-        padding: 10px 0;
-        text-align: center;
-       
-        .thinkaboutpr {
-            @include fontsize(16);
+        
+        .wrap_pickup_pc {
+            display: none;
+        }
+    
+        .wrap_pickup_sp {
+            display: block;
+            width: 96%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0;
         }
     }
+
     
     //PRサービス（mobile)
     .top_sectiontitle {
