@@ -1105,6 +1105,11 @@ footer {
             color: $blue1;
         }
         
+        #flow {
+            padding-top: 120px;
+             margin-top: -120px;    
+        }
+        
         #flow_pc , #contract {
             margin-top: 50px;
             img {
@@ -1173,8 +1178,8 @@ footer {
          #enlightenment_description , #training_description , #innerpr_description ,
          #crisis_description , #construction_description , #release_description ,
          #seminar_description , #tour_description , #forum_description , #lecturer_description {
-             padding-top: 130px;
-             margin-top: -130px;
+             padding-top: 120px;
+             margin-top: -120px;
          }
          
          .photo_left{
@@ -2166,7 +2171,7 @@ footer {
     
 /* mobile 設定 toppage----------------------------------------
 ------------------------------------------------------*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     
     //ヘッダー(mobile)
     #headerwrap-1 {

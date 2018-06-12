@@ -811,6 +811,9 @@ footer {
     font-size: 1.6rem;
     font-weight: bold;
     color: #26499d; }
+  .prsurvice #flow, .prmenu_content #flow {
+    padding-top: 120px;
+    margin-top: -120px; }
   .prsurvice #flow_pc, .prsurvice #contract, .prmenu_content #flow_pc, .prmenu_content #contract {
     margin-top: 50px; }
     .prsurvice #flow_pc img, .prsurvice #contract img, .prmenu_content #flow_pc img, .prmenu_content #contract img {
@@ -859,8 +862,8 @@ footer {
 .prmenu_content #enlightenment_description, .prmenu_content #training_description, .prmenu_content #innerpr_description,
 .prmenu_content #crisis_description, .prmenu_content #construction_description, .prmenu_content #release_description,
 .prmenu_content #seminar_description, .prmenu_content #tour_description, .prmenu_content #forum_description, .prmenu_content #lecturer_description {
-  padding-top: 130px;
-  margin-top: -130px; }
+  padding-top: 120px;
+  margin-top: -120px; }
 .prmenu_content .photo_left {
   float: left;
   width: 255px;
@@ -1603,7 +1606,7 @@ footer {
 
 /* mobile 設定 toppage----------------------------------------
 ------------------------------------------------------*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #headerwrap-1 {
     width: 100%;
     padding: 0 10px;
