@@ -911,9 +911,7 @@ footer {
                     background-color: $base_white;
                 }
                 
-                li.sidemenu_bottom {
-                    border-bottom: 0px #a9a9a9 solid;
-                }
+
                 
                 li.sidemenu_top {
                     border-top: 1px #a9a9a9 solid;
@@ -921,36 +919,34 @@ footer {
             }
             a:hover {
                 li {
-                    background-color: lighten($blue2, 30%);
+                    background-color: lighten($blue2, 50%);
+                    color: #333;
                 }
             }
             
-            .sidemenucate1 {
-                background-color: #a9a9a9;
-                padding: 10px 5px;
-                border: none;
-                color: #fff;
+            .sidemenu_branch {
+                padding-left: 20px;
             }
             
             .sidemenucate2 {
-                background-color: lighten($blue1 , 20%);
                 padding: 10px 5px;
-                border: 1px solid #fff;
-                color: #fff;
+                border-bottom: 1px solid #a9a9a9;
+                font-weight: bold ;
             }
             
             .sidemenucate3 {
-                background-color: lighten($blue1 , 20%);
                 padding: 10px 5px;
-                border-bottom: 1px solid #fff;
+                border-top: 1px #a9a9a9 solid;
+                font-weight: bold ;
+            }
+            
+            .currentmenu {
+                background-color: lighten($blue1, 30%);
                 color: #fff;
             }
             
-            .sidemenucate4 {
-                background-color: #a9a9a9;
-                padding: 10px 5px;
-                border: none;
-                color: #fff;
+            .bottom_none {
+                border-bottom: none;
             }
         }
     }
@@ -1877,7 +1873,13 @@ footer {
                         line-height: 1.5;
                         @include fontsize(14);
                     }
-    
+        }
+        
+        .marketing3 {
+            margin-top: 10px;
+        }
+        .marketing3_sp {
+                display: none;
         }
 
 }
@@ -2322,20 +2324,11 @@ footer {
     }
     
     .cover_area_about , .cover_area_survice {
-        /*
-        background-image: url("../images/top/cover_about_sp.jpg");
-        background-size: cover;
-        */
         height: 100px;
-        /*
-        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-         background-image: url("../images/about/cover_about_sp@2x.jpg");
-        }
-        */
         
         .page_title {
             padding: 50px 0;
-            @include fontsize(26);
+            @include fontsize(20);
         }
     }
     
@@ -2479,6 +2472,7 @@ footer {
     } 
     
     #news_sp {
+        display: block;
         max-width: 100%;
         margin: 50px 20px 30px;
         text-align: center;
@@ -2488,17 +2482,21 @@ footer {
         }
         
         .news_block {
-            text-align: left;
-            @include fontsize(16);
-            line-height: 1.5;
             margin-bottom: 20px;
+            p {
+            text-align: left;
+            line-height: 1.5;
+            }
             
             .date {
+                @include fontsize(16);
                 font-weight: bold;
-                padding-bottom: 10px;
+                margin-bottom: 5px;
             }
             .news_title {
+                @include fontsize(16);
                 font-weight: bold;
+                margin-bottom: 5px;
             }
         }
     }
@@ -2670,6 +2668,7 @@ footer {
                     }
                 }
                 .map {
+                    background-image: url(../images/about/map_sp.svg);
                     height: 250px;
                     margin: 0;
                 }
@@ -2854,13 +2853,15 @@ footer {
             }
         }
         
-        
-            .marketing3 {
-                width: 100%;
-                img {
-                   width: 100%; 
-                }
+        .marketing3 {
+                display: none;
+        }
+        .marketing3_sp {
+            width: 100%;
+            img {
+                width: 100%; 
             }
+        }
         
     }
 

@@ -667,32 +667,26 @@ footer {
       background-repeat: no-repeat;
       background-position: 95% 50%;
       background-color: #fdfcf9; }
-    #sidebar #sidemenu a li.sidemenu_bottom {
-      border-bottom: 0px #a9a9a9 solid; }
     #sidebar #sidemenu a li.sidemenu_top {
       border-top: 1px #a9a9a9 solid; }
   #sidebar #sidemenu a:hover li {
-    background-color: #b5e095; }
-  #sidebar #sidemenu .sidemenucate1 {
-    background-color: #a9a9a9;
-    padding: 10px 5px;
-    border: none;
-    color: #fff; }
+    background-color: #ecf7e4;
+    color: #333; }
+  #sidebar #sidemenu .sidemenu_branch {
+    padding-left: 20px; }
   #sidebar #sidemenu .sidemenucate2 {
-    background-color: #547ad5;
     padding: 10px 5px;
-    border: 1px solid #fff;
-    color: #fff; }
+    border-bottom: 1px solid #a9a9a9;
+    font-weight: bold; }
   #sidebar #sidemenu .sidemenucate3 {
-    background-color: #547ad5;
     padding: 10px 5px;
-    border-bottom: 1px solid #fff;
+    border-top: 1px #a9a9a9 solid;
+    font-weight: bold; }
+  #sidebar #sidemenu .currentmenu {
+    background-color: #7d9adf;
     color: #fff; }
-  #sidebar #sidemenu .sidemenucate4 {
-    background-color: #a9a9a9;
-    padding: 10px 5px;
-    border: none;
-    color: #fff; }
+  #sidebar #sidemenu .bottom_none {
+    border-bottom: none; }
 
 /*サービスページ---------------------------
 ---------------------------------------------------*/
@@ -1389,6 +1383,10 @@ footer {
     line-height: 1.5;
     font-size: 14px;
     font-size: 1.4rem; }
+  #content_whatispr .marketing3 {
+    margin-top: 10px; }
+  #content_whatispr .marketing3_sp {
+    display: none; }
 
 #content_prqa {
   width: 758px;
@@ -1710,20 +1708,11 @@ footer {
             width: 120px; }
 
   .cover_area_about, .cover_area_survice {
-    /*
-    background-image: url("../images/top/cover_about_sp.jpg");
-    background-size: cover;
-    */
-    height: 100px;
-    /*
-    @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-     background-image: url("../images/about/cover_about_sp@2x.jpg");
-    }
-    */ }
+    height: 100px; }
     .cover_area_about .page_title, .cover_area_survice .page_title {
       padding: 50px 0;
-      font-size: 26px;
-      font-size: 2.6rem; }
+      font-size: 20px;
+      font-size: 2rem; }
 
   .cover_area_whatispr {
     height: 100px; }
@@ -1831,22 +1820,27 @@ footer {
     display: none; }
 
   #news_sp {
+    display: block;
     max-width: 100%;
     margin: 50px 20px 30px;
     text-align: center; }
     #news_sp h2 {
       margin-bottom: 20px; }
     #news_sp .news_block {
-      text-align: left;
-      font-size: 16px;
-      font-size: 1.6rem;
-      line-height: 1.5;
       margin-bottom: 20px; }
+      #news_sp .news_block p {
+        text-align: left;
+        line-height: 1.5; }
       #news_sp .news_block .date {
+        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: bold;
-        padding-bottom: 10px; }
+        margin-bottom: 5px; }
       #news_sp .news_block .news_title {
-        font-weight: bold; }
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 5px; }
 
   #links_pc {
     display: none; }
@@ -1971,6 +1965,7 @@ footer {
         #content .spirit .companyprofile_wrap .companyprofile th, #content .about .companyprofile_wrap .companyprofile th, #content .prsurvice .companyprofile_wrap .companyprofile th {
           width: 80px; }
         #content .spirit .companyprofile_wrap .map, #content .about .companyprofile_wrap .map, #content .prsurvice .companyprofile_wrap .map {
+          background-image: url(../images/about/map_sp.svg);
           height: 250px;
           margin: 0; }
         #content .spirit .companyprofile_wrap .accesstext, #content .about .companyprofile_wrap .accesstext, #content .prsurvice .companyprofile_wrap .accesstext {
@@ -2095,8 +2090,10 @@ footer {
       font-size: 15px;
       font-size: 1.5rem; }
     #content_whatispr .marketing3 {
+      display: none; }
+    #content_whatispr .marketing3_sp {
       width: 100%; }
-      #content_whatispr .marketing3 img {
+      #content_whatispr .marketing3_sp img {
         width: 100%; }
 
   /*pr3.0個別ページ
