@@ -892,7 +892,14 @@ footer {
     
 //サイドバー
     #sidebar{
+         
+        
         #sidemenu {
+                   /*サイドバー固定*/
+        position: -webkit-sticky; /* safari対応 */
+        position: sticky;
+        top: 116px; /* 上端から10pxのところで固定 */
+            
             margin-top: 50px;
             margin-left: 20px;
             
