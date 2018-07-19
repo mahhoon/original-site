@@ -435,6 +435,19 @@ width: 30%;
     .news_table{
         text-align: left;
         margin-top: 30px;
+        
+        .news_content {
+            th,td {
+                border-bottom: 1px solid #a9a9a9;
+                padding: 5px;
+                @include fontsize(13);
+                width: 100px;
+                vertical-align: center;
+            }
+            th {
+                background-color :#e9e9e9;
+            }
+        }
     }
     
     .news_table th {
@@ -2174,6 +2187,7 @@ footer {
         }
     }
     
+    
 } 
 
 
@@ -2504,6 +2518,15 @@ footer {
                 @include fontsize(16);
                 font-weight: bold;
                 margin-bottom: 5px;
+            }
+            
+            .news_content_sp {
+                th,td {
+                    border-bottom: 1px solid #a9a9a9;
+                    padding: 5px;
+                    text-align: left;
+                    width: 100px;
+                }
             }
         }
     }
